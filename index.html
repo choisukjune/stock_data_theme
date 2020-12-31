@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello World!</title>
+		<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+<script>
+onload = () => {
+var cnt = 0;
+var ahks = [
+	'logic_00.ahk'
+	,'logic_01.ahk'
+	, "logic_02.ahk"	
+
+]
+
+window.laod = {};
+window.laod.cnt = 1;
+window.themeUrlArr = {};
+window.themeUrlObj = {};
+window.themeListMaxPage = 0
+
+global.fs =  require('fs');
+const webview = document.querySelector('webview')
+webview.addEventListener('dom-ready', () => {
+  
+	// we can get its URL and display it in the console
+	let currentURL = webview.getURL()
+	console.log('currentURL is : ' + currentURL)
+
+	// same thing about the title of the page
+	let titlePage = webview.getTitle()  
+	console.log('titlePage is : ' + titlePage)
+
+	var themeListUrl = "https://finance.naver.com/sise/theme.nhn?&page="
+	
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	window.getThemeMaxPage = function(){
+		webview.loadURL( themeListUrl );
+		webview.executeJavaScript(`
+		new Promise((resolve, reject) => { 
+			var _el = window.document.getElementsByClassName("pgRR")[0].children[0].href
+			resolve(_el.split("=")[1]); });
+		`
+		).then(function(data){
+				window.themeListMaxPage = data * 1
+		})
+	}
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	window.getThemeURL = function( url ){
+		
+		if( window.laod.cnt == window.themeListMaxPage )
+		{
+			global.fs.writeFileSync( "themeUrl.json", JSON.stringify(window.themeUrlArr,null,4), {flag:"w"} );
+			return;
+		}
+		webview.loadURL( themeListUrl + window.laod.cnt )
+		webview.executeJavaScript(`
+		new Promise((resolve, reject) => { 
+			var _els = window.document.getElementsByClassName("col_type1")
+			var i = 0,iLen = _els.length,io;
+			var ra = {};
+			for(;i<iLen;++i){
+				io = _els[ i ];
+				var tNm = io.innerText;
+				if( i > 0 ) ra[ tNm ] = io.children[ 0 ].href
+				//ra.push( io );
+			}
+			resolve(ra); });
+		`
+		).then(function(data){
+
+		var s,so;
+		for( s in data ){
+			so = data[ s ]
+			var key = s.replace(/\//gi,"-");
+			console.log( key )
+			debugger;
+			window.themeUrlArr[ key ] = so;
+		}
+		
+		//if( window.laod.cnt < urls.length ){
+		if( window.laod.cnt < 6 ){	
+			
+			++window.laod.cnt;
+			webview.loadURL( themeListUrl + window.laod.cnt )
+			window.getThemeURL()
+
+		}
+		
+		})
+	}		
+
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+
+
+	var _tText = global.fs.readFileSync( "themeUrl.json" ).toString();
+	var _tO = JSON.parse( _tText );
+	var themesArr = Object.keys( _tO );
+
+	window.getThemeHtml = function(){
+		
+		var themeName = themesArr[ window.getThemeHtml.cnt ];
+		var url = _tO[ themeName ];
+		webview.loadURL( url );
+
+		webview.executeJavaScript(`
+		new Promise(function(resolve, reject){ 
+
+			function fieldSubmit() {
+			var chkcnt = 0;
+			
+			for(i = 0; i < document.field_form.fieldIds.length ; i++) {
+				document.field_form.fieldIds[i].checked = true
+			}
+
+			document.field_form.action = 'field_submit.nhn';
+			document.field_form.submit();
+			}
+			fieldSubmit();
+
+			var r = window.document.body.innerHTML;
+			resolve(r); 
+		});
+		`
+		).then((html) => {
+
+		try {
+			global.fs.writeFileSync( "./stock_html/" + themeName + ".html", html, {flag:"w"} );	
+		} catch (error) {
+			debugger;
+		}
+		
+		
+		if( window.getThemeHtml.cnt <  themesArr.length )
+		{
+			++window.getThemeHtml.cnt;
+			console.log( window.getThemeHtml.cnt )
+			setTimeout( function(){ window.getThemeHtml(); },1000 )
+		}
+		})
+
+	}
+	window.getThemeHtml.cnt = 0;
+
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+
+	var _tText = global.fs.readFileSync( "themeUrl.json" ).toString();
+	var _tO = JSON.parse( _tText );
+	var themesArr = Object.keys( _tO );
+	var list = global.fs.readdirSync("./stock_html/20201231/");
+
+	var _tText00 = global.fs.readFileSync( "allStockCode.json" ).toString();
+	window.allStockCode = JSON.parse( _tText00 );
+
+	window.makeThemeList = function(){
+		
+		window.document.body.innerHTML = "";
+		window.document.body.innerHTML = global.fs.readFileSync( "./stock_html/20201231/" + list[ window.makeThemeList.cnt ] ).toString();
+
+		debugger;
+		var _els = window.document.getElementsByClassName("info_layer_wrap")
+		var _el_code = window.document.getElementsByClassName("name_area")
+
+		var i = 0,iLen = _el_code.length,io;
+		var ra_code = {};
+		for(;i<iLen;++i){
+			io = _el_code[ i ];
+			var key = io.children[0].innerText
+			var code = io.children[0].href.split("=")[1]
+			
+			if( !window.allStockCode[ key ] )
+			{
+				window.allStockCode[ key ] = code;
+			}
+
+			var _market = "KOSDAQ"
+			if( io.children[1].innerText != "" ) _market = "KOSPI"
+			ra_code[ key ] = {
+				code : code
+				, market : _market
+			}
+		}
+
+		var i = 0,iLen = _els.length,io;
+		var ra = [];
+		for(;i<iLen;++i){
+			io = _els[ i ];
+			var _to = {
+				name : io.children[ 0 ].innerText
+				, desc : io.children[ 1 ].innerText
+			}
+			if( i > 0 )
+			{
+				_to.code = ra_code[ io.children[ 0 ].innerText ].code
+				_to.market = ra_code[ io.children[ 0 ].innerText ].market
+			} 
+			ra.push( _to )
+		}
+		var html = ra;
+
+		var key = html[ 0 ].name.replace(/\//gi,"-")
+		window.themeUrlObj = {}
+		window.themeUrlObj[ key ] = {
+			name : key
+			, desc : html[ 0 ].desc
+			, child : []
+		};
+
+		var i = 0,iLen = html.length,io;
+		for(;i<iLen;++i){
+			io = html[ i ]
+			if( i > 0 ) window.themeUrlObj[ key ].child.push( io )
+		}
+
+		try
+		{
+			fs.writeFileSync( "./stock_theme/" + key + ".json", JSON.stringify(window.themeUrlObj[ key ],null,4), {flag:"w"} );	
+		}
+		catch(er)
+		{
+			console.log( er );
+			debugger;
+		}
+		
+		if( window.makeThemeList.cnt <  themesArr.length )
+		{
+			debugger;
+			++window.makeThemeList.cnt;
+			console.log( makeThemeList.cnt )
+			//setTimeout( function(){ window.getThemeData(); },1000 )
+			window.makeThemeList();
+		}
+		fs.writeFileSync( "./allStockCode.json", JSON.stringify(window.allStockCode,null,4), {flag:"w"} );	
+		return;
+		
+	}
+	window.makeThemeList.cnt = 0;
+
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+
+
+	window.makeThemeListToData = function(){
+		
+		window.document.body.innerHTML = "";
+		window.document.body.innerHTML = global.fs.readFileSync( "./stock_html/20201231/" + list[ window.makeThemeListToData.cnt ] ).toString();
+
+		debugger;
+		var el = window.document.getElementsByClassName("type_5")[0]
+		var category = window.document.getElementsByClassName("info_title")[0].innerText
+		var keys = []
+		var i = 0,iLen = el.children[2].children[0].children.length,io;
+		
+		for(;i<iLen;++i){
+			io = el.children[2].children[0].children[ i ]
+			keys.push( io.innerText );
+		}
+		
+		var r = [];
+		var i = 0, iLen = el.children[3].children.length, io;
+		for(;i<iLen;++i){
+			io = el.children[3].children[ i ]
+			if( io.childElementCount == 1 ) continue;
+			var j = 0,keyCnt = 0,jLen = io.children.length,jo
+			var ro = {}
+			for(;j<jLen;++j){
+				jo = io.children[ j ]
+				
+				// debugger;
+				if( jo.className == "name" ) var key = jo.innerText.replace(/\*/gi,"").trim();
+				if( jo.className != "center" && jo.className)
+				{
+					ro[ keys[ keyCnt ] ] = jo.innerText.replace(/\*/gi,"").trim();
+					++keyCnt;
+				} 
+			}
+			
+			ro[ "code" ] = window.allStockCode[ key ];
+			ro[ "theme" ] = category;
+			keyCnt = 0;
+
+			try
+			{
+				console.log( key )
+				fs.writeFileSync( "./stock_data/" + window.allStockCode[ key ] + ".json", JSON.stringify( ro ,null,4 ), {flag:"w"} );	
+			}
+			catch(er)
+			{
+				console.log( er );
+				debugger;
+			}
+		}
+		
+		if( window.makeThemeListToData.cnt <  themesArr.length )
+		{
+			debugger;
+			++window.makeThemeListToData.cnt;
+			console.log( makeThemeListToData.cnt )
+			//setTimeout( function(){ window.getThemeData(); },1000 )
+			window.makeThemeListToData();
+		}
+		return;
+		
+	}
+	window.makeThemeListToData.cnt = 0;
+
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	window.makeHtml = function(){
+		
+		var tFilePath = "20201231_all_data.json"
+		var list = global.fs.readFileSync( tFilePath ).toString();
+		var arr = JSON.parse( list );
+
+		var r = "";
+			r += `
+				<table>
+			`;
+		var i = 0,iLen = arr.length,io;
+		for(;i<iLen;++i){
+			r += "<tr>"
+			console.log( i )
+			io = arr[ i ];
+			
+			var s,so;
+			for( s in io ){
+				so = io[ s ];
+				r += "<td>" + so + "</td>";
+			}
+			
+			
+			r += "</tr>"
+		}
+		r += `
+				</table>
+			`;
+		fs.writeFileSync( "20201231_all_data.html", r, {flag:"w"} );	
+		
+	}
+})
+
+
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+//-------------------------------------------------------;
+
+}
+
+</script>		
+<!--script src="renderer.js"></script-->
+		<style>
+			#webview {
+     display: flex;  
+     width: 100%;
+     height: 98%;
+     border: none;
+}
+html, body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+		</style>
+	</head>
+	<body style="background: white" height="100% ">
+		
+    <!-- Webview -->
+    <webview
+      id="webview"
+      autosize="on"
+      src="https://finance.naver.com/sise/theme.nhn"
+      data-home="https://finance.naver.com/sise/theme.nhn"
+    ></webview>
+	</body>
+</html> 

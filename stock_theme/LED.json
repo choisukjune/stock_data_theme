@@ -1,0 +1,306 @@
+{
+    "name": "LED",
+    "desc": "발광다이오드(Light Emitting Diode)란 전기 신호를 빛으로 바꾸는 화합물 반도체임. 휴대전화 키패드 광원, LCD용 백라이트, 자동차 계기판, 브레이크등, 방향표시등, 전광판, 조명기구 등으로 활용범위를 확대하고 있는 LED생산/관련기업군.",
+    "child": [
+        {
+            "name": "케이엔제이",
+            "desc": "디스플레이 패널 관련 Edge Grinder(엣지그라인더)와 CVD-SiC(탄화규소) Product 생산 업체.  CVD-SiC(탄화규소) 제품인 LED제조용 SiC 코팅제품 생산.",
+            "code": "272110",
+            "market": "KOSPI"
+        },
+        {
+            "name": "파인테크닉스",
+            "desc": "LED 조명기기(LED조명, LED스텐드 등) 제조사업을 영위. 종속회사로 LED조명 판매업을 영위하는 디피에스, 에스씨엘이디 등을 보유.",
+            "code": "106240",
+            "market": "KOSPI"
+        },
+        {
+            "name": "금호전기",
+            "desc": "일반조명, LED조명 등을 생산하는 조명전문업체. 형광램프(직관, 환형, 컴팩트, 전구형), LED조명(가정용, 산업용, 실외용) 등을 생산. 피부미용 LED 스킨테라피 '레이큐어' 제품을 출시해 국내는 물론 미국, 일본, 중국 시장에 판매를 진행중.",
+            "code": "001210",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "소룩스",
+            "desc": "조명기구 전문제조 업체. 주요 제품으로는 실내등 부문 LED등, 형광등 등이 있으며, 실외등 부문 가로등, 터널등 등이 있으며, LED등 매출 비중이 높음.",
+            "code": "290690",
+            "market": "KOSPI"
+        },
+        {
+            "name": "알에프텍",
+            "desc": "LED조명사업 부문에서 LED조명 및 조명 관련 제품 생산중.",
+            "code": "061040",
+            "market": "KOSPI"
+        },
+        {
+            "name": "루멘스",
+            "desc": "LED사업 영위업체. 조명용 LED, LCD BLU용 LED, 모바일용 LED 등을 생산, 판매중.",
+            "code": "038060",
+            "market": "KOSPI"
+        },
+        {
+            "name": "성호전자",
+            "desc": "전자부품 전문 제조업체로 LED조명 생산/판매. 밝기 조절이 가능하고 최적 조건으로 반응하는 LED 조명용 PSU(LED조명용 전원 공급장치)를 국내 최초로 개발.",
+            "code": "043260",
+            "market": "KOSPI"
+        },
+        {
+            "name": "서울반도체",
+            "desc": "자동차용, 교통신호등용, 전광판용, 조명용, LCD 광원용 등에 사용되는 LED(발광 다이오드) 제품을 생산, 판매하는 국내 최대의 종합 LED업체.",
+            "code": "046890",
+            "market": "KOSPI"
+        },
+        {
+            "name": "드림텍",
+            "desc": "차량용 램프 LED 모듈 사업 영위. 현대모비스 등 전장부품 결합업체에 납품 중.",
+            "code": "192650",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "삼성전자",
+            "desc": "세계적 경쟁력을 보유한 전자 기업으로 DS부문 내 Display 사업(TFT-LCD, OLED 등)에서 LED조명과 LED TV 등 LED 관련 제품을 생산 판매 중.",
+            "code": "005930",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "비보존 헬스케어",
+            "desc": "LED제조업체로 LED(Light Emitting Diode) 사업(Package, Module&완제품)을 영위중. LED 광원을 이용한 다양한 Top View LED Type PKG, LED 조명용 Module 등을 생산.",
+            "code": "082800",
+            "market": "KOSPI"
+        },
+        {
+            "name": "LG전자",
+            "desc": "2010년 세계 최초 Full HD 3D LED TV를 출시하는 등 삼성전자와 함께 LED TV시장을 선도하고 있으며, 정부로부터 녹색기술 인증을 획득하는 등 LED 조명 사업도 본격화.",
+            "code": "066570",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "에스폴리텍",
+            "desc": "LED 조명용 확산판 관련 특허 취득 등. LED를 광원으로 하는 도광판, 광고용시트를 생산/판매중.",
+            "code": "050760",
+            "market": "KOSPI"
+        },
+        {
+            "name": "알에프세미",
+            "desc": "LED조명 및 모듈 생산/판매 사업을 영위. AC 직결형 LED 조명 등을 생산/판매. 13년1월 중국 심천에 심천애래복광전유한공사를 설립.",
+            "code": "096610",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엘컴텍",
+            "desc": "LED조명 사업 영위. 형광등, 할로겐, 다운라이트, 공장등 등의 실내조명, 가로등, 실외용 바, 투광기 등의 실외조명, 스탠드 등의 다양한 LED조명 제품 생산.",
+            "code": "037950",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아이엘사이언스",
+            "desc": "고효율 LED 조명 및 관련 광학기구 등의 제품 개발/생산업체. 주요제품은 LED용 실리콘 렌즈(LED용 집광렌즈/확산렌즈, 특수렌즈 등)와 LED조명제품(실내조명, 실외조명 등), IoT융합 조명시스템 등으로 분류.",
+            "code": "307180",
+            "market": "KOSPI"
+        },
+        {
+            "name": "레이크머티리얼즈",
+            "desc": "유기금속화학물 설계 및 TMA(Trimethyl Aluminium) 제조기술을 기반으로 하여 LED, 메탈로센촉매, 디스플레이, Solar, 반도체 등의 소재로 사용되는 초고순도 유기금속 화합물을 개발 및 공급 중. 국내 최초로 TMA를 개발하여 국산화한 기술력을 보유하고 있으며, 반도체, 디스플레이, Solar 소재 및 석유화학촉매를 자체 기술로 개발 소재 국산화를 주도.",
+            "code": "281740",
+            "market": "KOSPI"
+        },
+        {
+            "name": "광전자",
+            "desc": "Discrete반도체, 광센서, LED 등을 주력으로 생산하는 반도체 개별 소자 제조업체.",
+            "code": "017900",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "필룩스",
+            "desc": "LED 감성조명 및 문화 컨텐츠 사업과 전기/전자소재 및 부품사업 등을 영위하는 업체. 조명 및 문화컨텐츠 부문에서 LED 레일디바(D ber), LED 일반디바(D ber)/  LED용 슬림램프 류 등을 생산.",
+            "code": "033180",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "에프알텍",
+            "desc": "LED 조명 사업영위. LED조명 브랜드 Lucius를 런칭했으며, 주요제품으로는 면조명, 다운라이트, LED직관램프를 비롯해 지하주차장 등 LED조명 제어시스템, 가로등, 보안등 등이 있음.",
+            "code": "073540",
+            "market": "KOSPI"
+        },
+        {
+            "name": "태경비케이",
+            "desc": "LED조명사업을 영위하는 남영전구 지분 31.92% 보유.",
+            "code": "014580",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "나노신소재",
+            "desc": "디스플레이 산업의 핵심소재라 할 수 있는 투명전도성 Target 소재를 국내외 TSP, LED, LCD 업체에 주로  공급하고 있음.",
+            "code": "121600",
+            "market": "KOSPI"
+        },
+        {
+            "name": "서울바이오시스",
+            "desc": "LED Chip 연구개발, 생산, 판매업체. 일반조명과 디스플레이용 BLU, 차량용 등 가시광선 영역의 Visible LED와 살균, 탈취, 소독, 경화 등 다양한 용도로 사용되는 UV 제품 등에 적용되는 다양한 종류의 LED Chip 생산.",
+            "code": "092190",
+            "market": "KOSPI"
+        },
+        {
+            "name": "매직마이크로",
+            "desc": "반도체 및 LED 리드프레임과 LED package 제조, SMT(표면실장기술) 사업을 영위. 주력생산품인 리드프레임 및 패키지의 주용도는 LED용임.",
+            "code": "127160",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한국단자",
+            "desc": "LED TV 및 조명용 리드프레임 생산.",
+            "code": "025540",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "금호에이치티",
+            "desc": "자동차용 조명 전문 제조 업체. 조명의 광원에 따라 LED모듈 사업부 및 백열전구(BULB) 사업부로 구분지어 사업을 영위중이며, 차량 전면/후면 조명장치, 계기판, 실내등 등 자동차에 사용되는 전 부문의 조명을 생산중.",
+            "code": "214330",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "일진디스플",
+            "desc": "LED 칩의 기판재료로 사용되는 사파이어 웨이퍼와 스마트폰 및 태블릿PC용 터치스크린패널 생산, 판매업체.",
+            "code": "020760",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "제이엠아이",
+            "desc": "베트남 현지법인을 통해 LED 모듈 등 종합 EMS사업 영위. ",
+            "code": "033050",
+            "market": "KOSPI"
+        },
+        {
+            "name": "오디텍",
+            "desc": "5inch Sillicon Fabrication(Opto Semiconductor Chip제조)을 갖추고 User의 요구에 따라 다양한 형태의 비메모리반도체를 개발, 설계하여 제품을 공급하는 업체. LED응용제품도 생산. 반도체 Chip 제조부문 매출의 큰 비중을 차지하고 있는 Zener Diode Chip과 Sub-Mount Chip제품은 LED디스플레이 관련 산업과 밀접한 관계를 갖고 있음. Chip LED를 생산하여 판매하고 있는 삼성전자, LG이노텍, 서울반도체, 루멘스 등이 주요 매출처.",
+            "code": "080520",
+            "market": "KOSPI"
+        },
+        {
+            "name": "포인트엔지니어링",
+            "desc": "표면처리 전문업체. 디스플레이(LCD 및 OLED) 및 반도체 공정에 사용되는 공정장비의 핵심부품을 제작, 가공 및 표면처리를 중점사업으로 영위. 알루미늄 금속을 이용한 표면처리 응용기술개발로 방열문제를 개선할 수 있는 LED 금속기판을 개발하는 등 LED 시장에도 진출.",
+            "code": "256630",
+            "market": "KOSPI"
+        },
+        {
+            "name": "우리이앤엘",
+            "desc": "LED 패키지 및 LED 라이트바 제조업체. TV, 모니터, 노트북PC, 모바일, 조명 등에 사용되는 LED BLU는 소형에서부터 대형사이즈까지의 생산설비를 갖추고 있음. 주요고객사는 (주)뉴옵틱스, HEESUNG, 스타리온, 이라이콤,YANG JI 등.",
+            "code": "153490",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한라IMS",
+            "desc": "선용원격측정시스템 및 산업용 레벨측정장치 전문 제조업체로 LED 시스템 사업도 영위. 당사의 LED제품은 도로 운전자에 눈부심을 방지하고 글래어 현상을 방지하여 안전한 운행이 유지되도록 하는 기술 M1 등급이 적용된 LED가로등 제품임.",
+            "code": "092460",
+            "market": "KOSPI"
+        },
+        {
+            "name": "삼진엘앤디",
+            "desc": "LED조명제품 개발 및 생산사업을 영위. 주요 제품으로 Down Light, Arch, Tube 등.",
+            "code": "054090",
+            "market": "KOSPI"
+        },
+        {
+            "name": "파커스",
+            "desc": "LED, LED LAMP 제조 업체. LED Chip PKG를 주요 모듈업체 및 BLU 업체에 납품하고있으며 중국, 대만 일본 등에도 수출 진행중.",
+            "code": "065690",
+            "market": "KOSPI"
+        },
+        {
+            "name": "빛샘전자",
+            "desc": "LED 및 광통신 사업 영위 업체. 주요제품으로 LED 디스플레이 및 경관조명, LED 소자 및 모듈, 광선로 부품 등",
+            "code": "072950",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엘디티",
+            "desc": "OLED(PM OLED, AM OLED), LED용 구동칩(DDI : Display Driver IC)의 설계와 판매를 하는 팹리스(Fabless) 반도체 회사.",
+            "code": "096870",
+            "market": "KOSPI"
+        },
+        {
+            "name": "케이엠더블유",
+            "desc": "17년7월 물적분할을 통하여 ㈜기가테라라이팅을 설립하여 기존에 영위하던 스포츠조명, 실외조명 등을 생산/판매하는 LED사업을 이관.",
+            "code": "032500",
+            "market": "KOSPI"
+        },
+        {
+            "name": "유양디앤유",
+            "desc": "LCD, LED, 3D, 스마트, OLED, UHD TV용 SMPS(전원공급장치) 등의 제조/판매업체.",
+            "code": "011690",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "GV",
+            "desc": "LED 조명 생산/판매업체. 일반조명, 실외조명, 특수조명에 이르기까지 3W에서 160W의 완전한 제품 라인업을 구축. 2009년 LED조명 최초로 KS인증 획득 및 한국수력원자력 조명 공급업체에 선정.",
+            "code": "045890",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한솔테크닉스",
+            "desc": "LED Chip을 제조하기 위한 LED 잉곳/웨이퍼를 생산하는 LED 소재 사업을 영위.",
+            "code": "004710",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "이엠네트웍스",
+            "desc": "반도체 칩 외부를 밀봉하는 재료인 EMC(에폭시 몰딩 컴파운드)와 LED(발광다이오드)칩을 보호하는 소재 CMC(클리어 몰딩 컴파운드)를 생산하는 업체.",
+            "code": "087730",
+            "market": "KOSPI"
+        },
+        {
+            "name": "우리조명",
+            "desc": "가정용 및 광고용 램프, 조명기기 제조 및 판매, LED조명 사업 영위 업체.",
+            "code": "037400",
+            "market": "KOSPI"
+        },
+        {
+            "name": "LG이노텍",
+            "desc": "LG그룹 계열의 종합 전자부품 전문업체로 LED사업(BLU Array용 LED, 조명용 LED 등) 영위.",
+            "code": "011070",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "현대통신",
+            "desc": "SK하이닉스(구 하이닉스)에서 분사해 설립된 업체로 스마트홈시스템 사업 등을 영위. 2009년부터 LED 조명사업에 진출해 스마트 LED 조명등을 생산. 연결대상 종속회사에 포함된 HYUNDAI TELECOM JAPAN은 스마트홈시스템 및 LED lighting 제품 판매 사업 영위중.",
+            "code": "039010",
+            "market": "KOSPI"
+        },
+        {
+            "name": "태경산업",
+            "desc": "국내 종합 전구 제조업체인 남영전구를 계열사로 보유.",
+            "code": "015890",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "라이브파이낸셜",
+            "desc": "차량 및 조명용 LED 패키지 생산 전문업체.",
+            "code": "036170",
+            "market": "KOSPI"
+        },
+        {
+            "name": "우리바이오",
+            "desc": "LED 패키지 및 LED 라이트바 제조업체 우리이앤엘(주) 등을 종속회사로 보유.",
+            "code": "082850",
+            "market": "KOSPI"
+        },
+        {
+            "name": "유테크",
+            "desc": "모바일 디스플레이 부품 제조 및 판매업체. BLU 중에서 LED의 선광을 면광으로 전환하는 LGP(Light Guide Plate, 도광판)와 BLU 부품을 고정시키며 LED의 빛이 새는 것을 막아주는 M/F(Mold Frame, 몰드프레임)를 생산.",
+            "code": "178780",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아이엠이연이",
+            "desc": "EMS(전자제품 생산전문기업) 전문업체. SMD(표면실장장치)와 SMT(표면실장기술)를 기반으로 TFT-LCD Monitor & Notebook용 Source PBA, LCD TV용 Control & Source PBA, LED용 PBA, OLED용 PBA를 주로 생산.",
+            "code": "090740",
+            "market": "KOSPI"
+        },
+        {
+            "name": "세미콘라이트",
+            "desc": "LED Chip 등을 설계, 개발, 생산 및 판매하는 업체. 주요 제품으로 플립칩 등이 있음.",
+            "code": "214310",
+            "market": "KOSPI"
+        }
+    ]
+}

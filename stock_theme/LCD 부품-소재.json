@@ -1,0 +1,288 @@
+{
+    "name": "LCD 부품-소재",
+    "desc": "LCD산업의 영향을 받는 LCD관련 부품 및 소재업체들. 부품/소재 산업의 특성상 수요의 변동요인은 삼성전자와 LG디스플레이 등 패널업체들의 판매실적과 재고보유수준 및 생산수준, 패널가격의 변동 등이라고 할 수 있음.",
+    "child": [
+        {
+            "name": "네패스",
+            "desc": "플립칩 Bumping기술을 확보하여 TFT-LCD, OLED 패널의 구동칩 및 스마트폰 등 다양한 스마트 어플리케이션 등의 Chip-set을 위한 Bumping 기술을 개발. 또한, LCD 등 미세회로 Pattern을 구성하기 위하여 사용되는 공정재료인 현상액(Developer), Color Filter 현상액(Color Developer), 세정제(Cleaner), 연마제(Slurry) 등의 소재사업을 영위.",
+            "code": "033640",
+            "market": "KOSPI"
+        },
+        {
+            "name": "세진티에스",
+            "desc": "초박막 액정표시장치(TFT-LCD)용 BLU에 들어가는 광기능성 시트(반사시트, 확산시트, 보호시트, 프리즘시트등)를 생산하는 업체.",
+            "code": "067770",
+            "market": "KOSPI"
+        },
+        {
+            "name": "케이엔더블유",
+            "desc": "디스플레이 및 자동차 부품소재 제조 전문 업체. GLP모듈, 디스플레이용 보호필름(Protect Film), 광학필름 코팅 제품 등을 생산중.",
+            "code": "105330",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아나패스",
+            "desc": "비메모리 반도체의 일종인 시스템 반도체 특히, 주문형 반도체(ASIC)를 주력으로 개발, 공급하는 팹리스 업체. 주력제품으로 LCD TV, LED TV 부품인 타이밍콘트롤러(T-con)를 개발/생산.",
+            "code": "123860",
+            "market": "KOSPI"
+        },
+        {
+            "name": "동진쎄미켐",
+            "desc": "감광액과 발포제 생산, 판매업체. 반도체 및 TFT-LCD, PDP 등의 노광공정에 사용되는 감광액(Photoresist) 관련 전자재료사업을 영위.",
+            "code": "005290",
+            "market": "KOSPI"
+        },
+        {
+            "name": "우주일렉트로",
+            "desc": "모바일 및 디스플레이용 초정밀 커넥터를 생산 및 판매하는 업체.",
+            "code": "065680",
+            "market": "KOSPI"
+        },
+        {
+            "name": "이엔에프테크놀로지",
+            "desc": "반도체 및 디스플레이용 전자재료 전문 제조업체. TFT-LCD 소재인 프로세스케미칼(신너, 현상액, 식각액, 박리액 등), TFT-LCD의 칼라필터용 칼라페이스트 등을 제조하여 국내외 LCD 제조업체에 판매중.",
+            "code": "102710",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에프에스티",
+            "desc": "반도체 재료/장비 전문업체. LCD용 펠리클(Pellicle) 사업도 영위.",
+            "code": "036810",
+            "market": "KOSPI"
+        },
+        {
+            "name": "삼성SDI",
+            "desc": "전자재료 사업부문에서 디스플레이에 사용되는 EMC, 편광필름, CR 등 디스플레이 관련 소재를 생산.",
+            "code": "006400",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "미래나노텍",
+            "desc": "IT 디스플레이 소재 전문 업체. LCD BLU에 사용되는 광학필름 생산/판매.",
+            "code": "095500",
+            "market": "KOSPI"
+        },
+        {
+            "name": "예선테크",
+            "desc": "기능성 점착소재 제조사업 영위업체. 주요 제품으로는 LCD 및 OLED TV, LCD 모니터 등에 쓰이는 Foam Pad, Gasket Pad, EFR Foam Pad, COF Pad 등.",
+            "code": "250930",
+            "market": "KOSPI"
+        },
+        {
+            "name": "티엘아이",
+            "desc": "LCD 패널의 핵심부품인 Timing Controller와 LCD Driver IC등 시스템반도체 설계 전문 업체. Timing Controller와 LCD Driver IC는 주로 LG디스플레이에 납품.",
+            "code": "062860",
+            "market": "KOSPI"
+        },
+        {
+            "name": "오성첨단소재",
+            "desc": "광학용 보호/기능성 필름을 생산하는 소재사업을 영위. LCD용 기능성 광학필름 등을 생산중.",
+            "code": "052420",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에스앤에스텍",
+            "desc": "블랭크 마스크 제조업체. 블랭크마스크는 반도체 및 LCD, OLED 노광 공정의 핵심재료인 포토마스크의 원재료임.",
+            "code": "101490",
+            "market": "KOSPI"
+        },
+        {
+            "name": "신화인터텍",
+            "desc": "LCD용 광학필름(확산, 반사, 보호, 프리즘필름 등) 및 Mobile OLED용 Tape 제조/판매 업체. 주요 Display SET 업체(한국, 중국, 동남아, 터키 등)에 광학용 Film을 공급.",
+            "code": "056700",
+            "market": "KOSPI"
+        },
+        {
+            "name": "와이엠씨",
+            "desc": "평판디스플레이(FPD) 부품 및 소재 제조업체. FPD(LCD, OLED) 제조공정 중 증착공정의 박막형성 및 FPD Panel 제조공정 중 증착공정에서 필요한 배선재의 재료인 타겟과 관련 부품인 Backing Plate, FPD공정장비 부품을 연구/개발/생산하는 사업 영위.",
+            "code": "155650",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엘티씨",
+            "desc": "디스플레이(LCD용)나 반도체 제조 공정에 사용되는 공정소재(Process Chemical) 중 하나인 박리액 개발 및 제조를 주력사업으로 영위. LCD용 박리액 매출비중이 높음.",
+            "code": "170920",
+            "market": "KOSPI"
+        },
+        {
+            "name": "실리콘웍스",
+            "desc": "평판 디스플레이용 시스템 반도체 부품 제조업체. 주요제품으로 다양한 방식의 디스플레이 구동에 필요한 핵심부품인 패널 구동 IC 와 Data 신호전달 및 제어부품(T-CON), 전원관리IC(PMIC) 등.",
+            "code": "108320",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코디",
+            "desc": "디스플레이 검사장비인 Probe Unit(LCD 패널의 행상도 및 휘도 검사장비) 및 Probe Card(반도체칩 회로 설계 검사장비) 등을 제조.",
+            "code": "080530",
+            "market": "KOSPI"
+        },
+        {
+            "name": "토비스",
+            "desc": "중소형 TFT-LCD모듈을 생산/판매하고 있으며, LG전자가 주 고객임.",
+            "code": "051360",
+            "market": "KOSPI"
+        },
+        {
+            "name": "상보",
+            "desc": "디스플레이용 광학필름(BLU시트) 전문 제조업체. LED/LCD TV, 모니터, 노트북 등에 들어가는 광학필름을 생산/판매.",
+            "code": "027580",
+            "market": "KOSPI"
+        },
+        {
+            "name": "뉴파워프라즈마",
+            "desc": "반도체 및 디스플레이(LCD, OLED, Solar 등) 박막공정 및 식각공정 장비에 사용되는 핵심 부품 공급 업체. 주요 제품으로는 박막공정 진행 후 공정내 잔존하는 부산물에 대한 Plasma Cleaning를 실시하는 핵심 모듈인 Remote Plasma Generator(RPG), 박막 공정이나 건식각 공정장비의 진공 방(Vacuum Chamber)에 가스를 공급하여 Plasma를 발생하는데 필요한 전원을 공급하는 모듈인 RF Generator(RFG) 및 Matcher(MAT) 등이 있음.",
+            "code": "144960",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코오롱인더",
+            "desc": "코오롱의 제조사업이 분사되어 신설된 제조회사로 LCD용으로 사용되는 확산필름, 확산판, 프리즘 필름, 도광판 등 백라이트용 광학소재 등의 필름사업을 영위.",
+            "code": "120110",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "아바텍",
+            "desc": "LCD패널 식각 및 IPS패널 코팅 전문업체. 디스플레이 패널 Glass를 얇게 만드는 식각공정(LCD패널 Slimming)과 식각공정 후 고기능성 ITO코팅(LCD 패널중 Color 필터 상부에 ITO 도전막을 코팅) 수행.",
+            "code": "149950",
+            "market": "KOSPI"
+        },
+        {
+            "name": "디스플레이텍",
+            "desc": "LCD모듈 전문제조업체. 삼성전자에 보급형 스마트폰용 LCD 모듈(LCM)을 ODM(제조자개발생산) 방식으로 납품.",
+            "code": "066670",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에스폴리텍",
+            "desc": "광학용 시트/필름 생산/판매업체. 광학용 시트/필름 사업(TFT-LCD 산업의 일부분인 도광판, 확산판 등을 생산/판매) 영위.",
+            "code": "050760",
+            "market": "KOSPI"
+        },
+        {
+            "name": "제이엠티",
+            "desc": "TFT-LCD 패널의 주요 부품 중 하나로 노트북 및 PC 모니터, LCD TV용 핵심 부품인 PBA(Printed Board Assembly)를 주력으로 생산, 공급하는 업체.",
+            "code": "094970",
+            "market": "KOSPI"
+        },
+        {
+            "name": "LG화학",
+            "desc": "LG그룹 계열의 국내 대표적인 화학기업으로 2000년 국내 최초로 LCD용 편광판의 상업화에 성공한 이래, 편광판 등 LCD용 소재와 전지재료 등을 생산중.",
+            "code": "051910",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "엘엠에스",
+            "desc": "프리즘시트(LCD BLU의 핵심부품) 생산업체.",
+            "code": "073110",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코이즈",
+            "desc": "LCD 보호필름 및 광학코팅 업체. LCD 보호필름 제조 및 LCD의 부품인 백라이트유닛(BLU)의 핵심소재인 광학필름의 코팅과 도광판 및 보호필름 제조를 중심으로 사업 영위. 주요매출처는 LG전자, 미래나노텍, LGD, BOE 등임.",
+            "code": "121850",
+            "market": "KOSPI"
+        },
+        {
+            "name": "SKC",
+            "desc": "LCD, 태양전지, 일반 산업재에 부품으로 사용되는 PET(폴리에스테르)필름 등을 생산/판매하는 필름사업 영위. LCD용 광학용 필름 등을 생산.",
+            "code": "011790",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "파인디앤씨",
+            "desc": "TFT-LCD 부품 생산업체. LCD/LED TV부품인 TOP-CHASSIS, BOTTOM-CHASSIS, LAMP REFLECTOR 등을 주종으로 하여 기타 TFT-LCD 모듈 관련 주요 부품을 생산.",
+            "code": "049120",
+            "market": "KOSPI"
+        },
+        {
+            "name": "솔브레인",
+            "desc": "반도체 및 디스플레이 공정용 화학재료, 2차전지 소재 등 생산/판매 업체. 삼성전자, SK하이닉스, LG디스플레이 등 국내 반도체 및 디스플레이 제조사에 공정용 화학 재료 등을 공급.",
+            "code": "357780",
+            "market": "KOSPI"
+        },
+        {
+            "name": "삼진엘앤디",
+            "desc": "정밀 금형/사출 기술 기반의 전자부품업체. 전자부품 사업부에서 TV moldframe, 도광판(Light Guide Panel) 등을 생산/판매. 특히, 삼성전자 BLU 협력업체에 Mold Frame을 공급.",
+            "code": "054090",
+            "market": "KOSPI"
+        },
+        {
+            "name": "천보",
+            "desc": "디스플레이소재(LCD 식각액첨가제, OLED소재), 반도체 공정소재(SOH공정첨가제), 2차전지소재(전해질, 전해액 첨가제), 의약품 중간체(결핵치료제, 당뇨병치료제 등) 및 정밀화학 사업(질산 칼륨, 질산리튬 등) 등을 영위하는 업체. LCD식각액첨가제 아미노테트라졸(ATZ)은 국내시장점유율 1위, 세계시장점유율 1위(95%)를 차지하고 있으며, 차세대 제품인 메틸테트라졸(MTZ)도 판매.",
+            "code": "278280",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한국컴퓨터",
+            "desc": "전자제품 세트 업체로부터 완제품의 생산을 위탁받아 생산하는 국내 최초의 EMS(Electronic Manufacturing Service) 전문업체. 중대형 TFT-LCD(LCD-TV용 보드) 모듈용 부품 제조하여 삼성디스플레이 등에 납품.",
+            "code": "054040",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한솔테크닉스",
+            "desc": "LCD TV의 부품인 파워모듈과 백라이트유닛(BLU) 제조업체. 삼성전자의 BLU 공급업체로 BLU사업은 TV BLU를 중심으로, 파워모듈은 LCD TV용 인버터를 중심으로 사업을 전개.",
+            "code": "004710",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "켐트로닉스",
+            "desc": "전자용 부품 및 화학소재 전문업체. 사업영역은 LCD Glass용 TG(Thin Glass) 제조와 반도체 및 LCD 관련 전자용 및 공업용 용제류를 생산하는 화학사업부와 PBA(PCB Board Assembly), LD(Local Dimming) LED Plate Borad 등을 개발 및 생산하는 전자사업부로 구분됨",
+            "code": "089010",
+            "market": "KOSPI"
+        },
+        {
+            "name": "유아이디",
+            "desc": "ITO 코팅 유리(터치패널용 ITO 코팅 유리제품,  PLS용 배면코팅 제품) 및 PDP TV용 강화유리를 생산.",
+            "code": "069330",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아이원스",
+            "desc": "반도체 및 디스플레이(LCD, OLED) 관련 초정밀 가공/세정 업체.",
+            "code": "114810",
+            "market": "KOSPI"
+        },
+        {
+            "name": "원익머트리얼즈",
+            "desc": "2006년 12월 구 원익IPS의 특수가스사업부문이 물적분할한 업체. 반도체 및 디스플레이 생산공정에 사용되는 특수가스 생산을 주요 사업으로 영위. 삼성전자, SK하이닉스 등의 종합반도체회사를 주요 고객사로 두고 있으며, 반도체 이외에도 삼성디스플레이 AMOLED 사업부에 공정용 특수가스를 공급중.",
+            "code": "104830",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에스에이엠티",
+            "desc": "메모리를 포함한 각종 반도체 및 LCD 패널 등을 판매하고 있는 IT부품 유통업체. 삼성전자, 삼성디스플레이, 삼성전기, 삼성SDI 등의 IT기업들과 안정적인 공급계약을 체결하고, 스마트폰 및 디지탈카메라, TabletPC와 같은 IT 제품에 필요한 Memory, LCD패널, 시스템반도체, Digital Module 제품 등을 판매중.",
+            "code": "031330",
+            "market": "KOSPI"
+        },
+        {
+            "name": "솔브레인홀딩스",
+            "desc": "반도체 및 디스플레이 공정용 화학재료, 2차전지 소재 등 생산/판매 업체. 삼성전자, SK하이닉스, LG디스플레이 등 국내 반도체 및 디스플레이 제조사에 공정용 화학 재료 등을 공급.",
+            "code": "036830",
+            "market": "KOSPI"
+        },
+        {
+            "name": "이라이콤",
+            "desc": "LCD용 BLU(휴대폰, 태블릿, 소형가전제품용 등) 생산업체. 삼성전자의 협력업체로 등록되어 있으며, 중소형 BLU업체 중 First Vendor로 휴대폰 및 태블릿PC용 BLU 공급업체중 가장 높은 점유율을 유지중. ",
+            "code": "041520",
+            "market": "KOSPI"
+        },
+        {
+            "name": "인지디스플레",
+            "desc": "인지컨트롤스 계열사로 TFT-LCD패널 모듈에 사용되는 TOP CHASSIS류의 제품과 BLU(백라이트유닛)에 사용되는 BTM CHASSIS류의 제품을 제조/판매하는 업체. 주요 거래처는 삼성전자 등.",
+            "code": "037330",
+            "market": "KOSPI"
+        },
+        {
+            "name": "유테크",
+            "desc": "모바일 디스플레이 부품 제조 및 판매업체. BLU 중에서 LED의 선광을 면광으로 전환하는 LGP(Light Guide Plate, 도광판)와 BLU 부품을 고정시키며 LED의 빛이 새는 것을 막아주는 M/F(Mold Frame, 몰드프레임)를 생산.",
+            "code": "178780",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아이엠이연이",
+            "desc": "EMS(전자제품 생산전문기업) 전문업체. SMD(표면실장장치)와 SMT(표면실장기술)를 기반으로 TFT-LCD Monitor & Notebook용 Source PBA, LCD TV용 Control & Source PBA, LED용 PBA, OLED용 PBA를 주로 생산.",
+            "code": "090740",
+            "market": "KOSPI"
+        }
+    ]
+}

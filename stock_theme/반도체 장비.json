@@ -1,0 +1,426 @@
+{
+    "name": "반도체 장비",
+    "desc": "반도체 생산에 필요한 각종 장비와 설비를 생산/유통하는 업체.",
+    "child": [
+        {
+            "name": "하나마이크론",
+            "desc": "삼성전자 반도체 부문에서 분사한 반도체(메모리/비메모리) 패키징 전문 업체. 반도체 산업의 후공정 분야인 반도체 조립 및 TEST 제품을 주력으로 생산하고 있으며, 삼성전자, SK하이닉스 등이 주요 거래처임.",
+            "code": "067310",
+            "market": "KOSPI"
+        },
+        {
+            "name": "넥스틴",
+            "desc": "APS그룹 계열의 반도체 전(前)공정 패턴 결함 검사 장비 업체. 반도체 소자의 회로 제작 공정에서 발생하는 미소 패턴 결함을 검출하는 웨이퍼 미소 패턴 결함 검사 장비(AEGIS-DP 등) 제조 및 판매중.",
+            "code": "348210",
+            "market": "KOSPI"
+        },
+        {
+            "name": "네패스아크",
+            "desc": "시스템반도체 생태계의 중요한 한 축을 담당하는 반도체 테스트 전문기업. PMIC(Power Management IC), DDI(Display Driver IC), SoC(System on Chip) 등 영역의 반도체 테스트를 주력으로 영위하고 있으며, 특히 PMIC에 대해서는 국내 독점적 지위 확보. 네패스를 모회사를 두고 네패스 고객사(삼성전자 등)의 Test 물량을 확보해 웨이퍼 테스트(Wafer Test), Package Test, Final Test(FT)를 진행.",
+            "code": "330860",
+            "market": "KOSPI"
+        },
+        {
+            "name": "제이티",
+            "desc": "반도체 검사 장비 전문 제조 업체. 주력 제품으로 반도체 검사 장비는 Test Handler, Burn-In Sorter 등이 있음.",
+            "code": "089790",
+            "market": "KOSPI"
+        },
+        {
+            "name": "테크윙",
+            "desc": "반도체 후공정 검사장비인 테스트 핸들러 전문 제조 기업. 반도체 테스트 핸들러의 설계, 제조, 판매를 주요 사업으로 영위.",
+            "code": "089030",
+            "market": "KOSPI"
+        },
+        {
+            "name": "디아이",
+            "desc": "반도체 검사장비 등 초정밀 시험장비의 제조 및 수입업을 영위. 주요제품으로는 Monitoring Burn-In Tester(MBT), Test Burn-In Tester(TBT) 등의 반도체 검사장비, Burn-In Board(BIB), Wafer Test Board(WTB) 등의 반도체 검사보드 등.",
+            "code": "003160",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "네오셈",
+            "desc": "반도체 후공정 검사장비 업체로 메모리반도체의 제조 공정 중 제품의 성능과 신뢰성을 검사하는 장비 사업을 주 사업으로 영위. 크게 SSD(SOLID STATE DRIVE)의 성능 및 신뢰성을 검사하는 사업과 메모리반도체에 가혹 조건을 적용하여 검사하는 MBT(MONITORING BURN-IN TESTER) 장비 사업으로 구분됨.",
+            "code": "253590",
+            "market": "KOSPI"
+        },
+        {
+            "name": "기가레인",
+            "desc": "RF통신부품 및 반도체장비 제조업체로 반도체 장비 중 전공정 식각 장비에 해당하는 DRIE Etcher 장비를 생산.",
+            "code": "049080",
+            "market": "KOSPI"
+        },
+        {
+            "name": "와이아이케이",
+            "desc": "기업인수목적회사(SPAC) 대신밸런스제2호스팩이 반도체 메모리 테스터 제조 및 판매업체 와이아이케이(주)를 흡수합병함에 따라 변경 상장된 업체. 반도체 제조공정 중 EDS 테스트 공정에서 필요로 하는 반도체 메모리 검사 장비를 제작 및 판매. 주요 제품으로는 메모리 웨이퍼 테스터로 삼성전자에 납품하는 MT6133/MT6122임. ",
+            "code": "232140",
+            "market": "KOSPI"
+        },
+        {
+            "name": "신성이엔지",
+            "desc": "클린룸 사업 부문에서 반도체 및 평판디스플레이, 이와 관련한 소재 및 제품 등의 제조공간에 공기청정도를 제어하는 장비를 생산, 설치하는 사업 영위.",
+            "code": "011930",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "씨앤지하이테크",
+            "desc": "반도체 및 디스플레이(LCD, OLED 등)용 화학약품 혼합장치/재생장치 생산 업체. 반도체/디스플레이 제조 공정에 필요한 화학약품을 최종 양산 설비에 자동화로 공급하는 장치인 CCSS를 주요제품으로 생산하며, DSP + 혼합 장치, SC-1 혼합 장치, 현상액 혼합 장치, 암모니아수 혼합 장치, 불산 혼합 장치, ACQC/저장 및 공급 장치, 화학약품 재생 장치(DPF & DDS-11) 등이 있음.",
+            "code": "264660",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에프에스티",
+            "desc": "반도체 재료/장비 전문업체. 포토마스크용 보호막인 펠리클(Pellicle)과 반도체공정중 식각공정에서 Process Chamber 내 온도조절장비인 칠러(Chiller)를 주력으로 생산. 국내 유일의 펠리클(포토마스크 오염방지 부품, 국내 반도체 펠리클 M/S 80% 수준) 제조 업체이며, LCD용 펠리클(Pellicle) 사업도 영위.",
+            "code": "036810",
+            "market": "KOSPI"
+        },
+        {
+            "name": "인텍플러스",
+            "desc": "외관검사장비 전문 제조업체. 반도체 외관검사분야, 반도체 Mid-End 분야, 디스플레이 분야, 전기자동차용 2차전지 외관 검사 장비의 제조를 주요 사업으로 영위. 머신비전기술을 통해 표면 형상에 대한 영상 데이터를 획득, 분석 및 처리하는 3D/2D 자동외관검사장비 및 모듈을 개발하여 판매.",
+            "code": "064290",
+            "market": "KOSPI"
+        },
+        {
+            "name": "이오테크닉스",
+            "desc": "반도체 레이저마커, 레이저응용기기 제조 및 판매를 주요 사업으로 영위. 레이저를 이용하여 반도체, PCB, Display, 휴대폰 산업의 주요 생산 장비를 제조하여 국내외로 공급중. 반도체 생산 장비인 Laser Marker, Laser Cutter 등이 주요제품.",
+            "code": "039030",
+            "market": "KOSPI"
+        },
+        {
+            "name": "위드텍",
+            "desc": "반도체 및 디스플레이 공정 오염 모니터링 장비 개발 및 제조, 판매 업체. 암모니아, 산성가스, 휘발성 유기화합물 등 AMCs로 인해 야기되는 반도체 및 디스플레이의 품질 저하 문제가 기술의 발전에 따라 더욱 심각해짐에 따라 이를 통합적으로 관측, 감시할 수 있도록 하는 시스템 장비를 삼성전자, SK하이닉스 등 고객사에 주문납품(P/O) 방식으로 생산, 판매 중.",
+            "code": "348350",
+            "market": "KOSPI"
+        },
+        {
+            "name": "SFA반도체",
+            "desc": "반도체 조립 및 TEST 제품을 주력으로 생산하는 반도체 후공정 전문업체. 삼성전자, SK하이닉스, 마이크론 등의 반도체 업체들에게 반도체 패키징 솔루션을 제공중.",
+            "code": "036540",
+            "market": "KOSPI"
+        },
+        {
+            "name": "프로텍",
+            "desc": "반도체장비, 표면실장공정(SMT) 및 LED 장비 제조업체. 반도체 후공정에 사용되는 Dispenser M/C 등을 생산.",
+            "code": "053610",
+            "market": "KOSPI"
+        },
+        {
+            "name": "원방테크",
+            "desc": "반도체,디스플레이,2차전지,바이오 등 미세 공정 필수 설비인 클린룸 전문업체. 삼성전자 및 SK하이닉스 등 국내외 주요 반도체 생산업체에 공급 중. 주요 고객사로는 삼성전자, 삼성디스플레이, SK하이닉스, LG디스플레이 등.",
+            "code": "053080",
+            "market": "KOSPI"
+        },
+        {
+            "name": "피에스케이홀딩스",
+            "desc": "반도체 후공정 장비 사업을 주요 사업으로 영위하며, 주요 제품으로는 WLP/FOWLP/FOPLP Descum, Reflow 장비 등이 있음. 주요 매출처는 삼성전자, SK하이닉스 등.",
+            "code": "031980",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코미코",
+            "desc": "반도체, 태양광, 디스플레이 산업부문의 정밀세정 및 특수 코팅 사업을 영위. 반도체 공정장비에 대한 세정, 코팅 사업이 전체 매출액의 약 90% 창출. 주요 매출처는 삼성전자, SKHynix, TSMC, Intel 등.",
+            "code": "183300",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엑시콘",
+            "desc": "반도체 검사장비 제조 및 반도체 검사 용역 사업을 영위하는 업체. 주요 제품의 품목군은 Memory Tester, Storage Tester 및 Test Service로 구분.",
+            "code": "092870",
+            "market": "KOSPI"
+        },
+        {
+            "name": "피에스케이",
+            "desc": "기존 피에스케이에서 반도체 전공정 장비 사업부문이 인적분할됨에 따라 재상장된 업체. 주요 제품으로 Dry Strip, Dry Cleaning, New Hard Mask Strip, Etch Back 등이 있으며, Dry Strip 장비분야 세계시장에서 시장점유율을 확고히 하는중.",
+            "code": "319660",
+            "market": "KOSPI"
+        },
+        {
+            "name": "싸이맥스",
+            "desc": "반도체 제조과정에 필요한 장비를 생산하는 반도체장비(웨이퍼 이송장비) 제조업을 주력으로 영위하는 업체. 주요 제품으로는 Cluster Tool System, EFEM (Equipment Front End Module), LPM (Load Port Module) 등이 있음.",
+            "code": "160980",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코디엠",
+            "desc": "반도체 및 디스플레이 장비업체. 세정장비, 도포·현상장비, 접착장비 등 반도체 장비와 HP/CP 등 디스플레이 장비 등을 생산.",
+            "code": "224060",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코세스",
+            "desc": "반도체 장비 제조 업체. 반도체 후공정장비인 Solder Ball Attach System장비, Laser응용장비, Conversion Kit 등을 제조. 주요 매출처로 삼성전자, SK하이닉스 등이 있음.",
+            "code": "089890",
+            "market": "KOSPI"
+        },
+        {
+            "name": "로체시스템즈",
+            "desc": "반도체 및 TFT-LCD용 제조 장비 생산 전문업체. 반도체용 Clean Robot을 비롯하여 LCD용 Clean Robot, Indexer, EFEM, Laser를 이용한 Glass Cutting System 등의 최첨단 고기능의 장비를 개발, 공급. 주요 매출처는 삼성전자, 삼성디스플레이(SDC) 등.",
+            "code": "071280",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코디",
+            "desc": "반도체 검사 장비인 Probe Card(반도체칩 회로 설계 검사장비) 등을 생산.",
+            "code": "080530",
+            "market": "KOSPI"
+        },
+        {
+            "name": "로보스타",
+            "desc": "제조용 로봇 및 자동화 장비 개발/생산하는 산업용 로봇 전문업체. 반도체 공정의 핵심 역할인 이송 및 적재용으로 활용되는 트랜스퍼 로봇을 생산.",
+            "code": "090360",
+            "market": "KOSPI"
+        },
+        {
+            "name": "HB테크놀러지",
+            "desc": "LCD 및 AMOLED, 반도체 검사장비의 제품을 생산/판매하는 업체.",
+            "code": "078150",
+            "market": "KOSPI"
+        },
+        {
+            "name": "유니테스트",
+            "desc": "반도체 검사 장비를 전문으로 개발, 생산하는 업체. 특히, 반도체 후공정의 핵심이라고 할 수 있는 메모리 모듈 테스터 및 메모리 컴포넌트 테스터를 국내 업계 최초로 개발 완료 및 상용화.",
+            "code": "086390",
+            "market": "KOSPI"
+        },
+        {
+            "name": "유진테크",
+            "desc": "반도체 전공정장비업체. 반도체 전공정단계에서 \"박막(Thin Film)형성\" 공정에 필요한 장비를 개발중. 주력제품으로는 Single Thermal LPCVD(Low Pressure Chemical Vapor Deposition) System인 BlueJay™, Plasma Treatment System인 Albatross™ 등이 있음. 주요 매출처는 SK하이닉스, 삼성전자 등.",
+            "code": "084370",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에이팩트",
+            "desc": "반도체 제조 관련 테스트 서비스업체. 메모리 반도체 후공정 중 테스트 외주사업을 영위. 2007년 SK하이닉스 협력업체 협의회가 공동 출자해 설립.",
+            "code": "200470",
+            "market": "KOSPI"
+        },
+        {
+            "name": "서플러스글로벌",
+            "desc": "반도체 전공정, 후공정 중고장비 매입/매각 전문업체. 반도체 중고 장비 유통 글로벌 1위 업체로, 주요 거래처는 미국의 Macquari사, AG Semiconductor와 반도체 장비 회사인 Applied Materials, LAM Research, 일본의 Sumitomo Mitsui Financial Leasing 등임.",
+            "code": "140070",
+            "market": "KOSPI"
+        },
+        {
+            "name": "원익IPS",
+            "desc": "반도체용 플라즈마 화학기상 증착장비(PE-CVD) 전문업체. 주요 매출품목으로는 PE-CVD 등의 반도체장비가 있음. 삼성전자의 핵심장비 공급 업체.",
+            "code": "240810",
+            "market": "KOSPI"
+        },
+        {
+            "name": "테스",
+            "desc": "반도체 장비제조 사업(전공정 핵심장비 CVD, ETCH장비 제조 등) 영위. 주요 고객으로 SK하이닉스, 삼성전자 등이 있음.",
+            "code": "095610",
+            "market": "KOSPI"
+        },
+        {
+            "name": "자비스",
+            "desc": "X-ray 검사장비 전문업체로 Xscan 반도체 검사장비 사업을 영위. 주력 제품은 In-line 플립칩 법프 검사 장비로 반도체 후공정 패키지 공정 단계에서 발생하는 결함을 검사하기 위해 사용.",
+            "code": "254120",
+            "market": "KOSPI"
+        },
+        {
+            "name": "오션브릿지",
+            "desc": "반도체 공정용 화학재료와 반도체FAB(전공정 생산라인) 설비 등에 적용되는 장비 생산 업체. 반도체장비 부문에서는 화학물질 중앙공급장치(반도체 케미칼 공급장치)를 제조 설치하고 유지보수하는 사업을 영위.",
+            "code": "241790",
+            "market": "KOSPI"
+        },
+        {
+            "name": "예스티",
+            "desc": "디스플레이(LCD, LED, OLED) 및 반도체 장비 제조/판매 업체. 주요 제품으로 삼성전자 반도체 생산공정과 삼성디스플레이의 FPD 패널 생산공정에 투입되는 열처리, 온도제어 및 검사장비 등이 있음. 주요고객사는 삼성전자, 삼성디스플레이.",
+            "code": "122640",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에스엔유",
+            "desc": "OLED, LCD, 반도체 등의 산업용 제조장비 제조/판매 업체로 반도체 측정장비 등을 생산.",
+            "code": "080000",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엘오티베큠",
+            "desc": "반도체, 디스플레이(LCD, OLED), 태양광셀 제조 등에 사용되는 Fore Vacuum용 건식진공펌프 생산, 판매 업체.",
+            "code": "083310",
+            "market": "KOSPI"
+        },
+        {
+            "name": "성우테크론",
+            "desc": "반도체 검사장비, 부품 제조 업체. 반도체 구성재료인 리드프레임 후 공정가공 및 최종 검사 사업(LOC사업), PCB사업, 반도체 관련장비 사업(LOC, PCB 검사장비) 등을 영위. 주요 매출처로 삼성전기, LG이노텍 등.",
+            "code": "045300",
+            "market": "KOSPI"
+        },
+        {
+            "name": "쎄미시스코",
+            "desc": "반도체, 평판 디스플레이(LCD, OLED 등) 검사장비 제조/판매 업체. 주력 제품은 플라즈마 공정진단 장비, 유리기판 검사장비 등.",
+            "code": "136510",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에이피티씨",
+            "desc": "반도체 제조공정 중 식각 공정에 필요한 장비를 제조, 판매하는 업체. 200mm 및 300mm 금속막(Metal), 실리콘(Polysilicon), 산화막(Oxide) 식각 장비 등을 제조.",
+            "code": "089970",
+            "market": "KOSPI"
+        },
+        {
+            "name": "GST",
+            "desc": "반도체나 FPD(Flat Panel Display) 공정 및 기타 LED, Solar Cell 공정에서 사용후 배출되는 가스들을 정화시켜주는 가스정화장치인 Scrubber와 반도체 Main 공정상에 안정적인 온도유지를 제공하는 온도조절 장치인 Chiller제품 제조를 주요 사업으로 영위.",
+            "code": "083450",
+            "market": "KOSPI"
+        },
+        {
+            "name": "탑엔지니어링",
+            "desc": "반도체, LCD, LED Chip 제조 및 OLED 공정장비 제조를 주력사업으로 영위. 반도체 Package 장비를 독자 개발하여, 국내 반도체 제조업체에 공급.",
+            "code": "065130",
+            "market": "KOSPI"
+        },
+        {
+            "name": "러셀",
+            "desc": "기업인수목적회사(SPAC) 하이제3호스팩이 반도체 장비 리퍼비시(Refurbish) 업체 (주)러셀을 흡수합병함에 따라 변경 상장된 업체. 반도체 중고장비 리퍼비시(박막증착 공정장비) 사업 영위. 주요 매출처는 SK하이닉스, 매그나칩, 인피니온(독일) 등.",
+            "code": "217500",
+            "market": "KOSPI"
+        },
+        {
+            "name": "서진시스템",
+            "desc": "통신장비, 휴대폰, 반도체 장비의 함체, 구조물, 전기구동장치 등을 제조, 판매하는 업체. 친환경, 경량화의 대표 소재인 알루미늄을 주요 원재료로 사용하여 반도체 식각/증착 장비의 구동장치, 구조물 등을 생산.",
+            "code": "178320",
+            "market": "KOSPI"
+        },
+        {
+            "name": "AP시스템",
+            "desc": "반도체장비(급속열처리장비 등) 제조 업체.",
+            "code": "265520",
+            "market": "KOSPI"
+        },
+        {
+            "name": "유니셈",
+            "desc": "GAS SCRUBBER(반도체/LCD 제조 공정상 발생하는 유해가스를 정화시켜주는 장치), CHILLER UNIT 등 반도체 장비 생산업체. 반도체 장비인 스크러버(Scrubber) 국내 최초개발 업체로서 주요 매출처는 삼성전자 등.",
+            "code": "036200",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한미반도체",
+            "desc": "반도체, 태양광 및 LED 제조장비의 제조 및 판매 등을 주요 사업으로 영위. 주요 제품으로 Sawing & Placement, Laser Mark/Cutting/Ablation 등을 보유.",
+            "code": "042700",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "WI",
+            "desc": "반도체 검사장비 전문 제조업체. 주력제품은 PCB검사장비 및 반도체 부품 C.O.K., Socket 등.",
+            "code": "073570",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한화에어로스페이스",
+            "desc": "종속회사인 한화정밀기계가 반도체 장비(고속 칩마운터 장비) 사업을 영위.",
+            "code": "012450",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "티에스이",
+            "desc": "반도체 및 디스플레이(OLED/LED) 검사장비 제조/판매 업체. 주요제품으로 Interface Board(메모리 반도체 검사장비), Probe Card(반도체 웨이퍼 검사장비), Total Test Solution, OLED Tester 등이 있음.",
+            "code": "131290",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에스에프에이",
+            "desc": "자동화설비전문업체로 디스플레이기기 제조장비사업과 물류시스템사업, 반도체 패키징사업을 주된 사업으로 영위. 디스플레이기기 제조장비사업부문은 OLED/LCD 제조에 소요되는 제반 장비를 제작/공급중.",
+            "code": "056190",
+            "market": "KOSPI"
+        },
+        {
+            "name": "포인트엔지니어링",
+            "desc": "표면처리 전문업체. 디스플레이(LCD 및 OLED) 및 반도체 공정에 사용되는 공정장비의 핵심부품을 제작, 가공 및 표면처리를 중점사업으로 영위. 주요 제품으로는 Diffuser(Shower Head) 및 Susceptor, Shadow Frame 등이 있음.",
+            "code": "256630",
+            "market": "KOSPI"
+        },
+        {
+            "name": "고영",
+            "desc": "전자제품 및 반도체 생산용 검사장비업체(3차원 정밀측정 검사 기술 보유). 주요 제품으로 3D SPI 장비와 3D AOI 장비 등을 보유. SMT 전체 검사장비 시장(SPI+AOI) 세계시장 점유율 1위.",
+            "code": "098460",
+            "market": "KOSPI"
+        },
+        {
+            "name": "성도이엔지",
+            "desc": "하이테크산업설비(반도체, 디스플레이 등 첨단산업의 크린룸 설비공사) 및 플랜트(Plant) 전문 시공업체. 반도체 장비 업체 에스티아이 지분 보유.",
+            "code": "037350",
+            "market": "KOSPI"
+        },
+        {
+            "name": "네온테크",
+            "desc": "자동화 설비(FA System) 중 제어장치 및 모터 상품 제조, 반도체/LED/MLCC용 절단 장비 제조 등을 주력 사업으로 영위. 반도체/LED/MLCC용 절단 장비 부문 주요 제품으로는 Dicing Saw(반도체/LED), Saw & Sorter(반도체/PCB), MLCC Cutter(MLCC), Micro LED Cutting(PCB Panel) 등이 있음.",
+            "code": "306620",
+            "market": "KOSPI"
+        },
+        {
+            "name": "케이씨텍",
+            "desc": "디스플레이 및 반도체 공정에 사용되는 전공정 장비 및 소모성 재료 생산, 판매.",
+            "code": "281820",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "티씨케이",
+            "desc": "반도체 제조공정에 사용되는 장비의 부분품과 반도체 소자제조 공정 장비용 부분품 생산. 구체적인 제품으로 반도체 Device업체에서 사용하는 장비의 Solid SiC Wafer, Ring 및 SiC제품도 판매중. 또한, SiC coating사업으로 반도체 ALD 장비에 들어가는 Susceptor류를 제조, 판매.",
+            "code": "064760",
+            "market": "KOSPI"
+        },
+        {
+            "name": "제이스텍",
+            "desc": "디스플레이 및 반도체 장비 제조업체. 디스플레이장비, 반도체장비, 레이저장비 사업을 영위중이며, 디스플레이장비 부문이 매출액의 대부분을 차지. 워터젯 세정도금장비 부문에서 독보적인 기술과 위치를 차지하고 있으며, 반도체 도금장비는 Meco 등 세계적인 업체들과 경쟁.",
+            "code": "090470",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에이아이비트",
+            "desc": "디스플레이 패널 검사 장비(Probe Station) 및 장치(Probe Unit) 생산업체. 주요 고객사는 LG디스플레이, BOE 등.",
+            "code": "039230",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한양이엔지",
+            "desc": "반도체/디스플레이 유틸리티 설비 및 관련 장비 제조 업체. 반도체 및 디스플레이 생산설비에 필수적인 고순도(UHP) 특수가스설비 및 기타 엔지니어링 서비스 제공.",
+            "code": "045100",
+            "market": "KOSPI"
+        },
+        {
+            "name": "제너셈",
+            "desc": "반도체 후공정 장비 제조업체. 반도체제조 후공정에 적용되는 pick & place, Inspection, Test Handler, Laser Marking 등 다양한 반도체 후공정 검사 및 이송장비를 설계, 제조.",
+            "code": "217190",
+            "market": "KOSPI"
+        },
+        {
+            "name": "리노공업",
+            "desc": "검사용 PROBE(SPRING CONTACT PROBE:LEENO PIN)와 반도체 검사용 소켓(IC TEST SOCKET)을 자체브랜드로 개발하여, 제조 판매하는 사업을 영위하는 업체.",
+            "code": "058470",
+            "market": "KOSPI"
+        },
+        {
+            "name": "디바이스이엔지",
+            "desc": "반도체 및 디스플레이(OLED 등) 세정장비 제조 및 판매업체. 주요 제품으로는 OLED 유기발광층 증착용 FM(Fine Metal) MASK 세정장비, 반도체 웨이퍼 보관용기(FOUP) 세정장비, 반도체 웨이퍼 매엽세정용 약액공급장치 등이 있음.",
+            "code": "187870",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에스티아이",
+            "desc": "주요 제품으로는 반도체 및 Display용 CCSS(중앙약품 공급시스템), Wet System(세정, 식각, 현상 시스템) 등.",
+            "code": "039440",
+            "market": "KOSPI"
+        },
+        {
+            "name": "미래산업",
+            "desc": "반도체 검사장비(Test Handler)및 표면실장장비(Chip Mounter) 생산업체.",
+            "code": "025560",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "주성엔지니어링",
+            "desc": "SD CVD(CVD&ALD), HDP CVD, Dry Etch, MO CVD, UHV CVD, SDP CVD(CVD&ALD) 등의 제품을 공급하는 반도체 전공정 장비 업체.",
+            "code": "036930",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엔투텍",
+            "desc": "반도체, LCD/OLED 공정 장비 부품인 진공 Chamber와 해당 Chamber에 사용되는 특수 진공 밸브 제조를 주요 사업으로 영위. 주요 매출처는 삼성전자, SK하이닉스, BOE 등임.",
+            "code": "227950",
+            "market": "KOSPI"
+        }
+    ]
+}

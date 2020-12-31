@@ -1,0 +1,438 @@
+{
+    "name": "OLED(유기 발광 다이오드)",
+    "desc": "OLED(유기 발광 다이오드, 유기EL)는 백라이트에 의해 빛을 내는 LCD와 달리 자체발광형 소자로서 LCD보다 월등한 색상과 선명도, 광시야각, 빠른 응답속도, 저전력, 박형 등의 장점으로 LCD와 PDP 등에 이은 차세대 디스플레이 및 차세대 조명으로 주목 받고 있음. 휴대폰을 시작으로 최근에는 LG전자 주도하에 OLED TV 시장이 주목을 받고 있으며, 향후 노트북과 조명시장까지 OLED가 기존 시장을 급속히 잠식할 것으로 전망되고 있음.",
+    "child": [
+        {
+            "name": "케이엔제이",
+            "desc": "디스플레이 패널 관련 Edge Grinder(엣지그라인더)와 CVD-SiC(탄화규소) Product 생산 업체. 디스플레이(LCD, LED, OLED) 제조용 장비인 Edge Grinder(엣지그라인더)와 검사장비 등을 생산. 주요 고객은 삼성디스플레이.",
+            "code": "272110",
+            "market": "KOSPI"
+        },
+        {
+            "name": "윈텍",
+            "desc": "머신비전(Machine Vision) 기술에 기반한 검사장비 업체로 디스플레이(OLED BONDER/BENDING) 관련 검사장비 사업부인 LI(LCD Inspector) 사업을 영위. TAB(Tape Automated Bonding) 본딩 공정에 사용되는 BONDER 라인의 검사장비를 공급중. LG디스플레이에 OLED 본딩(Bonding) 및 벤딩(Bending) 얼라인먼트 비전 검사 솔루션을 제공.",
+            "code": "320000",
+            "market": "KOSPI"
+        },
+        {
+            "name": "덕산테코피아",
+            "desc": "OLED 소재 합성 전문업체로, Display用 화학제품인 OLED소재(OLED발광재료 중간체) 재료 제조 사업 영위.",
+            "code": "317330",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한솔케미칼",
+            "desc": "삼성전자의 QD-OLED TV에 퀀텀닷 소재 공급중.",
+            "code": "014680",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "신도기연",
+            "desc": "합착기 및 탈포기 등의 디스플레이(OLED, Flexible OLED 등) 장비 관련 장비 제조, 판매업체. Rigid LCD 패널 및 평면 커버글라스 합착기에 이외에 고정 곡면(Curved) 커버글라스 합착기, 2면 곡면 커버글라스 합착기, 4면 곡면 커버글라스 합착기, 폴더블 디스플레이용 합착기 등 다양한 디스플레이 패널의 특성에 부합하는 합착기와 편광 필름(Polarizing Film)이 접합된 패널에 압력과 열을 가하여 필름과 패널면 사이의 기포 및 먼지를 제거함과 동시에 접착력을 향상시키는 장비인 탈포기를 개발, 생산, 판매. 주요 매출처는 중국 4대 디스플레이 패널 제조사(BOE, Tianma, CSOT, Visionox) 및 국내 S사 등이 있음.",
+            "code": "290520",
+            "market": "KOSPI"
+        },
+        {
+            "name": "케이맥",
+            "desc": "평판 디스플레이(FPD)/공정 검사장비 등을 제조 판매하는 업체. 주력제품으로는 박막 두께 측정기, 색도 측정기, Vision & 3D 분석기 등이 있음.",
+            "code": "043290",
+            "market": "KOSPI"
+        },
+        {
+            "name": "핌스",
+            "desc": "OLED용 메탈 마스크 전문 업체. OLED 디스플레이 증착 공정에 사용되는 메탈 마스크의 설계 및 제조, 판매를 주력 사업으로 영위.",
+            "code": "347770",
+            "market": "KOSPI"
+        },
+        {
+            "name": "예선테크",
+            "desc": "기능성 점착소재 제조사업 영위업체. 주요 제품으로는 LCD 및 OLED TV, LCD 모니터 등에 쓰이는 Foam Pad, Gasket Pad, EFR Foam Pad, COF Pad 등.",
+            "code": "250930",
+            "market": "KOSPI"
+        },
+        {
+            "name": "이엘피",
+            "desc": "AMOLED 및 LCD 디스플레이 검사장비 제조, 판매업체. 주요 제품으로 AMOLED 패널에이징(Panel Aging) 및 검사용 장비를 생산중. 주요 거래처로 삼성디스플레이, LG디스플레이 등이 있음.",
+            "code": "063760",
+            "market": "KOSPI"
+        },
+        {
+            "name": "나인테크",
+            "desc": "2차전지 조립공정 장비 및 디스플레이 공정 장비 제조 업체. 디스플레이(OLED 등) 패널 제조업체를 대상으로 디스플레이용 기판을 세정하는 Wet Station 및 진공/N₂ 챔버를 개발 및 공급 중. 다만, 매출 대부분은 2차전지 분야에서 발생.",
+            "code": "267320",
+            "market": "KOSPI"
+        },
+        {
+            "name": "영우디에스피",
+            "desc": "유기발광다이오드(OLED), 액정표시장치(LCD) 등의 검사장비 제조를 주요사업으로 영위. 주력 분야는 유기발광다이오드(OLED) 검사장비로 삼성디스플레이가 주요 거래처.",
+            "code": "143540",
+            "market": "KOSPI"
+        },
+        {
+            "name": "티로보틱스",
+            "desc": "산업용 진공로봇 및 물류시스템 제조 및 판매업체. 디스플레이(OLED 등) 생산장비의 중앙에 위치하는 Transfer Chamber(Transfer Module)에 설치되어 모든 글래스 이송을 담당하는 진공로봇을 주요제품으로 생산.",
+            "code": "117730",
+            "market": "KOSPI"
+        },
+        {
+            "name": "참엔지니어링",
+            "desc": "LCD 및 OLED 등 패널 제작시 발생되는 결함을 레이저로 수리하는 장비 등을 생산하는 FPD사업(Laser Repair 설비 등)을 영위.",
+            "code": "009310",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "삼성전자",
+            "desc": "삼성그룹 계열의 세계적 경쟁력을 보유한 전자 기업. OLED를 적용한 갤럭시 시리즈를 출시 및 OLED TV 생산/판매중.",
+            "code": "005930",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "와이엠씨",
+            "desc": "평판디스플레이(FPD) 부품 및 소재 제조업체. FPD(LCD, OLED) 제조공정 중 증착공정의 박막형성 및 FPD Panel 제조공정 중 증착공정에서 필요한 배선재의 재료인 타겟과 관련 부품인 Backing Plate, FPD공정장비 부품을 연구/개발/생산하는 사업 영위.",
+            "code": "155650",
+            "market": "KOSPI"
+        },
+        {
+            "name": "APS홀딩스",
+            "desc": "신규 사업으로 소형 유기발광다이오드 증착 공정에 사용되는 섀도마스크(FMM)에 대한 기술 개발 진행중. 20년6월 'AMOLED FMM 제조기술개발' 과제의 수행기관으로 선정.",
+            "code": "054620",
+            "market": "KOSPI"
+        },
+        {
+            "name": "미래컴퍼니",
+            "desc": "OLED, LED장비 등의 제품 생산공정에 필요한 Edge Grinder(LCD 패널의 단면을 다듬는 장비), Edge Inspection(LCD 패널 검사장비) 등을 주력 제품으로 생산.",
+            "code": "049950",
+            "market": "KOSPI"
+        },
+        {
+            "name": "LG전자",
+            "desc": "LG그룹 계열의 글로벌 가전 및 정보통신기기 제조업체로 OLED TV와 AMOLED를 탑재한 스마트폰을 출시.",
+            "code": "066570",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "실리콘웍스",
+            "desc": "LG디스플레이 등이 거래처로, OLED 매출이 TV, 모바일 부분에서 발생.",
+            "code": "108320",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코디",
+            "desc": "OLED 제조 공정에 들어가는 장비를 생산.",
+            "code": "080530",
+            "market": "KOSPI"
+        },
+        {
+            "name": "브이원텍",
+            "desc": "머신비전(Machine Vision) 및 화상처리를 통한 디스플레이 검사 S/W 개발 및 장비 제작업체. 주요 제품은 LCD/OLED 압흔검사기 외에 OLED 원장 FMM(Fine Metal Mask) Align 및 검사 비전 시스템, FPR 부착 검사기, RTP(Roll to Panel) Film 부착 검사기, COG/FOG/TAB 비전 시스템, 세정 전후 검사 시스템 등이 있음. Flexible OLED 검사기술도 보유.",
+            "code": "251630",
+            "market": "KOSPI"
+        },
+        {
+            "name": "로보스타",
+            "desc": "산업용 로봇(직각좌표 로봇, 수평다관절 로봇 등 범용로봇, 글라스 및 웨이퍼 반송용 로봇 등)과 평판디스플레이(FPD)용 장비(정밀 스테이지) 등을 생산하는 업체. OLED 패널 생산라인의 이송/적재용로봇을 국내외 대형 패널업체들에게 납품중.",
+            "code": "090360",
+            "market": "KOSPI"
+        },
+        {
+            "name": "HB테크놀러지",
+            "desc": "LCD 및 AMOLED, 반도체 검사장비의 제품을 생산/판매하는 업체.",
+            "code": "078150",
+            "market": "KOSPI"
+        },
+        {
+            "name": "뉴파워프라즈마",
+            "desc": "반도체 및 디스플레이(LCD, OLED, Solar 등) 박막공정 및 식각공정 장비에 사용되는 핵심 부품 공급 업체. 주요 제품으로는 박막공정 진행 후 공정내 잔존하는 부산물에 대한 Plasma Cleaning를 실시하는 핵심 모듈인 Remote Plasma Generator(RPG), 박막 공정이나 건식각 공정장비의 진공 방(Vacuum Chamber)에 가스를 공급하여 Plasma를 발생하는데 필요한 전원을 공급하는 모듈인 RF Generator(RFG) 및 Matcher(MAT) 등이 있음.",
+            "code": "144960",
+            "market": "KOSPI"
+        },
+        {
+            "name": "원익IPS",
+            "desc": "반도체 증착장비 및 장치, LCD/AMOLED장비, SOLAR CELL장비 등을 제조, 판매하는 업체. AMOLED용 Dry Etcher(건식식각장비) 생산.",
+            "code": "240810",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에스엔유",
+            "desc": "OLED, LCD 등의 산업용 제조장비 제조/판매 업체. 세계 주요 디스플레이 제조사들을 주요 고객으로 하고 있음.",
+            "code": "080000",
+            "market": "KOSPI"
+        },
+        {
+            "name": "예스티",
+            "desc": "디스플레이(LCD, LED, OLED) 및 반도체 장비 제조/판매 업체. 주요 제품으로 삼성전자 반도체 생산공정과 삼성디스플레이의 FPD 패널 생산공정에 투입되는 열처리, 온도제어 및 검사장비 등이 있음. 주요고객사는 삼성전자, 삼성디스플레이.",
+            "code": "122640",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엘오티베큠",
+            "desc": "반도체, 디스플레이(LCD, OLED), 태양광셀 제조 등에 사용되는 Fore Vacuum용 건식진공펌프 생산, 판매 업체.",
+            "code": "083310",
+            "market": "KOSPI"
+        },
+        {
+            "name": "비아트론",
+            "desc": "디스플레이 패널 열처리장비 전문업체. AMOLED, LTPS LCD, Oxide TFT, Flexible Display 등의 디스플레이 패널 제작을 위한 backplane 제조 관련 열처리장비를 주요제품으로 생산/판매중.",
+            "code": "141000",
+            "market": "KOSPI"
+        },
+        {
+            "name": "선익시스템",
+            "desc": "OLED 증착장비 제조 및 판매업체. 주요 제품으로는 대형/중형/소형 Cluster Type OLED 증착장비, 중형/소형 Inline Type OLED 증착장비 등이 있음.",
+            "code": "171090",
+            "market": "KOSPI"
+        },
+        {
+            "name": "쎄미시스코",
+            "desc": "반도체, 평판 디스플레이(LCD, OLED 등) 검사장비 제조/판매 업체. 주력 제품은 플라즈마 공정진단 장비, 유리기판 검사장비 등.",
+            "code": "136510",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한송네오텍",
+            "desc": "OLED Mask 공정 장비업체. 주요 제품으로는 OLED FMM 인장기, OLED Cover/HowlingMask 인장기, OLED Mask PPA검사기, OLED원장 Open Mask 인장기, OLED Mask초기검사기, LAMINATOR 등이 있음. ",
+            "code": "226440",
+            "market": "KOSPI"
+        },
+        {
+            "name": "탑엔지니어링",
+            "desc": "반도체, LCD, LED Chip 제조 및 OLED 공정장비 제조를 주력사업으로 영위. 2010년 하반기 OLED용 GCS(Glass Cutting System) 장비의 대규모 수주를 통해 OLED 장비 사업 분야 진출 본격화.",
+            "code": "065130",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아이씨디",
+            "desc": "AM-OLED, TFT-LCD 등 FPD(Flat Panel Display) 의 양산에 필요한 전공정 제조 장비 생산/판매 업체.  5.5세대, 6세대 AMOLED 고밀도플라즈마식각장비(HDP Etcher)를 세계 최초로 개발하여 삼성디스플레이에 공급중.",
+            "code": "040910",
+            "market": "KOSPI"
+        },
+        {
+            "name": "LG화학",
+            "desc": "LG그룹 계열의 국내 대표적인 화학기업으로 OLED용 필름, OLED 재료 등을 생산, 판매중. 차세대 TV로 각광받고 있는 OLED TV용 재료를 핵심고객과 공동개발.",
+            "code": "051910",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "필옵틱스",
+            "desc": "인쇄회로기판 관련 장비 및 평판 디스플레이 공정용 장비와 부품/소재 제조, 판매업체. 핵심 고유 기술인 광학설계 및 제어기술을 기반으로 Rigid 및 Flexible OLED 제조공정과 전기차용 2차전지 제조 공정에 사용되는 레이저 응용장비를 제작 및 공급중.",
+            "code": "161580",
+            "market": "KOSPI"
+        },
+        {
+            "name": "DMS",
+            "desc": "디스플레이패널 생산 장비 제조/판매업체. CLEANER(세정장비), WET ETCHER(습식 식각장비), COATER(감광액 도포장비), WET STRIPPER(감광액 박리장비), DEVELOPER(현상장비) 등을 주요 제품으로 LCD, OLED 생산에 필요한 TFT공정과 LCD 생산에 필요한 CF 공정에 장비 납품.",
+            "code": "068790",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아이컴포넌트",
+            "desc": "디스플레이용 광학필름 전문 제조업체. 퀀텀닷 TV 및 Flexible OLED 용 배리어 필름 생산.",
+            "code": "059100",
+            "market": "KOSPI"
+        },
+        {
+            "name": "톱텍",
+            "desc": "OLED제품의 생산공정에 필요한  Robot을 이용한 Glass의 이송 및 각공정별 정밀조립기 및 제조공정장비 등을 생산.",
+            "code": "108230",
+            "market": "KOSPI"
+        },
+        {
+            "name": "AP시스템",
+            "desc": "AMOLED장비(LTPS결정화용 ELA장비, 봉지공정장비, Laser Lift Off장비 등) 등을 생산.",
+            "code": "265520",
+            "market": "KOSPI"
+        },
+        {
+            "name": "나노신소재",
+            "desc": "중국의 LCD, OLED 등의 디스플레이분야 8세대급 이상의 장비에 많이 사용되는 Rotary target(원통형타겟) 제조.",
+            "code": "121600",
+            "market": "KOSPI"
+        },
+        {
+            "name": "힘스",
+            "desc": "OLED 제조관련 Mask공정 및 Glass 검사공정 장비 제조, 판매업체. 글로벌 디스플레이 패널업체에 OLED 핵심공정인 유기물 증착공정에 관련된 모바일용 분할 메탈 Mask 연관 장비와 Glass 검사 공정에 관련된 장비를 개발 및 공급.",
+            "code": "238490",
+            "market": "KOSPI"
+        },
+        {
+            "name": "티에스이",
+            "desc": "반도체 및 디스플레이(OLED/LED) 검사장비 제조/판매 업체. 주요제품으로 Interface Board(메모리 반도체 검사장비), Probe Card(반도체 웨이퍼 검사장비), Total Test Solution, OLED Tester 등이 있음.",
+            "code": "131290",
+            "market": "KOSPI"
+        },
+        {
+            "name": "파인텍",
+            "desc": "16년8월 세광테크 인수로 유기발광다이오드(OLED) 장비 시장 진출. 17년1월 세광테크 흡수합병.",
+            "code": "131760",
+            "market": "KOSPI"
+        },
+        {
+            "name": "케이피에스",
+            "desc": "OLED 장비 개발, 공급업체. 디스플레이 패널업체를 대상으로 정밀장비 제작 및 제어, 비젼기술을 바탕으로 OLED(Organic Light Emitting Diode) 디스플레이 공정에서 사용되는 장비를 개발, 공급하고 있음. 주요 제품으로는 OELD 마스크 인장기 등임.",
+            "code": "256940",
+            "market": "KOSPI"
+        },
+        {
+            "name": "이녹스첨단소재",
+            "desc": "디스플레이용 OLED 소재(주요상표-INNOLED) 사업 영위.",
+            "code": "272290",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에스에프에이",
+            "desc": "자동화설비전문업체로 디스플레이기기 제조장비사업과 물류시스템사업, 반도체 패키징사업을 주된 사업으로 영위. 디스플레이기기 제조장비사업부문은 OLED/LCD 제조에 소요되는 제반 장비를 제작/공급중.",
+            "code": "056190",
+            "market": "KOSPI"
+        },
+        {
+            "name": "야스",
+            "desc": "OLED 산업의 핵심 분야인 증착 관련 증착원 및 증착 시스템 제작, 납품업체. 증착기와 증착원 모두 양산 성공경험을 보유하고 있는 전세계에서 유일한 업체임. 특히, 8G 대형 제품을 생산할 수 있는 독보적인 기술력 보유. 주요 매출처는 LG디스플레이임.",
+            "code": "255440",
+            "market": "KOSPI"
+        },
+        {
+            "name": "인베니아",
+            "desc": "LIG그룹 계열로 TFT-LCD, OLED 등의 디스플레이 패널 제조 장비 개발/제작/판매 사업을 영위. LG디스플레이에 5세대 장비 납품을 시작으로 현재 10.5세대 장비를 양산 납품 중.",
+            "code": "079950",
+            "market": "KOSPI"
+        },
+        {
+            "name": "포인트엔지니어링",
+            "desc": "표면처리 전문업체. 디스플레이(LCD 및 OLED) 및 반도체 공정에 사용되는 공정장비의 핵심부품을 제작, 가공 및 표면처리를 중점사업으로 영위. 주요 제품으로는 Diffuser(Shower Head) 및 Susceptor, Shadow Frame 등이 있음.",
+            "code": "256630",
+            "market": "KOSPI"
+        },
+        {
+            "name": "디아이티",
+            "desc": "평판디스플레이(OLED,LCD,TSP,PDP) 검사장비, 레이저 커팅 및 그라인더 장비, 2차전지 Film 검사 장비 업체. LCD와 OLED(Rigid, Flexible), 각종 Film 소재의 제조공정에서 발생하는 불량을 검사 및 측정하는 ‘비접촉 광학 검사장비와 측정장비’ 사업과 LCD와 OLED 공정에서 액정의 성능을 향상 및 특정 용액을 경화시키기 위한 ‘UV 노광 및 경화 장비’ 사업, 디스플레이 모델의 형상을 가공하는 ‘Laser Cutting 장비’ 사업 등을 영위.",
+            "code": "110990",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엘디티",
+            "desc": "OLED(PM OLED, AM OLED), LED용 구동칩(DDI : Display Driver IC)의 설계와 판매를 하는 팹리스(Fabless) 반도체 회사.",
+            "code": "096870",
+            "market": "KOSPI"
+        },
+        {
+            "name": "베셀",
+            "desc": "LCD/OLED 디스플레이용 장비 제조업체. LCD, OLED, 터치패널용 In-line System 및 각종 장비를 생산. LG디스플레이와 많은 개발 Project 들을 진행하였으며 다수의 국책과제에도 참여.",
+            "code": "177350",
+            "market": "KOSPI"
+        },
+        {
+            "name": "천보",
+            "desc": "디스플레이소재(LCD 식각액첨가제, OLED소재), 반도체 공정소재(SOH공정첨가제), 2차전지소재(전해질, 전해액 첨가제), 의약품 중간체(결핵치료제, 당뇨병치료제 등) 및 정밀화학 사업(질산 칼륨, 질산리튬 등) 등을 영위하는 업체. 3원색 중 적색(R) 발광재료 등의 중간체 및 완제품 생산.",
+            "code": "278280",
+            "market": "KOSPI"
+        },
+        {
+            "name": "이큐셀",
+            "desc": "반도체, 디스플레이 및 에너지 산업 분야의 공정 장비 개발 및 제조사업을 영위하는 업체. 주요 제품으로 N2 환경 중 8세대 OLED패널 이송 장치인 TRANSFER 등을 생산.",
+            "code": "160600",
+            "market": "KOSPI"
+        },
+        {
+            "name": "명성티엔에스",
+            "desc": "2차전지 핵심 소재 중 하나인 분리막 생산 설비 전문 제조업체. 디스플레이용 압력용기(Auto Clave : LCD 또는 OLED 제조공정에서 유리와 필름, 유리와 유리 사이에 남아있는 기포를 압력을 가하여 제거하는 장비) 사업도 영위.",
+            "code": "257370",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아이원스",
+            "desc": "반도체 및 디스플레이(LCD, OLED) 관련 초정밀 가공/세정 업체.",
+            "code": "114810",
+            "market": "KOSPI"
+        },
+        {
+            "name": "동아엘텍",
+            "desc": "LCD검사장비, OLED 검사장비 등 디스플레이 제조 공정상 주로 후공정의 검사장비를 제조, 판매하는 사업 영위. OLED 제조공정상 전공정의 증착장비를 제조를 주요사업으로 하는 (주)선익시스템을 종속회사로 보유.",
+            "code": "088130",
+            "market": "KOSPI"
+        },
+        {
+            "name": "제이스텍",
+            "desc": "디스플레이 장비 제조업체로 모듈공정에서 AMOLED 패널과 PCB를 접착시키는 후공정 장비(FPD 본딩장비)를 생산.",
+            "code": "090470",
+            "market": "KOSPI"
+        },
+        {
+            "name": "램테크놀러지",
+            "desc": "전자재료 화학 소재 전문업체. AMOLED 제조 공정 중 메탈 마스크의 증착재료 세정에 사용되는 세정액 제조.",
+            "code": "171010",
+            "market": "KOSPI"
+        },
+        {
+            "name": "덕산네오룩스",
+            "desc": "덕산하이메탈에서 분할돼 신설된 업체로 OLED 소재사업을 담당. 주요 제품은 아몰레드(AMOLED) 디스플레이에 사용되는 HTL(정공수송층), RED HOST 등. 주요 거래처는 삼성디스플레이 등.",
+            "code": "213420",
+            "market": "KOSPI"
+        },
+        {
+            "name": "LG디스플레이",
+            "desc": "LG그룹 계열의 TFT-LCD/OLED 등의 기술을 활용한 디스플레이 패널 제조 전문업체.",
+            "code": "034220",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "원익머트리얼즈",
+            "desc": "2006년 12월 구 원익IPS의 특수가스사업부문이 물적분할한 업체. 반도체 및 디스플레이 생산공정에 사용되는 특수가스 생산을 주요 사업으로 영위. 삼성전자, SK하이닉스 등의 종합반도체회사를 주요 고객사로 두고 있으며, 반도체 이외에도 삼성디스플레이 AMOLED 사업부에 공정용 특수가스를 공급중.",
+            "code": "104830",
+            "market": "KOSPI"
+        },
+        {
+            "name": "엘이티",
+            "desc": "디스플레이 사업분야에 특화된 모듈 공정 디스플레이(LCD, OLED) 제조설비 자동화시스템 업체. 주요 제품으로 도포기 자동화설비(LCD & OLED MODULE), 조립기 자동화설비(OLED MODULE), 검사기 자동화설비(LCD MODULE, 삼성전자 의료기기사업부), 신기술 자동화설비(OLED MODULE) 등이 있음. 주요 매출처는 삼성그룹(삼성전자, 삼성디스플레이) 등.",
+            "code": "297890",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아바코",
+            "desc": "LCD, OLED, PDP 등 평판디스플레이 관련 장비업체. 진공장비, 전용장비, 자동화장비 등의 평판디스플레이(FPD) 제조용 장비와 박막형 태양전지 장비 사업을 영위.",
+            "code": "083930",
+            "market": "KOSPI"
+        },
+        {
+            "name": "디바이스이엔지",
+            "desc": "반도체 및 디스플레이(OLED 등) 세정장비 제조 및 판매업체. 주요 제품으로는 OLED 유기발광층 증착용 FM(Fine Metal) MASK 세정장비, 반도체 웨이퍼 보관용기(FOUP) 세정장비, 반도체 웨이퍼 매엽세정용 약액공급장치 등이 있음.",
+            "code": "187870",
+            "market": "KOSPI"
+        },
+        {
+            "name": "솔루스첨단소재",
+            "desc": "OLED 부문에서 삼성디스플레이의 QD-OLED 패널 양산 소재인 EIL, aETL, HTL 등을 생산. 블루 기능성 소재인 aETL에 대한 핵심 특허를 보유.",
+            "code": "336370",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "엘아이에스",
+            "desc": "레이저를 이용하여 다양한 산업분야에 적용하는 레이저 응용기기 전문업체. 주요제품으로는 레이저장비인 Cell Cutting, Module Cutting, Pol Cutting, Sensor Cutting, Glass Cutting와 OLED Cell Sealing 등임.",
+            "code": "138690",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에프엔에스테크",
+            "desc": "반도체 및 디스플레이(OLED) 공정용 장비, 부품, 소재업체. OLED 전 공정(회로 공정, 유기막 증착/봉지 공정/플랙시블 공정)에 걸쳐 WET장비를 중심으로 OLED 장비 분야 사업을 영위하고 있으며, 반도체 부품 소재 사업 영위. 주요 제품으로 디스플레이 제조장비와 부품소재인 UV LAMP, CMP PAD, OLED MASK 세정 등이 있음.",
+            "code": "083500",
+            "market": "KOSPI"
+        },
+        {
+            "name": "상아프론테크",
+            "desc": "슈퍼 엔지니어링 플라스틱 소재 전문 생산업체. LCD 및 OLED 제조 공정중 패널의 보관 및 이송을 위한 FPD Cassette를 생산/판매.",
+            "code": "089980",
+            "market": "KOSPI"
+        },
+        {
+            "name": "주성엔지니어링",
+            "desc": "LED 및 OLED 제조장비 사업을 영위하고 있으며, 유기 발광 다이오드(OLED) 및 그 제조방법 관련 특허권 보유. OLED용 TSD-CVD(ALD)장비(Encapsulation, LTPS TFT, Oxide TFT, TSP) 생산. 산업통상자원부(전, 지식경제부) AMOLED 장비개발 국책과제 사업자로 선정된 바 있음. 차세대 평판 OLED 적용가능한 세계 최초 Oxide IGZO 화학증착기술 개발완료.",
+            "code": "036930",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아이엠이연이",
+            "desc": "EMS(전자제품 생산전문기업) 전문업체. SMD(표면실장장치)와 SMT(표면실장기술)를 기반으로 TFT-LCD Monitor & Notebook용 Source PBA, LCD TV용 Control & Source PBA, LED용 PBA, OLED용 PBA를 주로 생산.",
+            "code": "090740",
+            "market": "KOSPI"
+        }
+    ]
+}

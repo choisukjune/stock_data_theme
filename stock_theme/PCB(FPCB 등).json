@@ -1,0 +1,186 @@
+{
+    "name": "PCB(FPCB 등)",
+    "desc": "PCB(Printed Circuit Board : 인쇄회로기판)는 전자제품의 각 부품간을 연결하는 회로가 인쇄된 전자부품의 일종으로, 전자산업동향에 민감함. 따라서 전자산업 및 국내외 경기와 그 맥락을 같이하고 있으며 특히 환율, 국제원자재가격, 수출시장 등의 상황에 따라 산업의 경기가 크게 변동되는 특성이 있음. 한편, PCB의 한 종류인 FPCB(Flexible Printed Circuit Board : 연성인쇄회로기판)는 구부릴 수 있기 때문에 3차원 배선이 가능하고 소형화와 경량화가 가능하다는 장점이 있음. 따라서, 휴대폰, 디지털카메라, 노트북PC, 캠코더 등의 중소형 전자제품에 널리 쓰이고 있음. 또한 최근 들어 스마트폰이나 태블릿PC를 비롯한 각종 모바일 기기의 수요가 급증하고 있고, LED TV와 같",
+    "child": [
+        {
+            "name": "티엘비",
+            "desc": "PCB(인쇄회로기판) 전문 업체로 메모리 반도체 PCB의 제조, 판매를 주력 사업으로 영위하고 있으며, 반도체 후공정 검사장비(TEST) PCB 사업까지 진출. 주요제품은 Module PCB, SSD PCB, Semicondoctor PCB(신규) 등이 있음.",
+            "code": "356860",
+            "market": "KOSPI"
+        },
+        {
+            "name": "아모그린텍",
+            "desc": "스마트폰의 NFC, 무선충전 안테나 모듈용 회로 기판을 개발/상용화했고, 자동차의 무선충전용(Cup Holder, Side Mirror, Rear Lamp 등) FPCB를 개발. Tesla의 모델X의 근접센서(Cladding Sensor)용 FPCB를 개발/납품. FPCB 주요 고객은 삼성전자 등 스마트폰 제조업체, Tesla 등 자동차 전장업체.",
+            "code": "125210",
+            "market": "KOSPI"
+        },
+        {
+            "name": "심텍",
+            "desc": "반도체 및 통신기기용 인쇄회로기판(PCB) 전문 제조업체.",
+            "code": "222800",
+            "market": "KOSPI"
+        },
+        {
+            "name": "인터플렉스",
+            "desc": "전자제품(휴대폰, 카메라모듈 등)에 사용되는 연성인쇄회로기판(FPCB: Flexible Printed Circuit Board) 전문 제조업체.",
+            "code": "051370",
+            "market": "KOSPI"
+        },
+        {
+            "name": "디케이티",
+            "desc": "스마트폰용 플래그십(FLAGSHIP) 모델에 채용되는 연성회로기판(FPCA) 모듈 생산업체. 부품실장 SMT(Surface Mount Technology)을 통해 FPCB에 MLCC, IC-Chip 등 각종 부품을 실장하여 스마트폰 및 스마트와치용 FPCA 모듈을 생산.",
+            "code": "290550",
+            "market": "KOSPI"
+        },
+        {
+            "name": "대덕전자",
+            "desc": "인쇄회로기판(PCB) 및 연성인쇄회로기판(FPCB) 등을 전문적으로 제조 및 판매하고 있으며, 주요 거래처로는 삼성전자, SK하이닉스, SKYWORKS, (주)엠씨넥스, Harris 등",
+            "code": "353200",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "현우산업",
+            "desc": "인쇄회로기판(PCB) 전문 제조업체. 디스플레이(OLED, LED, LCD 등)분야와 자동차 및 전기차전장(카오디오,CID, OBCM, 네비게이션, 클러스트 등)분야, 일반 IT기기(IP SETTOP BOX, DVD-RW PLAYER, HOME THEATER, HOME APPLYCATION 등) 분야, 정보통신(WIBRO, WLL 등) 분야, O.A(복사기, PRINTER, 복합기 등) 분야의 국내외 주요 고객사에 PCB를 공급중.",
+            "code": "092300",
+            "market": "KOSPI"
+        },
+        {
+            "name": "비에이치",
+            "desc": "연성인쇄회로기판(FPCB) 전문 생산 업체. 삼성전자, LG전자, 삼성디스플레이 등 국내외 주요 IT제조업체에 휴대폰(스마트폰), OLED, LCD모듈, 전장부품용 FPCB를 납품.",
+            "code": "090460",
+            "market": "KOSPI"
+        },
+        {
+            "name": "코리아써키트",
+            "desc": "영풍그룹 계열사로 전자제품의 핵심부품인 PCB(인쇄회로기판) 전문 생산업체. 통신기기용 단말기, 메모리모듈 등 반도체 PKG, LED TV 용 PCB 등을 생산, 판매.",
+            "code": "007810",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "자비스",
+            "desc": "X-ray 검사장비 전문업체. PCB 산업관련 X-ray Source를 통한 제품의 내부 결함 검사 장비 개발. PCB 관련 주요 제품으로는 수동판정 X-ray 검사장비, 자동판정 X-ray 검사장비 (Off-Line용 및 In-Line용 모두), CT/3D 탑재 X-ray 검사장비 등이 있음.",
+            "code": "254120",
+            "market": "KOSPI"
+        },
+        {
+            "name": "뉴프렉스",
+            "desc": "연성인쇄회로기판(FPCB) 전문 제조/판매 업체. 주 거래처는 완성품 업체인 LG그룹의 전자계열사 및 삼성전기, 코웰 등임.",
+            "code": "085670",
+            "market": "KOSPI"
+        },
+        {
+            "name": "와이엠티",
+            "desc": "인쇄회로기판용 화학소재 전문 업체. PCB(인쇄회로기판), 반도체, 디스플레이 등 전자부품 제조에 이용되는 화학소재 개발 및 제조, 판매를 주요 사업으로 영위.",
+            "code": "251370",
+            "market": "KOSPI"
+        },
+        {
+            "name": "필옵틱스",
+            "desc": "인쇄회로기판 관련 장비 및 평판 디스플레이 공정용 장비와 부품/소재 제조, 판매업체. 핵심 고유 기술인 광학설계 및 제어기술을 기반으로 Rigid 및 Flexible OLED 제조공정과 전기차용 2차전지 제조 공정에 사용되는 레이저 응용장비를 제작 및 공급중. 이 외에도 신개념 3D 검사 장비 외 각종 광학장비 개조용역, 광학부품 제조 등의 사업 영위.",
+            "code": "161580",
+            "market": "KOSPI"
+        },
+        {
+            "name": "대덕",
+            "desc": "대덕그룹 계열의 인쇄회로기판(PCB) 전문업체. 인쇄회로기판(PCB) 및 연성인쇄회로기판(FPCB) 등을 전문적으로 제조 및 판매하고 있으며, 주요 거래처로는 삼성전자, SK하이닉스, SKYWORKS, LG전자(주), Ciena, 파트론, 파워로직스, (주)엠씨넥스 등.",
+            "code": "008060",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "PI첨단소재",
+            "desc": "폴리이미드필름(PI필름) 제조업체. 연성회로기판(FPCB)용 PI필름을 주력으로 FPCB업체 등에 납품.",
+            "code": "178920",
+            "market": "KOSPI"
+        },
+        {
+            "name": "일진머티리얼즈",
+            "desc": "일진 그룹 계열의 국내 1위 일렉포일(Elecfoil) 제조업체. FPCB의 FCCL(연성동박적층판)용 일렉포일(IHT제품) 생산.",
+            "code": "020150",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "시노펙스",
+            "desc": "FPCB 모듈 사업을 영위. FPCB(연성회로기판)와 SMT(표면실장기술), 모바일 제품 등에 활용되는 FPCB 및 전, 후 공정에 사용되는 각종 검사기기 등을 제조 및 판매하고 있음.",
+            "code": "025320",
+            "market": "KOSPI"
+        },
+        {
+            "name": "에이엔피",
+            "desc": "양단면 인쇄회로기판, 다층 인쇄회로기판 등 인쇄회로기판(PCB) 제조업체.",
+            "code": "015260",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "삼성전기",
+            "desc": "삼성그룹 계열의 종합전자부품 생산업체. 주요 품목으로는 반도체패키지기판 등. ",
+            "code": "009150",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "이녹스첨단소재",
+            "desc": "연성회로기판(FPCB)용 소재(주요상표-INNOFLEX, SMARTFLEX) 및 반도체 패키지용 소재(주요상표-INNOSEM) 등을 개발, 제조, 판매하는 부품 소재업체.",
+            "code": "272290",
+            "market": "KOSPI"
+        },
+        {
+            "name": "네오티스",
+            "desc": "PCB의 가공에 사용되는 초정밀 공구인 마이크로비트(Micro Bit) 생산/판매 사업 영위.",
+            "code": "085910",
+            "market": "KOSPI"
+        },
+        {
+            "name": "타이거일렉",
+            "desc": "인쇄회로기판(PCB) 전문 제조업체. 반도체 후공정의 검사공정에 사용되는 고다층(High-Multilayer), 고밀도(Fine Pitch)의 PCB를 주로 생산. 주요 제품으로는 반도체 작동 유무를 검사하는 핵심 부품인 Probe Card PCB, 반도체 device의 전기적 특성 평가용 Load Board PCB, 반도체 패키지 테스트용 Socket Board PCB, 반도체의 고온에 대한 내구성 테스트용 Burn in Board PCB 등이 있음.",
+            "code": "219130",
+            "market": "KOSPI"
+        },
+        {
+            "name": "멜파스",
+            "desc": "일신전자 인수를 통해 FPCB 사업 부문을 신설하고 고객사업체 등록을 완료해 제품을 공급중.",
+            "code": "096640",
+            "market": "KOSPI"
+        },
+        {
+            "name": "액트",
+            "desc": "스마트폰/태블릿PC 등에 탑재되는 FPCB(Flexible Printed Circuit Board, 연성PCB) 제조 업체.",
+            "code": "131400",
+            "market": "KOSPI"
+        },
+        {
+            "name": "이수페타시스",
+            "desc": "인쇄회로기판(PCB) 전문 제조업체.",
+            "code": "007660",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "스타모빌리티",
+            "desc": "연성인쇄회로기판(FPCB) 제조공정 중에 사용되는 자동화장비 생산/판매 업체. Guide Hole Puncher, Coverlay Bonder, Stiffener Bonder, Vision Press 등 연성인쇄회로기판 (FPCB) 가공 장비와 함께 터치패널(TSP) 가공 장비 제조 및 판매중.",
+            "code": "158310",
+            "market": "KOSPI"
+        },
+        {
+            "name": "슈펙스비앤피",
+            "desc": "PCB자동화기기(로더, 언로더, 본딩머쉰, X-ray drill M/C 등) 제조 사업영위.",
+            "code": "058530",
+            "market": "KOSPI"
+        },
+        {
+            "name": "디에이피",
+            "desc": "이동통신단말기용 인쇄회로기판(PCB) 전문 생산업체. 핸드폰, 스마트폰, 태블릿PC, 노트북, 디지털카메라, 캠코더 등 다양한 전자제품용 PCB를 생산, 판매. 주력제품은 Build-Up PCB(RCC(Resin이 코팅된 동박) 및 절연체를 벽돌을 쌓는 것처럼 적층하여 제작하는 MLB(Multi Layer Board : 다층 기판).",
+            "code": "066900",
+            "market": "KOSPI"
+        },
+        {
+            "name": "상아프론테크",
+            "desc": "슈퍼 엔지니어링 플라스틱 소재 전문 생산업체. PCB 기판 Drilling용 부자재인 Entry sheet(엔트리 시트), Back up board(백업 보드) 등을 생산.",
+            "code": "089980",
+            "market": "KOSPI"
+        },
+        {
+            "name": "우리바이오",
+            "desc": "우리조명그룹 계열사로 FPCB(연성회로기판)의 생산 및 판매업을 영위하는 업체.",
+            "code": "082850",
+            "market": "KOSPI"
+        }
+    ]
+}

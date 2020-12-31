@@ -1,0 +1,30 @@
+{
+    "name": "LCD BLU제조",
+    "desc": "LCD모듈을 구성하는 핵심부품인 BLU(Back Light Unit) 제조업체들. BLU는 주로 LCD TV, 모니터, 노트북 패널의 핵심 부품으로 사용되며, BLU의 수요는 이 같은 LCD제품의 수요와도 동일하기 때문에 BLU 제조업체들의 영업성과는 LCD의 경기변동에 따라 변동되는 특성이 있음.",
+    "child": [
+        {
+            "name": "코이즈",
+            "desc": "LCD 보호필름 및 광학코팅 업체. LCD 보호필름 제조 및 LCD의 부품인 백라이트유닛(BLU)의 핵심소재인 광학필름의 코팅과 도광판 및 보호필름 제조를 중심으로 사업 영위. 주요매출처는 LG전자, 미래나노텍, LGD, BOE 등임.",
+            "code": "121850",
+            "market": "KOSPI"
+        },
+        {
+            "name": "삼진엘앤디",
+            "desc": "정밀 금형/사출 기술 기반의 전자부품업체. 전자부품 사업부에서 BLU핵심부품인 Mold frame, 도광판(Light Guide Panel) 등을 생산/판매. 특히, 삼성전자 BLU 협력업체에 Mold Frame을 공급.",
+            "code": "054090",
+            "market": "KOSPI"
+        },
+        {
+            "name": "한솔테크닉스",
+            "desc": "LCD 및 LED TV 핵심부품인 백라이트유닛(BLU) 제조업체. 삼성전자의 BLU 공급업체로 BLU사업은 TV BLU를 중심으로, 파워모듈은 LCD TV용 인버터를 중심으로 사업을 전개.",
+            "code": "004710",
+            "market": "KOSDAQ"
+        },
+        {
+            "name": "이라이콤",
+            "desc": "LCD용 BLU(휴대폰, 태블릿, 소형가전제품용 등) 생산업체. 삼성전자의 협력업체로 등록되어 있으며, 중소형 BLU업체 중 First Vendor로 휴대폰 및 태블릿PC용 BLU 공급업체중 가장 높은 점유율을 유지중. ",
+            "code": "041520",
+            "market": "KOSPI"
+        }
+    ]
+}
