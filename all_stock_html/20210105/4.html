@@ -1,0 +1,14489 @@
+
+
+
+
+<script type="text/javascript">
+	document.domain = 'naver.com';
+	var nclk_evt = 3;
+	nclk_do();
+</script>
+
+
+<script type="text/javascript">
+
+
+
+
+var nsc="finance.stock";
+
+
+
+
+
+var ccsrv="cc.naver.com";
+
+
+	
+	
+	var gnb_service='finance';
+	
+
+
+var gnb_logout=document.URL; //GNB에서 로그아웃 후 redirect 될 URL
+var gnb_searchbox='off'; //미니 검색창을 on 할지 off 할지. default는 off
+var gnb_shortnick='off'; //닉네임 말줄임(10자)을 on할지 off 할지. default는 off.
+
+
+var gnb_naverme_layer_open_callback = function(){
+	   var naverLayerSize = gnbNaverMeLayer.getLayerSize();
+		
+		var me_layers = document.getElementById("me_layers");
+		me_layers.width=naverLayerSize.width;
+		me_layers.height=naverLayerSize.height;};
+
+var gnb_naverme_layer_close_callback = function(){
+		
+			var me_layers = document.getElementById("me_layers");
+			me_layers.width="0";
+			me_layers.height="0";};
+</script>
+
+
+<div id="u_skip">
+	<a href="#menu" tabindex="1"><span>메인 메뉴로 바로가기</span></a>
+
+	
+	
+		<a href="#start" tabindex="2"><span>본문으로 바로가기</span></a>
+	
+
+</div>
+
+
+<div id="header">
+	<div class="snb_area">
+		<div class="snb_inner">
+			<div id="gnb_area">
+				<div id="gnb"><strong class="blind">사용자 링크</strong><ul class="gnb_lst" id="gnb_lst" style="display:none"><li class="gnb_login_li" id="gnb_login_layer"><a class="gnb_btn_login" href="#" id="gnb_login_button"><span class="gnb_bg"></span><span class="gnb_bdr"></span><span class="gnb_txt">로그인</span></a></li><li class="gnb_my_li" id="gnb_my_layer" style="display:none"><div class="gnb_my_namebox" id="gnb_my_namebox"><a href="javascript:;" class="gnb_my" onclick="gnbUserLayer.clickToggle(); return false;"><img id="gnb_profile_img" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" width="26" height="26" alt="내 프로필 이미지"><span id="gnb_profile_filter_mask" class="filter_mask"></span> <span class="gnb_name" id="gnb_name1"></span><em class="blind">내정보 보기</em><span class="ico_arrow"></span></a><a href="#" class="gnb_emp" id="gnb_emp">(임직원혜택)</a></div><div class="gnb_my_lyr" id="gnb_my_lyr"><div class="gnb_my_content"><div class="gnb_img_area"><span class="gnb_mask"></span><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" width="80" height="80" alt="프로필 이미지"><a href="https://nid.naver.com/user2/api/naverProfile.nhn?m=checkIdType" class="gnb_change"><span class="blind">프로필 사진 변경</span></a></div><div class="gnb_txt_area"><p class="gnb_account"><span class="gnb_name" id="gnb_name2"><a class="gnb_nick" href="https://nid.naver.com/user2/api/naverProfile.nhn?m=checkIdType">_</a>님</span><a class="gnb_btn_login" href="#" id="gnb_logout_button"><span class="gnb_bg"></span><span class="gnb_bdr"></span><span class="gnb_txt">로그아웃</span></a></p><a href="https://mail.naver.com" class="gnb_mail_address">@naver.com</a><ul class="gnb_edit_lst"><li class="gnb_info"><a href="https://nid.naver.com/user2/help/myInfo.nhn?menu=home">내정보</a></li><li class="gnb_secure" id="gnb_secure_lnk"><a href="https://nid.naver.com/user2/help/myInfo.nhn?m=viewSecurity&amp;menu=security">보안설정</a></li><li class="gnb_cert" id="gnb_cert_lnk"><a href="https://nid.naver.com/user2/eSign/v1/home/land">내인증서</a></li></ul><div class="gnb_pay_check" id="gnb_pay_check"><p class="gnb_membership" style="display: none;" id="gnb_membership"><a href="https://nid.naver.com/membership/my" class="gnb_my_membership"><i class="blind">네이버 멤버쉽</i></a></p><em>N Pay</em><a href="https://pay.naver.com" id="gnb_pay_point"><span style="display: none">내 페이포인트</span></a></div></div></div><div class="gnb_my_community"><a href="https://blog.naver.com/MyBlog.nhn" class="gnb_blog">내 블로그</a><a href="https://section.cafe.naver.com" class="gnb_cafe">가입한 카페</a><a href="https://pay.naver.com" class="gnb_pay"><span>N Pay</span></a></div><a href="#" class="gnb_my_interface" style="display:none"><span class="blind">환경설정</span></a></div><iframe id="gnb_my_lyr_iframe" title="빈 프레임" class="gnb_pad_lyr" name="padding" width="0" height="0" scrolling="no" frameborder="0" style="top:34px;right:-4px;width:320px;height:158px;display:none;opacity:0;-ms-filter:alpha(opacity=0)"></iframe></li><li class="gnb_notice_li" id="gnb_notice_layer" style="display:none"><a href="javascript:;" class="gnb_notice" onclick="gnbNaverMeLayer.clickToggle(); return false;"><span class="blind">알림</span><span class="gnb_icon"></span><em class="gnb_ico_num" id="gnb_me_menu" style="display:none"><span class="gnb_ico_new"><span class="gnb_count" id="gnb_me_count"></span></span></em><span class="ico_arrow"></span></a><div class="gnb_notice_lyr" id="gnb_notice_lyr"><div class="svc_noti svc_panel"><div class="svc_scroll"><div class="svc_head"><strong class="gnb_tit">전체 알림</strong><div class="task_right"><button onclick="gnbNaverMeLayer.deleteReadList(this, event);" id="gnb_btn_read_noti_del">읽은 알림 삭제</button><button onclick="gnbNaverMeLayer.showDeleteAlert();" id="gnb_btn_all_noti_del">모두 삭제</button></div></div><div class="svc_body" id="gnb_naverme_layer"></div></div><div class="gnb_ly_alert" id="gnb_ly_alert" style="display: none;"><p class="gnb_msg"><strong>알림을 모두 삭제하시겠습니까?</strong></p><div class="gnb_btns"><button id="ly_alert_confirm" onclick="gnbNaverMeLayer.deleteAllList(this, event);">확인</button><button onclick="gnbNaverMeLayer.hideDeleteAlert();">취소</button></div><button class="gnb_btn_close" onclick="gnbNaverMeLayer.hideDeleteAlert();"><i>레이어 닫기</i></button></div><a href="https://noti.naver.com/index.nhn" class="gnb_notice_all">내 알림 전체보기</a></div></div><iframe id="gnb_notice_lyr_iframe" title="빈 프레임" class="gnb_pad_lyr" name="padding" width="0" height="0" scrolling="no" frameborder="0" style="top:34px;right:-4px;width:299px;height:332px;display:none;opacity:0;-ms-filter:alpha(opacity=0)"></iframe></li><li class="mail_li" id="gnb_mail_layer" style="display:none"><a href="https://mail.naver.com" class="gnb_mail"><span class="blind">메일</span><span class="gnb_icon"></span><em class="gnb_ico_num" id="gnb_mail_menu" style="display:none"><span class="gnb_ico_new"><span class="gnb_count" id="gnb_mail_count"></span></span></em></a></li><li class="gnb_service_li" id="gnb_service_layer"><a href="javascript:;" class="gnb_service" onclick="gnbMoreLayer.clickToggle(); return false;"><span class="blind">서비스 더보기</span><span class="gnb_icon"></span><span class="ico_arrow"></span></a><div class="gnb_service_lyr" id="gnb_service_lyr"><div class="gnb_favorite_search" id="gnb_favorite_search"><div class="gnb_favorite_area"><div class="gnb_favorite_lstwrp"><div class="gnb_first_visit" style="display:none"><span class="blind">나만의 즐겨찾기를 추가해 보세요!</span><a href="#" class="gnb_close"><span class="blind">닫기</span></a></div><strong class="blind">즐겨찾는 서비스</strong><ul class="gnb_favorite_lst" id="gnb_favorite_lst"><li class="gnb_add"><a href="#"><span class="ic_add"></span>추가</a></li><li class="gnb_add"><a href="#"><span class="ic_add"></span>추가</a></li><li class="gnb_add"><a href="#"><span class="ic_add"></span>추가</a></li><li class="gnb_add"><a href="#"><span class="ic_add"></span>추가</a></li></ul><a href="#" class="gnb_my_interface" onclick="gnbMoreLayer.clickToggleWhole(); return false;"><span class="blind">즐겨찾기 설정</span></a></div></div><div class="gnb_search_area"><div class="gnb_search_box" onmouseover="gnb_search.mouseOver(this);" onmouseout="gnb_search.mouseOut(this);"><input id="gnb_svc_search_input" type="text" title="서비스 검색" value="더 많은 서비스를 간편하게 시작하세요!" onfocus="gnb_search.clearInput(this);" onblur="gnb_search.resetInput(this);" onkeydown="gnb_search.keyDown(event);" onkeyup="gnb_search.keyUp(event);"><a href="#" class="gnb_del_txt" id="gnb_del_txt" style="display:none"><span class="blind">삭제</span></a><div class="gnb_pop_input" id="gnb_pop_input" tabindex="0" onfocus="gnb_search.searchPopOnMouse = true; return false;" onfocusout="gnb_search.searchPopOnMouse = false; return false;" onmouseover="gnb_search.searchPopOnMouse = true; return false;" onmouseout="gnb_search.searchPopOnMouse = false; return false;" style="display:none"><ul class="gnb_pop_lst"></ul></div></div><div id="gnb_search_lstwrp" class="gnb_search_lstwrp"><ul class="gnb_search_lst gnb_first"><li class="gnb_first"><a href="https://cafe.naver.com/">카페</a></li><li><a href="https://news.naver.com/">뉴스</a></li><li><a href="https://map.naver.com/">지도</a></li><li><a href="https://sports.news.naver.com/">스포츠</a></li><li><a href="https://game.naver.com/">게임</a></li></ul><ul class="gnb_search_lst"><li class="gnb_first"><a href="https://section.blog.naver.com/">블로그</a></li><li><a href="https://post.naver.com/main.nhn">포스트</a></li><li><a href="https://dict.naver.com/">사전</a></li><li><a href="https://kin.naver.com/">지식iN</a></li><li><a href="https://n.weather.naver.com/">날씨</a></li></ul><ul class="gnb_search_lst"><li class="gnb_first"><a href="https://mail.naver.com/">메일</a></li><li><a href="https://stock.naver.com/">증권</a></li><li><a href="https://land.naver.com/">부동산</a></li><li><a href="https://vibe.naver.com/today/">VIBE</a></li><li><a href="https://book.naver.com">책</a></li></ul><ul class="gnb_search_lst"><li class="gnb_first"><a href="https://shopping.naver.com/">쇼핑</a></li><li><a href="https://comic.naver.com/">웹툰</a></li><li><a href="https://movie.naver.com/">영화</a></li><li><a href="https://mybox.naver.com/">MYBOX</a></li><li><a href="https://auto.naver.com/">자동차</a></li></ul></div></div><div class="gnb_banner"><a href="https://campaign.naver.com/npay/rediret/index.nhn" class="gnb_service_event"><img id="gnb_promo" alt="N페이, 이벤트 참여하면 포인트 적립!" width="265" height="47" src="https://ssl.pstatic.net/static/common/gnb/banner/promo_npay_200108.png"></a></div><div class="gnb_linkwrp"><a href="https://www.naver.com/more.html" class="gnb_service_all" id="gnb_service_all">전체 서비스 보기</a></div></div><div class="gnb_svc_more" id="gnb_svc_more" style=""><strong class="blind">네이버 주요 서비스</strong><div class="gnb_bg_top"></div><div class="gnb_svc_hd" id="gnb_svc_hd" tabindex="0"><strong class="gnb_svc_tit">바로가기 설정</strong><span class="link"><a href="https://www.naver.com/more.html">전체 서비스 보기</a></span></div><div class="gnb_svc_lstwrp"><div class="gnb_svc_lst1"><ul class="gnb_first"><li><input type="checkbox" id="nsvc_game" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_game">게임</label></li><li><input type="checkbox" id="nsvc_weather" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_weather">날씨</label></li><li><input type="checkbox" id="nsvc_shopping" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_shopping">네이버쇼핑</label></li><li><input type="checkbox" id="nsvc_navercast" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_navercast">네이버캐스트</label></li><li class="gnb_event"><input type="checkbox" id="nsvc_naverpay" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_naverpay">네이버페이<em class="ic_gnb_new">New</em></label></li><li><input type="checkbox" id="nsvc_mybox" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_mybox">네이버 MYBOX</label></li><li><input type="checkbox" id="nsvc_news" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_news">뉴스</label></li><li><input type="checkbox" id="nsvc_comic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_comic">만화/웹툰</label></li><li><input type="checkbox" id="nsvc_memo" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_memo">메모</label></li><li><input type="checkbox" id="nsvc_mail" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_mail">메일</label></li><li><input type="checkbox" id="nsvc_music" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_music">뮤직</label></li><li><input type="checkbox" id="nsvc_land" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_land">부동산</label></li><li><input type="checkbox" id="nsvc_bookmark" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_bookmark">북마크</label></li></ul><ul class=""><li><input type="checkbox" id="nsvc_blog" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_blog">블로그</label></li><li><input type="checkbox" id="nsvc_dic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_dic">사전</label></li><li><input type="checkbox" id="nsvc_software" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_software">소프트웨어</label></li><li><input type="checkbox" id="nsvc_sports" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_sports">스포츠</label></li><li><input type="checkbox" id="nsvc_series" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_series">시리즈</label></li><li><input type="checkbox" id="nsvc_serieson" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_serieson">시리즈on</label></li><li><input type="checkbox" id="nsvc_ya9" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_ya9">야구9단</label></li><li><input type="checkbox" id="nsvc_movie" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_movie">영화</label></li><li><input type="checkbox" id="nsvc_office" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_office">오피스</label></li><li><input type="checkbox" id="nsvc_novel" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_novel">웹소설</label></li><li><input type="checkbox" id="nsvc_auto" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_auto">자동차</label></li><li><input type="checkbox" id="nsvc_contact" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_contact">주소록</label></li><li><input type="checkbox" id="nsvc_finance" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_finance">증권(금융)</label></li></ul><ul class=""><li><input type="checkbox" id="nsvc_map" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_map">지도</label></li><li><input type="checkbox" id="nsvc_kin" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_kin">지식iN</label></li><li><input type="checkbox" id="nsvc_terms" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_terms">지식백과</label></li><li><input type="checkbox" id="nsvc_book" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_book">책</label></li><li><input type="checkbox" id="nsvc_cafe" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_cafe">카페</label></li><li><input type="checkbox" id="nsvc_calendar" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_calendar">캘린더</label></li><li><input type="checkbox" id="nsvc_navertv" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_navertv">네이버TV</label></li></ul></div><div class="svc_lst2"><div class="svc_spc gnb_first"><strong><a href="https://dict.naver.com/">어학사전</a></strong><ul class=""><li><input type="checkbox" id="nsvc_krdic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_krdic">국어사전</label></li><li><input type="checkbox" id="nsvc_endic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_endic">영어/영영사전</label></li><li><input type="checkbox" id="nsvc_hanja" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_hanja">한자사전</label></li><li><input type="checkbox" id="nsvc_jpdic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_jpdic">일어사전</label></li><li><input type="checkbox" id="nsvc_cndic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_cndic">중국어사전</label></li><li><input type="checkbox" id="nsvc_frdic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_frdic">프랑스어사전</label></li><li><input type="checkbox" id="nsvc_dedic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_dedic">독일어사전</label></li><li><input type="checkbox" id="nsvc_rudic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_rudic">러시아어사전</label></li><li><input type="checkbox" id="nsvc_vndic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_vndic">베트남어사전</label></li><li><input type="checkbox" id="nsvc_spdic" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_spdic">스페인어사전</label></li><li><input type="checkbox" id="nsvc_papago" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_papago">파파고</label></li></ul></div><div class="svc_spc"><strong>인기/신규서비스</strong><ul class=""><li><input type="checkbox" id="nsvc_grafolio" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_grafolio">그라폴리오</label></li><li><input type="checkbox" id="nsvc_post" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_post">포스트</label></li><li><input type="checkbox" id="nsvc_band" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_band">밴드</label></li><li><input type="checkbox" id="nsvc_line" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_line">라인</label></li><li class="gnb_event"><input type="checkbox" id="nsvc_vibe" name="selmenu" class="gnb_input_check" value=""> <label for="nsvc_vibe">VIBE<em class="ic_gnb_new">New</em></label></li></ul></div></div></div><div class="svc_btnwrp"><div class="svc_btns"><button class="gnb_save" onclick="if(gnbFavorite.addService()){gnbMoreLayer.clickToggleWhole()} return false;"><strong class="blind">확인</strong></button><button class="gnb_close" onclick="gnbFavorite.cancel(); return false;"><span class="blind">취소</span></button><button class="gnb_return" onclick="gnbFavorite.resetService(); return false;"><span class="blind">초기 설정으로 변경</span></button></div></div><div class="gnb_bg_btm"></div></div></div><iframe id="gnb_service_lyr_iframe" title="빈 프레임" class="gnb_pad_lyr" name="padding" width="0" height="0" scrolling="no" frameborder="0" style="display:none;top:34px;right:297px;width:585px;height:385px;opacity:0;-ms-filter:alpha(opacity=0)"></iframe><iframe id="gnb_svc_more_iframe" title="빈 프레임" class="gnb_pad_lyr" name="padding" width="0" height="0" scrolling="no" frameborder="0" style="display:none;top:34px;right:-4px;width:295px;height:385px;opacity:0;-ms-filter:alpha(opacity=0)"></iframe></li></ul>
+						
+					
+				</div>
+			</div>
+
+			<div class="sta">
+				<h1 class="logo"> <a href="https://www.naver.com/" class="logo_naver" onclick="clickcr(this, 'STA.naver', '', '', event);"><span class="blind">네이버</span></a>
+				<a href="/" class="logo_service" onclick="clickcr(this, 'STA.finance', '', '', event);"><span class="blind">금융</span></a> </h1>
+				<form name="search" action="/search/search.nhn" method="get" onsubmit="return delayed_submit(this)" style="margin:0; padding:0;">
+				<fieldset>
+					<legend>검색</legend>
+					<div class="snb_search_box">
+						<div class="snb_search_box_sub">
+							<input id="stock_items" type="text" title="검색" name="query" value="종목명·지수명·펀드명·환율명·원자재명 입력" accesskey="s" class="snb_search_text snb_default" autocomplete="off">
+							<a id="nautocomplete" href="#" onclick="return false" class="btn_arrow"><span class="blind">자동완성 펼치기</span></a>
+						</div>
+						<div class="auto_area">
+							<h2 class="blind">자동완성</h2>
+							<iframe id="autoFrame" src="/ac/reatcmp.nhn?menu=sise&amp;submenu=" scrolling="no" height="0" frameborder="0" width="400" style="display: none;" marginheight="0" marginwidth="0" title="자동완성"></iframe>
+						</div>
+						<button type="submit" class="snb_search_btn" onclick="clickcr(this, 'STA.search', '', '', event);" alt="검색"><span class="blind">검색</span></button>
+						<a href="#" target="_blank" class="snb_search_btn-total" onclick="itegrationSearch();clickcr(this, 'STA.nx', '', '', event);return false;">통합검색</a>
+					</div>
+				</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="lnb_area ">
+		<div class="lnb_inner">
+			<div id="menu">
+				<ul class="menu">
+					<li class="m1 first "><a href="/" onclick="clickcr(this, 'LNB.home', '', '', event);"><span class="tx">금융 홈</span></a></li>
+					<li class="m2 on"><a href="/sise/" onclick="clickcr(this, 'LNB.sise', '', '', event);"><span class="tx">국내증시</span></a></li>
+					<li class="m3 "><a href="/world/" onclick="clickcr(this, 'LNB.world', '', '', event);"><span class="tx">해외증시</span></a></li>
+					<li class="m4 "><a href="/marketindex/" onclick="clickcr(this, 'LNB.market', '', '', event);"><span class="tx">시장지표</span></a></li>
+					<li class="m5 "><a href="/fund/" onclick="clickcr(this, 'LNB.fund', '', '', event);"><span class="tx">펀드</span></a>
+						
+					</li>
+					<li class="m6 "><a href="/research/" onclick="clickcr(this, 'LNB.research', '', '', event);"><span class="tx">리서치</span></a></li>
+					<li class="m7 "><a href="/news/"><span class="tx">뉴스</span></a></li>
+					<li class="m8 "><a href="/mystock/" onclick="clickcr(this, 'LNB.mystock', '', '', event);"><span class="tx">MY</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+
+	
+	<script type="text/JavaScript">
+		/* lcs 집계 */
+        ;(function(){
+            var eventType = "onpageshow" in window ? "pageshow" : "load";
+            jindo.$Fn(function(){
+                lcs_do();
+            }).attach(window, eventType);
+        })();
+
+		/* 검색 자동완성 [ 인자1 : 검색input의 ID, 인자2 : iframe 태그 ID ]   */
+		// AutoComplete 생성
+		var acDomain = "ac.finance.naver.com";
+        if (location.hostname.indexOf("staging-") > -1) {
+            acDomain = "staging-" + acDomain;
+        } else if (location.hostname.indexOf("dev-") > -1 || location.hostname.indexOf("localhost") > -1 || location.hostname.indexOf("local-") > -1) {
+			acDomain = "dev-" + acDomain;
+		}
+
+        var acUrl = "https://" + acDomain + "/ac";
+
+		smartSearch = new nhn.Autocomplete(
+			// InputManager 생성
+			new nhn.AcInputManager(jindo.$("stock_items")),
+			// DataManager 생성
+			new nhn.AcDataManager(acUrl, "jsonp", "get", {
+                    st: "111",
+                    r_lt : "111",
+                    q_enc : "euc-kr",
+                    r_enc : "euc-kr",
+                    frm: "stock"}),
+			// ViewManager 생성
+			new nhn.AcStockViewManager(jindo.$("autoFrame"), jindo.$("nautocomplete"), {
+                                        strMax: 200,
+                                        listMax: [7, 2, 2],
+                                        aRedirectUrl : [
+                            			"https://finance.naver.com",
+                            			"https://finance.naver.com",
+                            			"https://finance.naver.com"]}),
+			// Autocomplete Option
+            {formId:"search", cookieDomain:location.hostname, cookieName:"NaverCommonStock"});
+
+			smartSearch.attach({
+	            onFocus: function () {
+	                var weInput = jindo.$Element('stock_items');
+	                if (weInput && weInput.hasClass("snb_default")) {
+	                        weInput.text("");
+	                        weInput.removeClass('snb_default');
+	                }
+	            }
+	        });
+
+		/* 통합검색  start ----->  */
+		document.domain = 'naver.com';
+		var sSearchHintText = '종목명·지수명·펀드명·환율명·원자재명 입력';
+		function itegrationSearch() {
+			var query = jindo.$('stock_items').value;
+
+			if ( query == ''  || encodeURIComponent(query) == encodeURIComponent(sSearchHintText))
+			{
+				alert ( '검색어를 입력해 주세요.' );
+				return;
+			}
+
+            var url = location.protocol + "//search.naver.com/search.naver?sm=sta_hty.finance&where=nexearch&ie=UTF8&query=" + encodeURIComponent(query);
+            window.open(url, "_blank");
+
+			return false;
+		}
+
+		function delayed_submit(object) {
+			if (navigator.userAgent.indexOf('MSIE') == -1) {
+				window.setTimeout(function() {stock_search(object)}, 300);
+			} else {
+				stock_search(object);
+			}
+			return false;
+		}
+
+		function stock_search (object)
+		{
+			query = object.query.value.replace(/^\s*/,'').replace(/\s*$/,'');	// trim
+			object.query.value=query;
+
+			if ( query == '' || query == sSearchHintText.replace(/^\s*/,'').replace(/\s*$/,''))
+			{
+				alert ( '검색어를 입력해 주세요.' );
+				return;
+			}
+			else {
+				object.submit();
+			}
+		}
+		/* <---------- 통합검색  end */
+
+		function popup()
+		{
+			win = window.open('/template/group_limit_pop.jsp','finan_popup','width=569 height=278 scrollbars=no status=no');
+			win.focus();
+		}
+	</script>
+
+	<iframe id="me_layers" name="test" title="네이버미 영역" width="0" height="0" scrolling="no" frameborder="0" style="display:block;top: 22px; right: 209px; position: absolute; z-index: 15;"></iframe>
+</div>
+<div id="wrap">
+
+<!-- //  global include -->
+<script language="JavaScript">
+function mouseOver(obj){
+  obj.style.backgroundColor="#f6f4e5";
+}
+function mouseOut(obj){
+  obj.style.backgroundColor="#ffffff";
+}
+</script>
+
+	<div id="newarea">
+			
+
+			<!-- leftmenu -->
+			<div class="snb snb2">
+				<h2 class="h_sise"><a href="/sise/"><span class="blind">국내증시</span></a></h2>
+				<ul class="nav1">
+				<li class="frst"><strong class="lst_sise"><span class="blind">주요시세정보</span></strong>
+					<ul class="sub">
+					 <li class="type1 lst1_1"><a href="/sise/sise_index.nhn?code=KOSPI" onclick="clickcr(this,'siu.1','','',event);" class="off"><span class="blind">코스피</span></a></li> 
+                     <li class="type1 lst1_2"><a href="/sise/sise_index.nhn?code=KOSDAQ" onclick="clickcr(this,'siu.2','','',event);" class="off"><span class="blind">코스닥</span></a></li>
+                     <li class="type1 lst1_3"><a href="/sise/sise_index.nhn?code=FUT" onclick="clickcr(this,'siu.3','','',event);" class="off"><span class="blind">선물</span></a></li>
+                     <li class="type1 lst1_26"><a href="/sise/sise_index.nhn?code=KPI200" onclick="clickcr(this,'siu.26','','',event);" class="off"><span class="blind">코스피200</span></a></li>
+                     <li class="type1 lst1_31"><a href="/sise/konex.nhn" onclick="clickcr(this,'siu.konex','','',event);" class="off"><span class="blind">코넥스</span></a></li>
+                     <li class="type1 lst1_16"><a href="/sise/sise_market_sum.nhn" onclick="clickcr(this,'siu.16','','',event);" class="on"><span class="blind">시가총액</span></a></li>
+                     <li class="type1 lst1_32"><a href="/sise/dividend_list.nhn" onclick="clickcr(this,'siu.dividend','','',event);" class="off"><span class="blind">배당</span></a></li>                     
+                     <li class="type1 lst1_4"><a href="/sise/sise_group.nhn?type=upjong" onclick="clickcr(this,'siu.4','','',event);" class="off"><span class="blind">업종</span></a></li>
+                     <li class="type1 lst1_5"><a href="/sise/theme.nhn" onclick="clickcr(this,'siu.5','','',event);" class="off"><span class="blind">테마</span></a></li>
+                     <li class="type1 lst1_30"><a href="/sise/sise_group.nhn?type=group" onclick="clickcr(this,'siu.30','','',event);" class="off"><span class="blind">그룹사</span></a></li>
+					 <li class="type1 lst1_27 "><a href="/sise/etf.nhn" onclick="clickcr(this,'siu.27','','',event);" class="off"><span class="blind">ETF</span></a></li>
+					 <li class="type1 lst1_34"><a href="/sise/etn.nhn" onclick="clickcr(this,'siu.34','','',event);" class="off"><span class="blind">ETN</span></a></li>
+					 <li class="type1 lst1_8 "><a href="/sise/sise_rise.nhn" onclick="clickcr(this,'siu.8','','',event);" class="off"><span class="blind">ª?Ω?</span></a></li>
+                     <li class="type1 lst1_9 "><a href="/sise/sise_steady.nhn" onclick="clickcr(this,'siu.9','','',event);" class="off"><span class="blind">보합</span></a></li>
+                     <li class="type1 lst1_10"><a href="/sise/sise_fall.nhn" onclick="clickcr(this,'siu.10','','',event);" class="off"><span class="blind">하락</span></a></li>
+                     <li class="type1 lst1_6"><a href="/sise/sise_upper.nhn" onclick="clickcr(this,'siu.6','','',event);" class="off"><span class="blind">상한가</span></a></li>
+                     <li class="type1 lst1_7"><a href="/sise/sise_lower.nhn" onclick="clickcr(this,'siu.7','','',event);" class="off"><span class="blind">하한가</span></a></li>
+                     <li class="type1 lst1_15 "><a href="/sise/sise_low_up.nhn" onclick="clickcr(this,'siu.15','','',event);" class="off"><span class="blind">급등</span></a></li>
+                     <li class="type1 lst1_14 "><a href="/sise/sise_high_down.nhn" onclick="clickcr(this,'siu.14','','',event);" class="off"><span class="blind">급락</span></a></li>
+                     <li class="type2 lst1_11"><a href="/sise/sise_quant.nhn" onclick="clickcr(this,'siu.11','','',event);" class="off"><span class="blind">거래상위</span></a></li>  
+                     <li class="type1 lst1_12 "><a href="/sise/sise_quant_high.nhn" onclick="clickcr(this,'siu.12','','',event);" class="off"><span class="blind">급증</span></a></li> 
+                     <li class="type1 lst1_13 "><a href="/sise/sise_quant_low.nhn" onclick="clickcr(this,'siu.13','','',event);" class="off"><span class="blind">급감</span></a></li>
+                     <li class="lst1_23"><a href="/sise/sise_trans_style.nhn" onclick="clickcr(this,'siu.23','','',event);" class="off"><span class="blind">투자자별매매동향</span></a></li>  
+                     <li class="type1 lst1_17"><a href="/sise/sise_deal_rank.nhn" onclick="clickcr(this,'siu.17','','',event);" class="off"><span class="blind">외국인매매</span></a></li> 
+                     <li class="type1 lst1_18"><a href="/sise/sise_deal_rank.nhn?investor_gubun=1000" onclick="clickcr(this,'siu.18','','',event);" class="off"><span class="blind">기관매매</span></a></li> 
+                     <li class="lst1_19"><a href="/sise/sise_program.nhn" onclick="clickcr(this,'siu.19','','',event);" class="off"><span class="blind">프로그램매매동향</span></a></li> 
+                     <li class="lst1_22"><a href="/sise/sise_deposit.nhn" onclick="clickcr(this,'siu.22','','',event);" class="off"><span class="blind">증시자금동향</span></a></li>
+                     <li class="lst1_21"><a href="/sise/sise_new_stock.nhn" onclick="clickcr(this,'siu.21','','',event);" class="off"><span class="blind">신규상장</span></a></li>  
+                     <li class="lst1_24 "><a href="/sise/sise_foreign_hold.nhn" onclick="clickcr(this,'siu.24','','',event);" class="off"><span class="blind">외국인보유</span></a></li> 
+                     <li class="lst1_25 "><a href="/sise/market3news_list.nhn" onclick="clickcr(this,'siu.25','','',event);" class="off"><span class="blind">장외시세</span></a></li>
+                     <li class="lst1_33 "><a href="/sise/ipo.nhn" onclick="clickcr(this,'siu.33','','',event);" class="off"><span class="blind">IPO</span></a></li>
+					</ul>
+				</li>
+				<li><strong class="lst_prevent"><span class="blind">투자자보호</span></strong>
+	                <ul class="sub">
+	                 <li class="lst1_20"><a href="/sise/management.nhn" onclick="clickcr(this,'siu.20','','',event);" class="off"><span class="blind">관리종목</span></a></li>
+	                 <li class="lst1_29"><a href="/sise/trading_halt.nhn" onclick="clickcr(this,'siu.29','','',event);" class="off"><span class="blind">거래정지종목</span></a></li> 
+	                 <li class="lst1_28"><a href="/sise/investment_alert.nhn?type=caution" onclick="clickcr(this,'siu.28','','',event);" class="off"><span class="blind">시장경보종목</span></a></li>
+	                </ul>
+            	</li>
+    			<li><strong class="lst_search"><span class="blind">종목조건검색</span></strong>
+					<ul class="sub">
+					 <li class="type1 lst2_2"><a href="/sise/item_gold.nhn" onclick="clickcr(this,'sih.2','','',event);" class="off"><span class="blind">골든크로스</span></a></li>
+					 <li class="type1 lst2_1"><a href="/sise/item_gap.nhn" onclick="clickcr(this,'sih.1','','',event);" class="off"><span class="blind">갭상승</span></a></li>
+					 <li class="type1 lst2_3"><a href="/sise/item_igyuk.nhn" onclick="clickcr(this,'sih.3','','',event);" class="off"><span class="blind">이격도과열</span></a></li>
+					 <li class="type1 lst2_4"><a href="/sise/item_overheating_1.nhn" onclick="clickcr(this,'sih.4','','',event);" class="off"><span class="blind">투심과열</span></a></li>
+					 <li class="lst2_5"><a href="/sise/item_overheating_2.nhn" onclick="clickcr(this,'sih.5','','',event);" class="off"><span class="blind">상대강도과열</span></a></li>  	                 
+					</ul>
+				</li>
+				<li><a href="/sise/report.nhn"><strong class="lst_report"><span class="blind">기업 전자공시</span></strong></a></li>
+				<li class="last"><a href="/sise/short_trade.nhn"><strong class="lst_short"><span class="blind">공매도 종합 현황</span></strong></a></li>				
+				</ul>
+								
+			</div>
+			<!-- //leftmenu -->
+			
+			<!-- //leftmenu -->
+		<div id="contentarea">
+			<!-- 컨텐츠 -->
+			<div id="contentarea_left" class="bnd_wid">
+				<!-- 로케이터 : 메뉴에 맞게 고쳐주세요 -->
+				<div class="sub_location tlt_bottom_line">
+					<a href="/">금융홈</a> &gt; <a href="/sise/">국내증시</a> &gt; <a href="#">시가총액</a>
+				</div>
+				<!-- //로케이터 -->
+
+				<h3 class="sub_tlt">시가총액<span class="tlt_page">항목을 자유롭게 변경하실 수 있습니다.&nbsp;&nbsp;<img src="https://ssl.pstatic.net/imgstock/images5/bar_C7C.gif">&nbsp;&nbsp;최대 6개까지 설정 가능합니다.</span></h3>
+			<!-- 항목선택 -->
+		
+		
+	
+
+
+ 
+ 
+ 	
+ 	
+ 
+
+
+<script language="javascript">
+function fieldSubmit() {
+	var chkcnt = 0;
+	
+	for(i = 0; i < document.field_form.fieldIds.length ; i++) {
+    	if(document.field_form.fieldIds[i].checked == true) {
+    		chkcnt++;
+    	}
+    }
+    
+    if(chkcnt > 6) {
+    	alert('최대 6개까지만 가능합니다.');
+    	return;
+    }
+
+	document.field_form.action = 'field_submit.nhn';
+	document.field_form.submit();
+}
+
+function fieldDefault() {
+	document.field_form.action = 'field_del.nhn';
+	document.field_form.submit();
+
+}
+</script>
+<!-- 항목선택 -->
+<div class="box_type_m" style="margin-top:0">
+<form name="field_form" action="field_submit.nhn">
+<input type="hidden" name="menu" value="market_sum">
+<input type="hidden" name="returnUrl" value="http://finance.naver.com/sise/sise_market_sum.nhn?sosok=0&amp;page=3">
+	<div class="subcnt_sise_item sub810"><div class="subcnt_sise_item_top sub810t">
+		<table summary="원하시는 항목을 선택하여 결과를 보실 수 있습니다." cellpadding="0" cellspacing="0" class="item_list">
+		<caption>항목 선택표</caption>
+		<colgroup><col width="62"><col width="84"><col width="111"><col width="97"><col width="116"><col width="85"></colgroup>
+		
+			<tbody><tr>
+			
+			
+
+			
+				
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option1" name="fieldIds" value="quant" checked=""> <label for="option1">거래량</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option2" name="fieldIds" value="ask_buy" checked=""> <label for="option2">매수호가</label></td>
+			
+				
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option3" name="fieldIds" value="amount" checked=""> <label for="option3">거래대금</label>(백만)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option4" name="fieldIds" value="market_sum" checked=""> <label for="option4">시가총액</label>(억)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option5" name="fieldIds" value="operating_profit" checked=""> <label for="option5">영업이익</label>(억)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option6" name="fieldIds" value="per" checked=""> <label for="option6">PER</label>(배)</td>
+			
+			</tr>
+		
+			<tr>
+			
+			
+
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option7" name="fieldIds" value="open_val" checked=""> <label for="option7">시가</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option8" name="fieldIds" value="ask_sell" checked=""> <label for="option8">매도호가</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option9" name="fieldIds" value="prev_quant" checked=""> <label for="option9">전일거래량</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option10" name="fieldIds" value="property_total" checked=""> <label for="option10">자산총계</label>(억)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option11" name="fieldIds" value="operating_profit_increasing_rate" checked=""> <label for="option11">영업이익증가율</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option12" name="fieldIds" value="roe" checked=""> <label for="option12">ROE</label>(%)</td>
+			
+			</tr>
+		
+			<tr>
+			
+			
+
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option13" name="fieldIds" value="high_val" checked=""> <label for="option13">고가</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option14" name="fieldIds" value="buy_total" checked=""> <label for="option14">매수총잔량</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option15" name="fieldIds" value="frgn_rate" checked=""> <label for="option15">외국인비율</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option16" name="fieldIds" value="debt_total" checked=""> <label for="option16">부채총계</label>(억)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option17" name="fieldIds" value="net_income" checked=""> <label for="option17">당기순이익</label>(억)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option18" name="fieldIds" value="roa" checked=""> <label for="option18">ROA</label>(%)</td>
+			
+			</tr>
+		
+			<tr>
+			
+			
+
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option19" name="fieldIds" value="low_val" checked=""> <label for="option19">저가</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option20" name="fieldIds" value="sell_total" checked=""> <label for="option20">매도총잔량</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option21" name="fieldIds" value="listed_stock_cnt" checked=""> <label for="option21">상장주식수</label>(천주)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option22" name="fieldIds" value="sales" checked=""> <label for="option22">매출액</label>(억)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option23" name="fieldIds" value="eps" checked=""> <label for="option23">주당순이익</label>(원)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option24" name="fieldIds" value="pbr" checked=""> <label for="option24">PBR</label>(배)</td>
+			
+			</tr>
+		
+			<tr>
+			
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option25" name="fieldIds" value="sales_increasing_rate" checked=""> <label for="option25">매출액증가율</label></td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				<td class="choice"><input type="checkbox" id="option26" name="fieldIds" value="dividend" checked=""> <label for="option26">보통주배당금</label>(원)</td>
+			
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						
+					
+				
+				<td class="choice"><input type="checkbox" id="option27" name="fieldIds" value="reserve_ratio" checked=""> <label for="option27">유보율</label>(%)</td>
+			
+			</tr>
+		
+		</tbody></table>
+		<div class="item_btn">
+			<a href="javascript:fieldSubmit()"><img src="https://ssl.pstatic.net/imgstock/images5/btn_apply.gif" alt="적용하기" width="55" height="18"></a><a href="javascript:fieldDefault()"><img src="https://ssl.pstatic.net/imgstock/images5/btn_initialize.gif" alt="초기항 목으로" width="76" height="18"></a>
+		</div>
+	</div></div>
+</form></div>
+
+<!-- //항목선택 끝 -->
+
+			<!-- //항목선택 끝 -->
+			</div>
+			<!--  right area -->
+			<div id="contentarea_right">
+				
+
+
+	
+
+	
+		<script>document.domain='naver.com';</script>
+	
+
+			</div>
+
+			<!-- 종목 -->
+			<div class="box_type_l">
+				<div class="tab_style_1">
+
+	
+	
+	
+					<div class="tab_smeun choice"><div class="choice_lt"></div>코스피</div>
+					<div class="tab_smeun"><a href="?sosok=1">코스닥</a></div>
+	
+
+				</div>
+				
+				<!-- [D] 활성화된 탭메뉴에 따라 blind text 변경해주세요 -->
+
+	
+	
+				<h4 class="blind">코스피</h4>
+				<table summary="코스피 시세정보를 선택한 항목에 따라 정보를 제공합니다." cellpadding="0" cellspacing="0" class="type_2">
+				<caption>코스피</caption>
+	
+
+
+				<colgroup>
+				<col width="2%">
+				<col width="*">
+				<col width="7%">
+				<col width="9%">
+				<col width="7%">
+				<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+					<col width="8%">
+	
+				<col width="6%">
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">N</th>
+					<th scope="col">종목명</th>
+					<th scope="col">현재가</th>
+					<th scope="col" class="tr" style="padding-right:8px">전일비</th>
+					<th scope="col">등락률</th>
+					<th scope="col">액면가</th>
+	
+					<th scope="col">거래량</th>
+	
+					<th scope="col">거래대금</th>
+	
+					<th scope="col">전일거래량</th>
+	
+					<th scope="col">시가</th>
+	
+					<th scope="col">고가</th>
+	
+					<th scope="col">저가</th>
+	
+					<th scope="col">매수호가</th>
+	
+					<th scope="col">매도호가</th>
+	
+					<th scope="col">매수총잔량</th>
+	
+					<th scope="col">매도총잔량</th>
+	
+					<th scope="col">상장주식수</th>
+	
+					<th scope="col">시가총액</th>
+	
+					<th scope="col">매출액</th>
+	
+					<th scope="col">자산총계</th>
+	
+					<th scope="col">부채총계</th>
+	
+					<th scope="col">영업이익</th>
+	
+					<th scope="col">당기순이익</th>
+	
+					<th scope="col">주당순이익</th>
+	
+					<th scope="col">보통주배당금</th>
+	
+					<th scope="col">매출액증가율</th>
+	
+					<th scope="col">영업이익증가율</th>
+	
+					<th scope="col">외국인비율</th>
+	
+					<th scope="col">PER</th>
+	
+					<th scope="col">ROE</th>
+	
+					<th scope="col">ROA</th>
+	
+					<th scope="col">PBR</th>
+	
+					<th scope="col">유보율</th>
+	
+					<th scope="col">토론실</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr><td colspan="10" class="blank_08"></td></tr>
+				
+				
+					
+					
+				
+				
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">101</td>
+					<td><a href="/item/main.nhn?code=000210" class="tltle">대림산업</a></td>
+					<td class="number">83,000</td>
+					<td class="number">
+				<span class="tah p11">0</span>
+			</td>
+					<td class="number">
+				<span class="tah p11">0.00%</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">34,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,884</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">97,001</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">134,452</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">67,085</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,301</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,103</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,894</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,300</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-11.69</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">33.69</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32.33</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.39</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.74</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.41</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.49</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,685.8</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=000210"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">102</td>
+					<td><a href="/item/main.nhn?code=307950" class="tltle">현대오토에버</a></td>
+					<td class="number">137,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				1,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-0.72%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">283,580</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">38,563</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">634,892</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">135,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">140,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">131,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">137,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">138,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,436</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30,675</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,875</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,718</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,267</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,117</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">802</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">569</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,737</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">710</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10.31</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14.30</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.63</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">50.24</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.71</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.13</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.38</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,783.7</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=307950"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">103</td>
+					<td><a href="/item/main.nhn?code=036460" class="tltle">한국가스공사</a></td>
+					<td class="number">31,050</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				250
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+0.81%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">474,310</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,631</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">532,969</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">31,250</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">31,050</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">31,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">54,901</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">65,534</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">92,313</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,663</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">249,826</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">393,119</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">311,653</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,345</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">583</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-5,436</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">380</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-4.59</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.52</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.70</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-5.71</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.48</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.15</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.36</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,606.7</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=036460"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">104</td>
+					<td><a href="/item/main.nhn?code=001040" class="tltle">CJ</a></td>
+					<td class="number">94,000</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,900
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.06%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">230,472</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,391</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">173,838</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">92,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">94,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">90,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">94,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">94,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,594</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,534</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,177</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,426</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">337,797</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">403,814</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">257,663</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,092</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,238</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,020</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,850</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14.42</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13.26</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19.81</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15.61</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.24</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.90</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.66</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,528.0</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=001040"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">105</td>
+					<td><a href="/item/main.nhn?code=081660" class="tltle">휠라홀딩스</a></td>
+					<td class="number">44,700</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,850
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+4.32%
+				</span>
+			</td>
+					<td class="number">1,000</td>
+	
+		
+			
+			
+			
+									<td class="number">662,932</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,235</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">482,493</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">42,750</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">44,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">42,750</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">44,650</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">44,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,586</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">33,590</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">60,752</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,156</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">34,504</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">37,702</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19,693</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,707</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,381</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,966</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">219</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16.78</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">31.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">47.26</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15.07</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23.81</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9.56</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.95</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,959.9</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=081660"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">106</td>
+					<td><a href="/item/main.nhn?code=028050" class="tltle">삼성엔지니어링</a></td>
+					<td class="number">13,850</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				350
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.59%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">4,835,564</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">66,892</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,490,548</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,850</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">525,605</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,006,417</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">196,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,146</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">63,680</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">45,452</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32,424</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,855</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,956</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,303</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16.21</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">87.05</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25.04</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10.63</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24.62</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.44</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.74</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">51.9</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=028050"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">107</td>
+					<td><a href="/item/main.nhn?code=007070" class="tltle">GS리테일</a></td>
+					<td class="number">35,200</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				800
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.33%
+				</span>
+			</td>
+					<td class="number">1,000</td>
+	
+		
+			
+			
+			
+									<td class="number">614,249</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,467</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">320,189</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">34,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">35,250</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">34,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">35,150</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">35,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">41,968</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">47,249</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">77,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,104</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">90,069</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">70,548</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">45,040</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,388</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,436</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,194</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">750</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.63</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32.50</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14.11</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16.04</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.25</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.36</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.19</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,737.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=007070"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">108</td>
+					<td><a href="/item/main.nhn?code=047810" class="tltle">한국항공우주</a></td>
+					<td class="number">27,800</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				900
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+3.35%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">1,446,997</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">39,419</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,568,992</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">26,950</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">26,550</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,850</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">70,821</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">106,635</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">97,475</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,098</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">31,102</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">43,671</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">31,840</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,756</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,683</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,358</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.63</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">88.25</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14.12</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20.47</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15.84</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.14</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.19</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">138.8</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=047810"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">109</td>
+					<td><a href="/item/main.nhn?code=185750" class="tltle">종근당</a></td>
+					<td class="number">232,000</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				500
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-0.22%
+				</span>
+			</td>
+					<td class="number">2,500</td>
+	
+		
+			
+			
+			
+									<td class="number">636,439</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">149,731</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">249,441</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">230,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">248,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">224,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">232,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">232,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,020</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12,462</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,886</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,255</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,793</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,014</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,264</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">746</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">530</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,429</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">817</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12.88</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1.54</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13.48</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27.52</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.94</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.00</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.84</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,766.6</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=185750"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">110</td>
+					<td><a href="/item/main.nhn?code=008560" class="tltle">메리츠증권</a></td>
+					<td class="number">3,710</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				95
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.63%
+				</span>
+			</td>
+					<td class="number">1,000</td>
+	
+		
+			
+			
+			
+									<td class="number">4,464,722</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,215</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,662,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,710</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,575</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,705</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,710</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">198,255</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">239,541</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">675,962</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,078</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">119,126</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">381,099</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">340,907</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,799</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,546</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">799</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">36.31</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27.73</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12.60</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.64</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15.06</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.59</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.60</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">461.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=008560"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">111</td>
+					<td><a href="/item/main.nhn?code=009240" class="tltle">한샘</a></td>
+					<td class="number">106,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+0.95%
+				</span>
+			</td>
+					<td class="number">1,000</td>
+	
+		
+			
+			
+			
+									<td class="number">138,757</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,688</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">89,715</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">105,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">107,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">104,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">106,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">107,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,535</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,096</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,534</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,064</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,984</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12,026</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,893</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">558</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">427</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,848</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-11.93</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-0.47</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23.35</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">37.39</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.32</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.99</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.13</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,113.3</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=009240"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">112</td>
+					<td><a href="/item/main.nhn?code=006260" class="tltle">LS</a></td>
+					<td class="number">76,000</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				3,500
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+4.83%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">487,590</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">36,168</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">309,673</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">72,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">76,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">71,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">75,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">76,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,465</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,248</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,472</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">101,762</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">107,635</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">64,922</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,520</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">928</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-72</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,450</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.83</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-31.67</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.85</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1,055.56</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.87</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.65</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,934.4</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=006260"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">113</td>
+					<td><a href="/item/main.nhn?code=020150" class="tltle">일진머티리얼즈</a></td>
+					<td class="number">53,000</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				500
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+0.95%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">608,978</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">31,924</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">802,979</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">52,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53,600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">51,600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">52,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,996</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">78,192</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">46,111</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,439</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,502</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,369</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,127</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">469</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">468</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">964</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">50</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9.60</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-3.84</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.97</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">54.98</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.52</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.42</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.02</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,340.2</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=020150"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">114</td>
+					<td><a href="/item/main.nhn?code=047040" class="tltle">대우건설</a></td>
+					<td class="number">5,790</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				640
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+12.43%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">63,291,018</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">370,211</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9,249,864</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,250</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,230</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,780</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,790</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">383,845</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">335,451</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">415,623</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,065</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">86,519</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">96,977</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">72,094</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,641</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,012</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">463</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-18.42</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-42.10</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.35</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12.51</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.18</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.90</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">35.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=047040"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">115</td>
+					<td><a href="/item/main.nhn?code=010060" class="tltle">OCI</a></td>
+					<td class="number">99,800</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,300
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+1.32%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">535,537</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53,188</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">787,830</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">97,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">102,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">95,600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">99,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">99,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,351</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">66,454</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,849</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,802</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">26,051</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">48,112</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,255</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1,806</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-8,074</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-30,950</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-16.29</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-213.82</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20.11</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-3.22</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-26.20</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-15.42</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.93</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,956.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=010060"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">116</td>
+					<td><a href="/item/main.nhn?code=064350" class="tltle">현대로템</a></td>
+					<td class="number">21,650</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				2,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+10.18%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">52,011,043</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,154,668</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,091,762</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,250</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,250</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,650</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">314,983</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">349,208</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">109,142</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,629</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,593</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">40,843</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32,014</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-2,799</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-3,557</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1,761</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.97</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-42.70</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.59</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-12.29</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-37.93</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-8.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.75</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">59.3</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=064350"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">117</td>
+					<td><a href="/item/main.nhn?code=004170" class="tltle">신세계</a></td>
+					<td class="number">239,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+0.42%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">106,892</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,362</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">111,422</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">237,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">240,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">235,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">239,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">239,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">35,750</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,985</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9,845</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,579</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">63,942</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">130,185</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">75,034</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,678</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,931</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-31,123</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23.31</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17.73</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24.91</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-7.70</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14.24</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.92</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.70</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,741.2</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=004170"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">118</td>
+					<td><a href="/item/main.nhn?code=005250" class="tltle">녹십자홀딩스</a></td>
+					<td class="number">49,550</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				4,050
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-7.56%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">6,411,379</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">320,215</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,193,118</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">50,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">47,600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">49,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">49,550</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30,027</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19,521</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">47,028</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,302</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,248</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,739</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12,673</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">304</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-305</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,058</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">325</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1.54</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-38.42</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.48</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">46.83</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.37</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1.13</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.84</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,024.6</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=005250"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">119</td>
+					<td><a href="/item/main.nhn?code=030000" class="tltle">제일기획</a></td>
+					<td class="number">20,250</td>
+					<td class="number">
+				<span class="tah p11">0</span>
+			</td>
+					<td class="number">
+				<span class="tah p11">0.00%</span>
+			</td>
+					<td class="number">200</td>
+	
+		
+			
+			
+			
+									<td class="number">550,054</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,116</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">455,072</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,250</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,300</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">137,855</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">62,247</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">115,041</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,296</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">34,217</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,528</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12,960</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,058</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,395</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,180</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">820</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1.62</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13.65</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32.32</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17.16</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15.09</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.30</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.13</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,735.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=030000"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">120</td>
+					<td><a href="/item/main.nhn?code=000080" class="tltle">하이트진로</a></td>
+					<td class="number">33,200</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,200
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+3.75%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">1,244,820</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">40,883</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">462,233</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32,050</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">33,350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">33,150</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">33,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">39,105</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">72,526</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">70,134</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,284</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,351</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32,709</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,377</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">882</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-424</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,058</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.93</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-2.43</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.90</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">31.38</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-3.86</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1.27</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.13</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">202.8</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=000080"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">121</td>
+					<td><a href="/item/main.nhn?code=282330" class="tltle">BGF리테일</a></td>
+					<td class="number">134,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				2,500
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+1.89%
+				</span>
+			</td>
+					<td class="number">1,000</td>
+	
+		
+			
+			
+			
+									<td class="number">45,925</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,103</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">47,745</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">132,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">135,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">131,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">134,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">134,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,290</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,126</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,284</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,247</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">59,461</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,724</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,498</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,966</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,514</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,570</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.95</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.75</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30.83</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17.77</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">26.46</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.28</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.46</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,372.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=282330"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">122</td>
+					<td><a href="/item/main.nhn?code=014680" class="tltle">한솔케미칼</a></td>
+					<td class="number">198,000</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+0.51%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">96,937</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">136,189</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">195,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">198,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">191,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">197,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">198,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,246</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,023</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,295</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,364</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,876</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9,392</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,186</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,114</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">910</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,393</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.97</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19.05</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">38.33</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19.05</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20.88</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10.52</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.06</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">712.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=014680"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">123</td>
+					<td><a href="/item/main.nhn?code=005385" class="tltle">현대차우</a></td>
+					<td class="number">91,300</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				400
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-0.44%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">204,350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,635</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">371,184</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">91,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">93,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">89,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">91,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">91,300</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,862</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12,742</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,357</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,238</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,185</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53.57</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21.82</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.34</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=005385"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">124</td>
+					<td><a href="/item/main.nhn?code=000990" class="tltle">DB하이텍</a></td>
+					<td class="number">49,900</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				1,200
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-2.35%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">2,394,591</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">118,760</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,271,924</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">50,300</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">51,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">48,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">49,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">49,950</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53,197</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">47,985</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">44,399</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,155</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,074</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,889</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,442</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,813</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,046</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,706</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20.64</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">60.45</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27.47</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13.46</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17.40</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9.71</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.77</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">226.3</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=000990"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">125</td>
+					<td><a href="/item/main.nhn?code=000880" class="tltle">한화</a></td>
+					<td class="number">29,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				150
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+0.51%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">863,651</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,378</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,120,170</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,850</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,550</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,898</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">94,787</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">74,959</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,113</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">504,124</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,822,862</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,640,222</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,257</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,311</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,454</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.43</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-37.67</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19.56</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12.02</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.09</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.13</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.54</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">834.8</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=000880"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">126</td>
+					<td><a href="/item/main.nhn?code=069620" class="tltle">대웅제약</a></td>
+					<td class="number">190,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				18,500
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+10.76%
+				</span>
+			</td>
+					<td class="number">2,500</td>
+	
+		
+			
+			
+			
+									<td class="number">2,884,670</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">541,680</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">787,288</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">175,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">207,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">158,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">190,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">190,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,539</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,243</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,587</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,072</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,134</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12,457</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,097</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">447</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">289</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-143</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.95</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">61.93</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.84</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1,332.17</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.34</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.35</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.87</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,871.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=069620"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">127</td>
+					<td><a href="/item/main.nhn?code=088350" class="tltle">한화생명</a></td>
+					<td class="number">2,490</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				150
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+6.41%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">10,253,779</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,525</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,562,131</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,325</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,515</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,280</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,485</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,490</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">181,160</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">583,085</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">868,530</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,626</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">249,785</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,418,501</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,278,568</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">494</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">587</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">263</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.61</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-92.40</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.39</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9.47</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.51</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.04</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.14</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">243.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=088350"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">128</td>
+					<td><a href="/item/main.nhn?code=010620" class="tltle">현대미포조선</a></td>
+					<td class="number">53,800</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				5,550
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+11.50%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">2,115,395</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">112,624</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">481,406</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">48,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">58,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">48,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,698</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30,019</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">39,942</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,489</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,941</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">33,806</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,267</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">926</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">612</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,162</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24.60</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30.64</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13.08</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">46.30</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.31</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.79</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.91</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">964.4</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=010620"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">129</td>
+					<td><a href="/item/main.nhn?code=007310" class="tltle">오뚜기</a></td>
+					<td class="number">573,000</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				6,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+1.06%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">7,573</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,323</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,814</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">576,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">576,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">568,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">572,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">573,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,491</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,565</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,672</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,040</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,597</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,521</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,056</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,483</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">998</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,596</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.02</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-2.27</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15.99</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19.36</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.79</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.73</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.43</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,116.4</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=007310"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">130</td>
+					<td><a href="/item/main.nhn?code=153130" class="tltle">KODEX 단기채권</a></td>
+					<td class="number">102,635</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				10
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-0.01%
+				</span>
+			</td>
+					<td class="number">0</td>
+	
+		
+			
+			
+			
+									<td class="number">27,445</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,816</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">49,503</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">102,630</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">102,635</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">102,620</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">102,630</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">102,635</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">61,864</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">36,164</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,428</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,966</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.94</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=153130"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">131</td>
+					<td><a href="/item/main.nhn?code=001450" class="tltle">현대해상</a></td>
+					<td class="number">22,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				100
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+0.45%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">510,850</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,372</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">397,341</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,550</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,450</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">96,430</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">35,005</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">89,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20,115</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">168,459</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">463,938</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">418,834</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,953</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,691</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,075</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">880</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.98</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-25.90</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">37.41</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.52</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.23</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.60</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.36</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,074.3</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=001450"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">132</td>
+					<td><a href="/item/main.nhn?code=009420" class="tltle">한올바이오파마</a></td>
+					<td class="number">38,250</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				700
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+1.86%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">676,464</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,267</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">507,568</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">37,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">38,250</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">36,600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">38,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">38,250</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,796</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,590</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">52,241</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19,982</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,085</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,914</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">510</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">171</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">192</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">377</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18.09</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">212.21</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.79</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">101.46</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14.90</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10.84</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.64</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">418.2</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=009420"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">133</td>
+					<td><a href="/item/main.nhn?code=010120" class="tltle">LS ELECTRIC</a></td>
+					<td class="number">66,000</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+1.54%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">266,628</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,396</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">300,165</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">65,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">66,300</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">63,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">65,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">66,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,649</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9,782</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,468</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,381</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11,755</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,685</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,030</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,595</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-5.56</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-17.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14.28</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25.43</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.82</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.17</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.39</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">831.7</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=010120"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">134</td>
+					<td><a href="/item/main.nhn?code=009900" class="tltle">명신산업</a></td>
+					<td class="number">48,300</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				100
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-0.21%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">4,592,308</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">225,173</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,184,952</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">50,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">52,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">45,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">48,300</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">48,350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,845</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,732</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">40,779</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19,696</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,757</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,658</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,864</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">596</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">338</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">125.38</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">326.82</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.04</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">53.84</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10.41</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">799.8</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=009900"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">135</td>
+					<td><a href="/item/main.nhn?code=272210" class="tltle">한화시스템</a></td>
+					<td class="number">17,800</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				350
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.01%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">2,081,709</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">37,372</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,256,480</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,450</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,450</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,850</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">130,818</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">134,779</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">110,230</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19,621</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,460</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,092</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,408</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">858</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">729</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">706</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">310</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">36.94</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">91.51</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.45</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25.21</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.15</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.38</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.98</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">76.0</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=272210"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">136</td>
+					<td><a href="/item/main.nhn?code=011210" class="tltle">현대위아</a></td>
+					<td class="number">71,700</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				2,200
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+3.17%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">3,977,898</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">284,540</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,951,540</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">71,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">74,400</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">69,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">71,600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">71,700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,543</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">56,303</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,195</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19,499</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">73,146</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">67,743</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">36,825</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,019</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">552</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,628</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-7.18</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,926.12</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.81</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15.49</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.60</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,243.1</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=011210"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">137</td>
+					<td><a href="/item/main.nhn?code=252670" class="tltle">KODEX 200선물인버스2X</a></td>
+					<td class="number">2,315</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				65
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-2.73%
+				</span>
+			</td>
+					<td class="number">0</td>
+	
+		
+			
+			
+			
+									<td class="number">204,410,548</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">487,058</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">178,030,291</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,415</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,425</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,315</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,310</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,315</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,180,189</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,372,315</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">806,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,661</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.88</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=252670"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">138</td>
+					<td><a href="/item/main.nhn?code=047050" class="tltle">포스코인터내셔널</a></td>
+					<td class="number">15,100</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				550
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+3.78%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">1,066,495</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,842</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">664,410</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,550</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,150</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">90,070</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">128,604</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">123,375</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,630</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">244,226</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">89,594</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">59,114</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,053</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,024</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,813</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-2.99</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28.08</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.83</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.33</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.06</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.15</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.58</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">391.5</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=047050"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">139</td>
+					<td><a href="/item/main.nhn?code=294870" class="tltle">HDC현대산업개발</a></td>
+					<td class="number">28,050</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,750
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+6.65%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">3,727,961</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">102,762</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,071,873</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">26,050</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,350</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,950</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,050</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">71,258</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">168,924</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">65,907</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,487</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">42,165</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">44,096</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,778</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,515</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,137</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,030</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">438</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">50.98</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">73.46</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9.67</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.96</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20.30</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8.92</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.70</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">916.9</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=294870"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">140</td>
+					<td><a href="/item/main.nhn?code=003000" class="tltle">부광약품</a></td>
+					<td class="number">28,450</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				500
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-1.73%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">1,832,282</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">52,117</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,294,656</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,450</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">29,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,550</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,450</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">112,797</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">41,425</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">64,838</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,446</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,682</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,885</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">620</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">95</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-74</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">196</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-13.40</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-72.85</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.89</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,225.00</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-2.00</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-1.69</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.07</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,062.9</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=003000"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">141</td>
+					<td><a href="/item/main.nhn?code=004370" class="tltle">농심</a></td>
+					<td class="number">301,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				5,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+1.69%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">72,051</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,546</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">65,656</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">297,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">301,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">296,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">301,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">302,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,262</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,211</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,083</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,339</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,439</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">26,530</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,123</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">788</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">711</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">22,289</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.81</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-11.00</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18.18</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13.53</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.72</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.74</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.86</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,572.0</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=004370"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">142</td>
+					<td><a href="/item/main.nhn?code=138930" class="tltle">BNK금융지주</a></td>
+					<td class="number">5,580</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				20
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+0.36%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">2,744,725</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,159</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,067,437</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,510</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,590</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,480</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,570</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,580</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">383,013</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">269,154</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">325,935</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,187</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">52,795</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,045,388</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">953,576</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,069</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,989</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,474</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">360</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.55</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.61</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">36.79</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.79</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7.07</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.59</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.21</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">463.4</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=138930"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">143</td>
+					<td><a href="/item/main.nhn?code=002380" class="tltle">KCC</a></td>
+					<td class="number">204,500</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				5,500
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.76%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">83,996</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,118</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">76,218</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">199,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">207,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">199,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">204,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">204,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9,240</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,955</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,886</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,173</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,196</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">93,822</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">49,290</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,332</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-2,219</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-315</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5,500</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-11.73</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-33.68</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.57</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-649.21</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-4.37</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-2.42</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.38</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9,923.4</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=002380"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">144</td>
+					<td><a href="/item/main.nhn?code=310970" class="tltle">TIGER MSCI Korea TR</a></td>
+					<td class="number">16,645</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				175
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+1.06%
+				</span>
+			</td>
+					<td class="number">0</td>
+	
+		
+			
+			
+			
+									<td class="number">423,224</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,963</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">178,829</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,340</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,655</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,340</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,645</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,715</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,835</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,413</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">107,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,827</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.00</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=310970"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">145</td>
+					<td><a href="/item/main.nhn?code=278540" class="tltle">KODEX MSCI Korea TR</a></td>
+					<td class="number">13,295</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				195
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+1.49%
+				</span>
+			</td>
+					<td class="number">0</td>
+	
+		
+			
+			
+			
+									<td class="number">340,125</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,446</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">344,891</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,010</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,295</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12,955</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,255</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,295</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">19,927</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,373</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">133,300</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,722</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9.64</td>
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+		
+			
+			
+					<td class="number">N/A</td>
+			
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=278540"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+				<tr><td colspan="13" class="blank_06"></td></tr>
+				<tr><td colspan="13" class="division_line"></td></tr>
+				<tr><td colspan="13" class="blank_08"></td></tr>
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">146</td>
+					<td><a href="/item/main.nhn?code=042670" class="tltle">두산인프라코어</a></td>
+					<td class="number">8,120</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				210
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.65%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">2,974,006</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,008</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,631,830</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,910</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,180</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">7,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,110</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,120</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">111,085</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">222,297</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">215,913</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,532</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">81,858</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">113,386</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">70,710</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">8,404</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,957</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">775</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.90</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-0.91</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.70</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10.48</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">11.59</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.54</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.70</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">135.7</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=042670"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">147</td>
+					<td><a href="/item/main.nhn?code=010780" class="tltle">아이에스동서</a></td>
+					<td class="number">56,200</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				1,600
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.93%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">183,637</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,209</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">172,077</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">55,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">56,300</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">54,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">56,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">56,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9,956</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,587</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">30,893</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,362</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9,641</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,838</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,102</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">662</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">743</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,148</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">700</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-39.62</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-82.58</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.36</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13.55</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6.10</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2.93</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.46</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">6,959.6</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=010780"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">148</td>
+					<td><a href="/item/main.nhn?code=069960" class="tltle">현대백화점</a></td>
+					<td class="number">74,000</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				2,000
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.78%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">379,003</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">27,735</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">292,873</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">72,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">74,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">72,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">73,900</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">74,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">28,676</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">32,297</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,402</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,318</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">21,989</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">76,231</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">26,438</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,922</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,430</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,881</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,000</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18.08</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-18.06</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13.73</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15.16</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.64</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3.33</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.38</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,641.1</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=069960"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">149</td>
+					<td><a href="/item/main.nhn?code=017800" class="tltle">현대엘리베이</a></td>
+					<td class="number">41,800</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_up.gif" width="7" height="6" style="margin-right:4px;" alt="상승"><span class="tah p11 red02">
+				900
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 red01">
+				+2.20%
+				</span>
+			</td>
+					<td class="number">5,000</td>
+	
+		
+			
+			
+			
+									<td class="number">858,589</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">35,904</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">510,789</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">40,650</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">42,650</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">40,600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">41,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">41,850</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">23,547</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">24,748</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">40,815</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">17,061</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18,725</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25,477</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">15,996</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1,362</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">436</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">2,233</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">600</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-0.25</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">-4.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">25.09</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">18.72</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">5.22</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.77</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.73</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">596.0</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=017800"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+	
+
+
+				<tr onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<td class="no">150</td>
+					<td><a href="/item/main.nhn?code=000060" class="tltle">메리츠화재</a></td>
+					<td class="number">14,050</td>
+					<td class="number">
+				<img src="https://ssl.pstatic.net/imgstock/images/images4/ico_down.gif" width="7" height="6" style="margin-right:4px;" alt="하락"><span class="tah p11 nv01">
+				200
+				</span>
+			</td>
+					<td class="number">
+				<span class="tah p11 nv01">
+				-1.40%
+				</span>
+			</td>
+					<td class="number">500</td>
+	
+		
+			
+			
+			
+									<td class="number">749,629</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">10,439</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">876,899</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,200</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">13,800</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,050</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">14,100</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">222,936</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">43,006</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">120,625</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">16,948</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">101,180</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">232,157</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">207,751</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,528</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,013</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">3,410</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">850</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">20.19</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">9.87</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4.12</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">12.80</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">1.38</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">0.57</td>
+			
+		
+	
+		
+			
+			
+			
+									<td class="number">4,269.4</td>
+			
+		
+	
+					<td class="center"><a href="/item/board.nhn?code=000060"><img src="https://ssl.pstatic.net/imgstock/images5/ico_debatebl2.gif" width="15" height="13" alt="토론실"></a></td>
+				</tr>
+			
+	
+		
+		
+				<tr><td colspan="13" class="blank_09"></td></tr>
+				<tr><td colspan="13" class="division_line_1"></td></tr>
+				<tr><td colspan="13" class="blank_09"></td></tr>
+		
+	
+
+
+
+				</tbody>
+				</table>
+				<table summary="페이지 네비게이션 리스트" class="Nnavi" align="center">
+				<caption>페이지 네비게이션</caption>
+				<tbody><tr>		
+					
+					<td class="pgLL">
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=1">
+				<img src="https://ssl.pstatic.net/static/n/cmn/bu_pgarLL.gif" width="7" height="5" alt="">맨앞
+				</a>
+				</td>
+
+					
+					<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=1">1</a>
+				</td>
+<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=2">2</a>
+				</td>
+<td class="on">
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=3">3</a>
+				</td>
+<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=4">4</a>
+				</td>
+<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=5">5</a>
+				</td>
+<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=6">6</a>
+				</td>
+<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=7">7</a>
+				</td>
+<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=8">8</a>
+				</td>
+<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=9">9</a>
+				</td>
+<td>
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=10">10</a>
+				</td>
+
+					<td class="pgR">
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=11">
+				다음<img src="https://ssl.pstatic.net/static/n/cmn/bu_pgarR.gif" width="3" height="5" alt="" border="0">
+				</a>
+				</td>
+
+					<td class="pgRR">
+				<a href="/sise/sise_market_sum.nhn?sosok=0&amp;page=32">맨뒤
+				<img src="https://ssl.pstatic.net/static/n/cmn/bu_pgarRR.gif" width="8" height="5" alt="" border="0">
+				</a>
+				</td>
+
+					
+				</tr>
+				</tbody></table>
+			</div>
+			<!-- // 종목 -->
+			<!-- //컨텐츠 -->
+		</div>
+	</div>
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	<div id="footer">
+		<ul>
+			<li class="first">
+				<a href="https://www.naver.com/rules/service.html" onclick="clickcr(this, 'fot.service', '', '', event);" target="_blank">이용약관</a>
+			</li>
+			<li>
+				<a href="https://finance.naver.com/rules.nhn" onclick="clickcr(this, 'fot.policy', '', '', event);" target="_blank">금융게시판 운영원칙</a>
+			</li>
+			<li>
+				<a href="https://www.naver.com/rules/privacy.html" onclick="clickcr(this, 'fot.privacy', '', '', event);" target="_blank"><strong>개인정보처리방침</strong></a>
+			</li>
+			<li>
+				<a href="https://www.naver.com/rules/disclaimer.html" onclick="clickcr(this, 'fot.limit', '', '', event);" target="_blank">책임의 한계와 법적고지</a>
+			</li>
+			<li>
+				<a href="https://help.naver.com/support/alias/contents2/finance/finance_1.naver" onclick="clickcr(this, 'fot.help', '', '', event);" target="_blank">금융 고객센터</a>
+			</li>
+		</ul>
+		<p class="desc">네이버(주)가 제공하는 금융 정보는 각 콘텐츠 제공업체<a href="javascript:;" onclick="togglePanelFooter('footerPanel0');" class="desc_help"><img src="https://ssl.pstatic.net/static/nfinance/2018/06/29/btn_help.png" width="17" height="17" alt="제공업체 상세설명"></a>로부터 받는 투자 참고사항이며, 오류가 발생하거나 지연될 수 있습니다.<br>네이버(주)와 콘텐츠 제공업체는 제공된 정보에 의한 투자 결과에 법적인 책임을 지지 않습니다. 게시된 정보는 무단으로 배포할 수 없습니다.</p>
+		<div id="footerPanel0" class="provider_layer" style="display:none" tabindex="0" onblur="hidePannel('footerPanel0')">
+			<strong class="provider_layer__tit">컨텐츠 제공업체</strong>
+			<div class="provider_layer__txt">
+				<p><span>코스콤 : </span>실시간 주가정보 및 국내시세정보</p>
+				<p><span>에프앤가이드 : </span>기업 및 재무정보</p>
+				<p><span>이데일리 : </span>해외 시세 및 시장지표 정보</p>
+				<p><span>제로인 : </span>펀드정보</p>
+				<p><span>한국예탁결제원 : </span>주주총회일 및 전자투표 정보</p>
+			</div>
+			<span class="arrow"></span>
+		</div>
+		<address>
+			<a href="https://www.navercorp.com/" target="_blank" class="logo" onclick="clickcr(this, 'fot.nhn', '', '', event);"><img src="https://ssl.pstatic.net/static/nfinance/2019/02/22/ci_naver.png" width="58" height="11" alt="NAVER"></a>
+			<em>Copyright ©</em>
+			<a href="https://www.navercorp.com/" target="_blank" onclick="clickcr(this, 'fot.nhn', '', '', event);">NAVER Corp.</a>
+			<span>All Rights Reserved.</span>
+		</address>
+		
+		
+		
+	</div>
+
+
+
+<script type="text/javascript">
+function isVisible(obj) {
+    if (obj == document) return true
+ 
+    if (!obj) return false
+    if (!obj.parentNode) return false
+    if (obj.style) {
+        if (obj.style.display == 'none') return false
+        if (obj.style.visibility == 'hidden') return false
+    }
+ 
+    if (window.getComputedStyle) {
+        var style = window.getComputedStyle(obj, "")
+        if (style.display == 'none') return false
+        if (style.visibility == 'hidden') return false
+    }
+ 
+    var style = obj.currentStyle
+    if (style) {
+        if (style['display'] == 'none') return false
+        if (style['visibility'] == 'hidden') return false
+    }
+ 
+    return isVisible(obj.parentNode)
+}
+
+function isChildOf(myobj, containerObj) {
+	while(myobj != undefined) {
+		if (myobj == document.body) {
+			break;
+		} 
+		if (myobj == containerObj) {
+			return true;
+		}
+		myobj = myobj.parentElement;
+	}
+	return false;	
+}
+
+function gnbLayerClose(e){
+	var target = e.target ? e.target : e.srcElement;
+	if (isVisible(document.getElementById('gnb_service_lyr')) || isVisible(document.getElementById('gnb_notice_lyr')) ||isVisible(document.getElementById('gnb_my_lyr')) ) {
+		if (!isChildOf(target, document.getElementById('gnb'))) {
+			gnbAllLayerClose();
+		}
+	}	
+}
+
+var isIE = (navigator.userAgent.toLowerCase().indexOf("msie")!=-1 && window.document.all) ? true:false;
+if (isIE) {
+	document.attachEvent('onmousedown', gnbLayerClose);
+} else {
+	window.addEventListener('mousedown', gnbLayerClose);
+}
+
+function showPannel(layerId){
+    var layer = jindo.$(layerId);
+    layer.style.display='block';
+
+    if (layerId == "summary_lyr") {
+        var layerHeight = jindo.$Element(layer).height();
+        jindo.$Element("summary_ifr").height(layerHeight);
+    }
+}
+
+function hidePannel(layerId){
+    var layer = jindo.$(layerId);
+    layer.style.display='none';
+}
+
+function togglePanelFooter(layerId) {
+    var elTargetLayer = jindo.$Element(jindo.$$.getSingle("#" + layerId));
+
+    if (elTargetLayer != null) {
+        if (elTargetLayer.visible()) {
+            hidePannel(layerId);
+        } else {
+            showPannel(layerId);
+        }
+    }
+}
+
+// add data-useragent
+document.documentElement.setAttribute('data-useragent',navigator.userAgent);
+</script>
+</div>
+
+

@@ -19,22 +19,44 @@ window.laod.cnt = 1;
 window.themeUrlArr = {};
 window.themeUrlObj = {};
 window.themeListMaxPage = 0
+window.sosokListMaxPage = 0
 window._tmp = {};
-window._tmp.cnt = 0;
+window._tmp.cnt = 1;
+
+
+window.getThemeHtml_cnt = 0;
 
 global.fs =  require('fs');
 const webview = document.querySelector('webview')
+window.themeListUrl = "https://finance.naver.com/sise/theme.nhn?&page="
+window.stockListUrl = "https://finance.naver.com/sise/sise_market_sum.nhn?sosok=0"
+
+window.UTIL = {}
+window.UTIL.URL = {}
+window.UTIL.URL.paramToObject = function(url){
+	var _t00 = url.split("?")[1].split("&");
+	var i = 0,iLen = _t00.length,io;
+	var r = {}
+	for(;i<iLen;++i){
+		io = _t00[ i ];
+		var _t = io.split("=")
+		r[ _t[0] ] = _t[1];
+	}
+	return r;
+}
+
+
 webview.addEventListener('dom-ready', () => {
   
 	// we can get its URL and display it in the console
-	let currentURL = webview.getURL()
+	let currentURL = webview.getURL( themeListUrl )
 	console.log('currentURL is : ' + currentURL)
 
 	// same thing about the title of the page
 	let titlePage = webview.getTitle()  
 	console.log('titlePage is : ' + titlePage)
 
-	var themeListUrl = "https://finance.naver.com/sise/theme.nhn?&page="
+	
 	
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
@@ -44,15 +66,16 @@ webview.addEventListener('dom-ready', () => {
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
-	window.getThemeMaxPage = function(){
-		webview.loadURL( themeListUrl );
+	window.getMaxPage = function( url ){
+		webview.loadURL( url );
 		webview.executeJavaScript(`
-		new Promise((resolve, reject) => { 
 			var _el = window.document.getElementsByClassName("pgRR")[0].children[0].href
-			resolve(_el.split("=")[1]); });
+			Promise.resolve( _el )
 		`
 		).then(function(data){
-				window.themeListMaxPage = data * 1
+				
+			debugger;
+			window.sosokListMaxPage = window.UTIL.URL.paramToObject( data ).page * 1
 		})
 	}
 	//-------------------------------------------------------;
@@ -63,9 +86,61 @@ webview.addEventListener('dom-ready', () => {
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
+	
+	window.getSosokHtml = function(){
+		
+
+		debugger;
+		webview.loadURL( window.stockListUrl + "&page=" + window._tmp.cnt );
+
+		webview.executeJavaScript(`
+		new Promise(function(resolve, reject){ 
+
+			function fieldSubmit() {
+			var chkcnt = 0;
+			
+			for(i = 0; i < document.field_form.fieldIds.length ; i++) {
+				document.field_form.fieldIds[i].checked = true
+			}
+
+			document.field_form.action = 'field_submit.nhn';
+			document.field_form.submit();
+			}
+			fieldSubmit();
+
+			var r = window.document.body.innerHTML;
+			resolve(r); 
+		});
+		`
+		).then((html) => {
+
+		try {
+			global.fs.writeFileSync( "./all_stock_html/" + window._tmp.cnt + ".html", html, {flag:"w"} );	
+		} catch (error) {
+			debugger;
+		}
+		})
+
+		if( window._tmp.cnt <  window.sosokListMaxPage + 1 )
+		{
+			debugger;
+			++window._tmp.cnt;
+			console.log( window._tmp.cnt )
+			setTimeout( function(){ window.getSosokHtml(); },1000 )
+		}
+
+	}	
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
 	window.getThemeURL = function( url ){
 		
-		if( window.laod.cnt == window.themeListMaxPage )
+		if( window.laod.cnt == window.themeListMaxPage + 1 )
 		{
 			global.fs.writeFileSync( "themeUrl.json", JSON.stringify(window.themeUrlArr,null,4), {flag:"w"} );
 			return;
@@ -96,7 +171,7 @@ webview.addEventListener('dom-ready', () => {
 		}
 		
 		//if( window.laod.cnt < urls.length ){
-		if( window.laod.cnt < 6 ){	
+		if( window.laod.cnt <  window.themeListMaxPage + 1 ){	
 			
 			++window.laod.cnt;
 			webview.loadURL( themeListUrl + window.laod.cnt )
@@ -162,7 +237,86 @@ webview.addEventListener('dom-ready', () => {
 
 	}
 	
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	var _tText00 = global.fs.readFileSync( "allStockCode.json" ).toString();
+	window.allStockCode = JSON.parse( _tText00 );
+	var list = global.fs.readdirSync("./all_stock_html/20210105/");
+	window.makeSosokHtmlToData = function( yyyymmdd ){
+		
+		window.document.body.innerHTML = "";
+		window.document.body.innerHTML = global.fs.readFileSync( "./all_stock_html/" + yyyymmdd + "/" + list[ window.makeThemeListToData.cnt ] ).toString();
 
+		debugger;
+		var el = window.document.getElementsByClassName("type_2")[0]
+		//var category = window.document.getElementsByClassName("info_title")[0].innerText
+		var keys = []
+		var i = 0,iLen = el.children[2].children[0].children.length,io;
+		
+		for(;i<iLen;++i){
+			io = el.children[2].children[0].children[ i ]
+			keys.push( io.innerText );
+		}
+		
+		var r = [];
+		var i = 0, iLen = el.children[3].children.length, io;
+		for(;i<iLen;++i){
+			io = el.children[3].children[ i ]
+			if( io.childElementCount == 1 ) continue;
+			var j = 0,keyCnt = 0,jLen = io.children.length,jo
+			var ro = {}
+			for(;j<jLen;++j){
+				jo = io.children[ j ]
+				
+				// debugger;
+				if( j == 1 ) var key = jo.innerText.replace(/\*/gi,"").trim();
+				if( j == 3 )
+				{
+					var upDown = jo.children[0].alt;
+					ro[ "상태" ] = upDown
+				}
+
+				if( jo.className != "center")
+				{
+					ro[ keys[ keyCnt ] ] = jo.innerText.replace(/\*/gi,"").trim();
+					++keyCnt;
+				} 
+			}
+			
+			ro[ "code" ] = window.allStockCode[ key ];
+			//ro[ "theme" ] = category;
+			keyCnt = 0;
+
+			try
+			{
+				console.log( key )
+				fs.writeFileSync( "./all_stock_html/" + window.allStockCode[ key ] + ".json", JSON.stringify( ro ,null,4 ), {flag:"w"} );	
+			}
+			catch(er)
+			{
+				console.log( er );
+				debugger;
+			}
+		}
+		
+		if( window.makeSosokHtmlToData.cnt <  themesArr.length )
+		{
+			debugger;
+			++window.makeSosokHtmlToData.cnt;
+			console.log( makeSosokHtmlToData.cnt )
+			//setTimeout( function(){ window.getThemeData(); },1000 )
+			window.makeSosokHtmlToData( yyyymmdd );
+		}
+		return;
+		
+	}
+	window.makeSosokHtmlToData.cnt = 0;
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
@@ -179,10 +333,10 @@ webview.addEventListener('dom-ready', () => {
 
 	window.getThemeHtml = function(){
 		
-		var themeName = themesArr[ window.getThemeHtml.cnt ];
+		var themeName = themesArr[ window.getThemeHtml_cnt ];
 		var url = _tO[ themeName ];
 		webview.loadURL( url );
-
+debugger;
 		webview.executeJavaScript(`
 		new Promise(function(resolve, reject){ 
 
@@ -211,16 +365,14 @@ webview.addEventListener('dom-ready', () => {
 		}
 		
 		
-		if( window.getThemeHtml.cnt <  themesArr.length )
+		if( window.getThemeHtml_cnt <  themesArr.length )
 		{
-			++window.getThemeHtml.cnt;
-			console.log( window.getThemeHtml.cnt )
+			++window.getThemeHtml_cnt;
+			console.log( window.getThemeHtml_cnt )
 			setTimeout( function(){ window.getThemeHtml(); },1000 )
 		}
 		})
-
 	}
-	window.getThemeHtml.cnt = 0;
 
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
@@ -231,112 +383,112 @@ webview.addEventListener('dom-ready', () => {
 	//-------------------------------------------------------;
 	//-------------------------------------------------------;
 
-	var _tText = global.fs.readFileSync( "themeUrl.json" ).toString();
-	var _tO = JSON.parse( _tText );
-	var themesArr = Object.keys( _tO );
-	var list = global.fs.readdirSync("./stock_html/20201231/");
+//	var _tText = global.fs.readFileSync( "themeUrl.json" ).toString();
+//	var _tO = JSON.parse( _tText );
+//	var themesArr = Object.keys( _tO );
+//	var list = global.fs.readdirSync("./stock_html/20201231/");
+//
+//	var _tText00 = global.fs.readFileSync( "allStockCode.json" ).toString();
+//	window.allStockCode = JSON.parse( _tText00 );
+//
+//	window.makeThemeList = function(){
+//		
+//		window.document.body.innerHTML = "";
+//		window.document.body.innerHTML = global.fs.readFileSync( "./stock_html/20201231/" + list[ window.makeThemeList.cnt ] ).toString();
+//
+//		debugger;
+//		var _els = window.document.getElementsByClassName("info_layer_wrap")
+//		var _el_code = window.document.getElementsByClassName("name_area")
+//
+//		var i = 0,iLen = _el_code.length,io;
+//		var ra_code = {};
+//		for(;i<iLen;++i){
+//			io = _el_code[ i ];
+//			var key = io.children[0].innerText
+//			var code = io.children[0].href.split("=")[1]
+//			
+//			if( !window.allStockCode[ key ] )
+//			{
+//				window.allStockCode[ key ] = code;
+//			}
+//
+//			var _market = "KOSDAQ"
+//			if( io.children[1].innerText != "" ) _market = "KOSPI"
+//			ra_code[ key ] = {
+//				code : code
+//				, market : _market
+//			}
+//		}
+//
+//		var i = 0,iLen = _els.length,io;
+//		var ra = [];
+//		for(;i<iLen;++i){
+//			io = _els[ i ];
+//			var _to = {
+//				name : io.children[ 0 ].innerText
+//				, desc : io.children[ 1 ].innerText
+//			}
+//			if( i > 0 )
+//			{
+//				_to.code = ra_code[ io.children[ 0 ].innerText ].code
+//				_to.market = ra_code[ io.children[ 0 ].innerText ].market
+//			} 
+//			ra.push( _to )
+//		}
+//		var html = ra;
+//
+//		var key = html[ 0 ].name.replace(/\//gi,"-")
+//		window.themeUrlObj = {}
+//		window.themeUrlObj[ key ] = {
+//			name : key
+//			, desc : html[ 0 ].desc
+//			, child : []
+//		};
+//
+//		var i = 0,iLen = html.length,io;
+//		for(;i<iLen;++i){
+//			io = html[ i ]
+//			if( i > 0 ) window.themeUrlObj[ key ].child.push( io )
+//		}
+//
+//		try
+//		{
+//			fs.writeFileSync( "./stock_theme/" + key + ".json", JSON.stringify(window.themeUrlObj[ key ],null,4), {flag:"w"} );	
+//		}
+//		catch(er)
+//		{
+//			console.log( er );
+//			debugger;
+//		}
+//		
+//		if( window.makeThemeList.cnt <  themesArr.length )
+//		{
+//			debugger;
+//			++window.makeThemeList.cnt;
+//			console.log( makeThemeList.cnt )
+//			//setTimeout( function(){ window.getThemeData(); },1000 )
+//			window.makeThemeList();
+//		}
+//		fs.writeFileSync( "./allStockCode.json", JSON.stringify(window.allStockCode,null,4), {flag:"w"} );	
+//		return;
+//		
+//	}
+//	window.makeThemeList.cnt = 0;
 
-	var _tText00 = global.fs.readFileSync( "allStockCode.json" ).toString();
-	window.allStockCode = JSON.parse( _tText00 );
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
+	//-------------------------------------------------------;
 
-	window.makeThemeList = function(){
+
+	window.makeThemeListToData = function( yyyymmdd ){
 		
 		window.document.body.innerHTML = "";
-		window.document.body.innerHTML = global.fs.readFileSync( "./stock_html/20201231/" + list[ window.makeThemeList.cnt ] ).toString();
-
-		debugger;
-		var _els = window.document.getElementsByClassName("info_layer_wrap")
-		var _el_code = window.document.getElementsByClassName("name_area")
-
-		var i = 0,iLen = _el_code.length,io;
-		var ra_code = {};
-		for(;i<iLen;++i){
-			io = _el_code[ i ];
-			var key = io.children[0].innerText
-			var code = io.children[0].href.split("=")[1]
-			
-			if( !window.allStockCode[ key ] )
-			{
-				window.allStockCode[ key ] = code;
-			}
-
-			var _market = "KOSDAQ"
-			if( io.children[1].innerText != "" ) _market = "KOSPI"
-			ra_code[ key ] = {
-				code : code
-				, market : _market
-			}
-		}
-
-		var i = 0,iLen = _els.length,io;
-		var ra = [];
-		for(;i<iLen;++i){
-			io = _els[ i ];
-			var _to = {
-				name : io.children[ 0 ].innerText
-				, desc : io.children[ 1 ].innerText
-			}
-			if( i > 0 )
-			{
-				_to.code = ra_code[ io.children[ 0 ].innerText ].code
-				_to.market = ra_code[ io.children[ 0 ].innerText ].market
-			} 
-			ra.push( _to )
-		}
-		var html = ra;
-
-		var key = html[ 0 ].name.replace(/\//gi,"-")
-		window.themeUrlObj = {}
-		window.themeUrlObj[ key ] = {
-			name : key
-			, desc : html[ 0 ].desc
-			, child : []
-		};
-
-		var i = 0,iLen = html.length,io;
-		for(;i<iLen;++i){
-			io = html[ i ]
-			if( i > 0 ) window.themeUrlObj[ key ].child.push( io )
-		}
-
-		try
-		{
-			fs.writeFileSync( "./stock_theme/" + key + ".json", JSON.stringify(window.themeUrlObj[ key ],null,4), {flag:"w"} );	
-		}
-		catch(er)
-		{
-			console.log( er );
-			debugger;
-		}
-		
-		if( window.makeThemeList.cnt <  themesArr.length )
-		{
-			debugger;
-			++window.makeThemeList.cnt;
-			console.log( makeThemeList.cnt )
-			//setTimeout( function(){ window.getThemeData(); },1000 )
-			window.makeThemeList();
-		}
-		fs.writeFileSync( "./allStockCode.json", JSON.stringify(window.allStockCode,null,4), {flag:"w"} );	
-		return;
-		
-	}
-	window.makeThemeList.cnt = 0;
-
-	//-------------------------------------------------------;
-	//-------------------------------------------------------;
-	//-------------------------------------------------------;
-	//-------------------------------------------------------;
-	//-------------------------------------------------------;
-	//-------------------------------------------------------;
-	//-------------------------------------------------------;
-	//-------------------------------------------------------;
-
-
-	window.makeThemeListToData = function(){
-		
-		window.document.body.innerHTML = "";
-		window.document.body.innerHTML = global.fs.readFileSync( "./stock_html/20201231/" + list[ window.makeThemeListToData.cnt ] ).toString();
+		window.document.body.innerHTML = global.fs.readFileSync( "./stock_html/" + yyyymmdd + "/" + list[ window.makeThemeListToData.cnt ] ).toString();
 
 		debugger;
 		var el = window.document.getElementsByClassName("type_5")[0]
@@ -375,7 +527,7 @@ webview.addEventListener('dom-ready', () => {
 			try
 			{
 				console.log( key )
-				fs.writeFileSync( "./stock_data/" + window.allStockCode[ key ] + ".json", JSON.stringify( ro ,null,4 ), {flag:"w"} );	
+				fs.writeFileSync( "./stock_data/" + yyyymmdd + "/" + window.allStockCode[ key ] + ".json", JSON.stringify( ro ,null,4 ), {flag:"w"} );	
 			}
 			catch(er)
 			{
@@ -390,7 +542,7 @@ webview.addEventListener('dom-ready', () => {
 			++window.makeThemeListToData.cnt;
 			console.log( makeThemeListToData.cnt )
 			//setTimeout( function(){ window.getThemeData(); },1000 )
-			window.makeThemeListToData();
+			window.makeThemeListToData( yyyymmdd );
 		}
 		return;
 		
@@ -481,8 +633,8 @@ html, body {
     <webview
       id="webview"
       autosize="on"
-      src="https://finance.naver.com/sise/theme.nhn"
-      data-home="https://finance.naver.com/sise/theme.nhn"
+      src="https://finance.naver.com/sise/sise_market_sum.nhn?sosok=0"
+      data-home="https://finance.naver.com/sise/sise_market_sum.nhn?sosok=0"
     ></webview>
 	</body>
 </html> 
