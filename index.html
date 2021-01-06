@@ -608,6 +608,71 @@ debugger;
 //-------------------------------------------------------;
 //-------------------------------------------------------;
 
+var FN00 = function(){
+var fs = require("fs");
+var targetPath = 'D:/workspace_csj/stock_data_theme/stock_theme/';
+var a = fs.readdirSync( targetPath )
+var r = `
+    <style>
+        /*body { padding-top:50px; }*/
+table{
+width : 100%;
+background-color : #ccc
+}		
+tr{ 
+margin : 1px;
+}
+
+		td{ 
+			border : 0px solid #ccc;
+padding: 3px;
+background-color : #fff;
+			font-size :11px;
+	}
+    </style>
+<table>
+`
+
+var i=0,iLen = a.length,io;
+for(;i<iLen;++i){
+debugger;
+	io = a[ i ];
+	var _t = fs.readFileSync( targetPath + io ).toString();
+	var _o = JSON.parse( _t );
+	
+	
+	var j = 0,jLen = _o.child.length,jo;
+	for(;j<jLen;++j){
+	r += "<tr>";
+		jo = _o.child[ j ]
+		
+			r += "<td>"
+			r += _o.name
+			r += "</td>"
+
+		var s,so
+		for( s in jo ){
+			so = jo[ s ]
+//			r += "<td>"
+//			r += s
+//			r += "</td>"
+			r += "<td>"
+			r += so
+			r += "</td>"
+		}
+		
+	r += "</tr>"
+	}
+	
+	console.log( i )
+
+}
+r += "</table>"
+ fs.writeFileSync( "D:/workspace_csj/HttpServer_Default/html/test.html", r, {flag:"w"})
+}
+
+})
+
 }
 
 </script>		
