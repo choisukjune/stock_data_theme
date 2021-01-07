@@ -1,191 +1,288 @@
 (function(){
-	var fs = require( "fs" );
-	var execSync = require('child_process').execSync;
+	global.fs = require( "fs" );
+	onload = function(){
 
-	window.stockCodes = JSON.parse( fs.readFileSync( "allStockCode.json" ).toString() );
-	
-	window.addEventListener('DOMContentLoaded', function(){
+		var webview = document.querySelector('webview')
 
-		var a = window.document.createElement("div");
-			a.id = "_tmp_"
-			a.style.height ="200px"
-			a.style.backgroundColor = "#ff0000"
-
-		var b = window.document.body;
-			b.appendChild( a );
-
-		var c = window.document.getElementById( "_tmp_" );
-		window.MSGS = {};
-
-		var URLS = {
-			targetListPage : "http://www.fantastock.co.kr/bbs/board.php?bo_table=free_list20"
-			, targetPage : ""
-			, slackToMe : "https://hooks.slack.com/services/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"
-			, slackToStock : "https://hooks.slack.com/services/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"
+		window.UTIL = {}
+		window.UTIL.URL = {}
+		window.UTIL.URL.paramToObject = function(url){
+			var _t00 = url.split("?")[1].split("&");
+			var i = 0,iLen = _t00.length,io;
+			var r = {}
+			for(;i<iLen;++i){
+				io = _t00[ i ];
+				var _t = io.split("=")
+				r[ _t[0] ] = _t[1];
+			}
+			return r;
 		};
 
-		var getTagetPage = function( cbFunction ){
-			
-			var xhr = new XMLHttpRequest();
-				xhr.open("GET" , URLS.targetListPage );
-				xhr.onreadystatechange = function() {
-					if( xhr.readyState == 4 && xhr.status == 200 )
-					{
-						var page_innerHTML = xhr.responseText.match(/<table[^>]*>([\w|\W]*)<\/table>/im)[0];
-												
-						c.innerHTML = page_innerHTML;
-						
-						var _tdom = window.document.getElementsByClassName( "bo_notice" );
-						var _tbody = window.document.getElementsByTagName( "tbody" )[ 0 ]
-						var k = 0,kLen = _tdom.length,ko;
-						for(;k<kLen;++k){
-							ko = window.document.getElementsByClassName( "bo_notice" )[ 0 ];
-							_tbody.removeChild( ko );
-						}
-						URLS.targetPage = window.document.getElementsByClassName( "td_subject" )[ 0 ].children[0].children[0].href;			
-						c.innerHTML = "";
-						cbFunction();
-					}
-				}
-				xhr.send();
+		window.UTIL.String = {};
+		window.UTIL.String.pad = function(n, width){
+		  n = n + '';
+		  return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
 		}
 
-		var pad = function(n, width){
-			n = n + '';
-			return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
-		};
 
-		var getNowYYYYMMDD_HHMMSS = function(){
+		window.UTIL.DateFormat = {};
+
+		window.UTIL.DateFormat.YYYYMMDD_HHMMSS = function(){
 			var date = new Date();
 			
 			var YYYY = date.getFullYear();
-			var MM = pad( date.getMonth() + 1, 2 );
-			var DD = pad( date.getDate(), 2 );
-			var H = pad( date.getHours(), 2 );
-			var M = pad( date.getMinutes(), 2 );
-			var S = pad( date.getSeconds(), 2 );
+			var MM = window.UTIL.String.pad( date.getMonth() + 1, 2 );
+			var DD = window.UTIL.String.pad( date.getDate(), 2 );
+			var H = window.UTIL.String.pad( date.getHours(), 2 );
+			var M = window.UTIL.String.pad( date.getMinutes(), 2 );
+			var S = window.UTIL.String.pad( date.getSeconds(), 2 );
 
 			return YYYY + "-" + MM + "-" + DD + " " + H + ":" + M + ":" + S;
 		};
 
-		var loadPage = function(targetEl, url, cbFunction ){
-			var xhr = new XMLHttpRequest();
-				xhr.open("GET" , url );
-				xhr.onreadystatechange = function() {
-					if( xhr.readyState == 4 && xhr.status == 200 )
-					{
-						var page_innerHTML = xhr.responseText.match(/<section id="bo_vc"[^>]*>([\w|\W]*)<\/section>/im)[0]
-											.replace( /김용재소장님의  댓글/gi, "" )
-											//.replace( /<header style="z-index[^>]*>([\w|\W]*)<\/header>/gi, "" );
-							
-						targetEl.innerHTML = page_innerHTML;
-						cbFunction();
-					}
-				}
-				xhr.send();
+		window.UTIL.DateFormat.YYYYMMDD = function(){
+			var date = new Date();
+			
+			var YYYY = date.getFullYear();
+			var MM = window.UTIL.String.pad( date.getMonth() + 1, 2 );
+			var DD = window.UTIL.String.pad( date.getDate(), 2 );
+
+			return YYYY + MM + DD;
 		};
 
-		var FN00 = function(){
-
-			var _el = window.document.getElementsByTagName( "article" )
-			var i = 0,iLen = _el.length,io;
+		window.UTIL.DateFormat.YYMMDD = function( date ){
+			date = date || new Date();
 			
-			for(;i<iLen;++i){
-				io = _el[ i ]
-				if( io.id.indexOf("c_") == -1 ) continue;
-				
-				var j = 0,jLen = io.children[ 1 ].children.length,jo;
-				for(;j<jLen;++j){
-					var r = "";
-					jo = io.children[ 1 ].children[ j ];
+			var YYYY = date.getFullYear();
+			var YY = YYYY.toString().substr(2)
+
+			var MM = window.UTIL.String.pad( date.getMonth() + 1, 2 );
+			var DD = window.UTIL.String.pad( date.getDate(), 2 );
+			
+			return YY + "." + MM + "." + DD;
+		};
+
+		
+		window.YYMMDD_now = window.UTIL.DateFormat.YYMMDD();
+		window.YYYYMMDD = window.UTIL.DateFormat.YYYYMMDD();
+		var oneDayAgo_date = new Date();
+		oneDayAgo_date.setDate(oneDayAgo_date.getDate() - 2);
+		window.YYMMDD_oneDayAgo = window.UTIL.DateFormat.YYMMDD( oneDayAgo_date );
+
+		window.maxPage = -1;
+		window.pageCnt = 1;
+		window._tmp = {}
+		window._tmp.cnt = 0;
+		window.linkList = [];
+		window.detailList = [];
+
+		window.pageBaseUrl = "https://eomisae.co.kr/index.php?mid=fs&page="
+		webview.addEventListener('dom-ready', () => {
+		  
+			var currentURL = webview.getURL();
+			var titlePage = webview.getTitle();
+			console.log('currentURL is : ' + currentURL)
+			console.log('titlePage is : ' + titlePage)			
+			
+			//-------------------------------------------------------;
+			//페이지MAX걊 구하기;
+			//-------------------------------------------------------;
+			window.getMaxPage = function( url ){
+				url = url || webview.getURL();
+				webview.loadURL( url );
+				webview.executeJavaScript(`
+					var _el = window.document.getElementsByClassName("frst_last")[1].href
+					Promise.resolve( _el )
+				`
+				).then(function(data){
+					window.maxPage = window.UTIL.URL.paramToObject( data ).page * 1
+				})
+			}
+			//-------------------------------------------------------;
+			//게시물HTML저장하기;
+			//-------------------------------------------------------;
+			window.downloadHtml = function( url ){
+
+				url = url || window.pageBaseUrl + window.pageCnt
+				webview.loadURL( url );
+				webview.executeJavaScript(`
+					var _el = window.document.getElementsByClassName("card_wrap")[0].innerHTML
+					Promise.resolve( _el )
+				`
+				).then(function(data){
+
+					var _data = data.replace(/\/\/img/gi, "https://img")
+
+					window.document.getElementById("_tmp").innerHTML = "";
+					window.document.getElementById("_tmp").innerHTML = _data;
+
+					//window.document.getElementsByClassName("card_content")[0].children[0].children[1].innerText
+					//window.document.getElementsByClassName("card_content")[0].children[1].children[0]
+					var date = window.document.getElementsByClassName("card_content")[0].children[0].children[1].innerText;
 					
-					var z = 0,zLen = jo.children.length,zo;
-					for(;z<zLen;++z){
-						
-						zo = jo.children[ z ]
-						var d = zo.textContent.trim();
-						
-						if( d != "" && d.indexOf( "평균" ) == -1 && d.indexOf( "종가매도" ) == -1 && d.indexOf( "보유중인 종목은 손절가와 목표가" ) == -1 ){
-							if( d.indexOf( "▶ 현재시간 9시" ) != -1 || d.indexOf( "현재가" ) != -1 )
-							{
-								if( d.indexOf( "▶ 현재시간 9시" ) != -1 )
-								{
-									var _tArr = d.split( " " );
-									var key = _tArr[ _tArr.length - 1];
-									console.log( key + " - " + window.stockCodes[ key ])
-									execSync('test.ahk ' + window.stockCodes[ key ]);
-								}
-
-								r += d 
-								if( !window.MSGS[ io.id ] )
-								{
-									window.MSGS[ io.id ] = { text : "", isSend : 0 };
-								}
-							}
-							if( d.indexOf( "목표가" ) != -1 && d.indexOf( "손절가" ) != -1 && d.indexOf( "1차" ) != -1 )
-							{
-								r += d + "원";
-								if( !window.MSGS[ io.id ] )
-								{
-									window.MSGS[ io.id ] = { text : "", isSend : 0 };
-								}
-							}
-						}
+					if( Number( date.replace(/\./gi,"") ) < Number( window.YYMMDD_now.replace(/\./gi,"") ) )
+					{
+						debugger;
+						window.document.getElementById("_tmp").innerHTML = "";
 					}
-					if( r != "" ) window.MSGS[ io.id ].text += r + " - ";
-					else continue;
-				}
-			}
-			
-			var now = getNowYYYYMMDD_HHMMSS();
+					else
+					{
+						
+						fs.writeFileSync( window.pageCnt + ".html", _data, {flag : "w"} )	
 
-			var msg = "";
-				msg += "\n\n==============================\n\n";
-				msg += now
-				msg += "\n\n==============================\n\n";
-			
-			var s,so,msg_cnt = 0;
-			for( s in window.MSGS ){
-				so = window.MSGS[ s ];
+						debugger;
+						++window.pageCnt;
+						window.downloadHtml( window.pageBaseUrl + window.pageCnt )
+					}
+					
+				})
+			}
+
+
+			//-------------------------------------------------------;
+			//게시물상세페이지링크 추출 및 저장하기;
+			//-------------------------------------------------------;
+			//var _tText00 = global.fs.readFileSync( "allStockCode.json" ).toString();
+			//window.allStockCode = JSON.parse( _tText00 );
+			//var list = global.fs.readdirSync("./all_stock_html/20210105/");
+			window.getDetailLinks = function( yyyymmdd ){
 				
-				if( !so.isSend )
-				{
-					msg += so.text + "\n";
-					so.isSend = 1;
-					++msg_cnt;
+				window.document.getElementById("_tmp").innerHTML = "";
+				window.document.getElementById("_tmp").innerHTML = global.fs.readFileSync( "1.html" ).toString();
+
+				var el = window.document.getElementsByClassName("card_content");
+				
+				var r = [];
+				var i = 0, iLen = el.length, io;
+				for(;i<iLen;++i){
+					io = el[ i ];
+					var date = io.children[0].children[1].innerText;
+					var href = io.children[1].children[0].href
+
+					if( Number( date.replace(/\./gi,"") ) < Number( window.YYMMDD_now.replace(/\./gi,"") ) ) break;
+					
+					console.log( date + " - " + href );
+
+					var _to = {
+						id : window.UTIL.URL.paramToObject( href ).document_srl
+						, url : href
+						, img : io.parentElement.children[0].children[0].src
+					};
+					
+					r.push( _to );
 				}
-			}
-
-			if( msg_cnt != 0 ) //toSlack( URLS.slackToStock, msg );
+				try
+				{
+					fs.writeFileSync( "1.json", JSON.stringify( r ,null,4 ), {flag:"w"} );	
+					window.document.getElementById("_tmp").innerHTML = "";
+				}
+				catch(er)
+				{
+					console.log( er );
+				}
 			
-			if( Object.keys( window.MSGS ).length < 6 )
-			{
-				console.log( "아직메세지 전체를 수신하지 않았음" + getNowYYYYMMDD_HHMMSS() );
-				setTimeout(function(){
-					loadPage( c, URLS.targetPage , function(){ FN00(); });
-				},5000)
 			}
-			else
-			{
-				toSlack( URLS.slackToStock, "전체메세지 수신 완료!" )
+
+			//-------------------------------------------------------;
+			//게시물상세페이지링크 추출 및 저장하기;
+			//-------------------------------------------------------;
+			//var _tText00 = global.fs.readFileSync( "allStockCode.json" ).toString();
+			//window.allStockCode = JSON.parse( _tText00 );
+			//var list = global.fs.readdirSync("./all_stock_html/20210105/");
+			window.downloadDetailHtml = function( yyyymmdd ){
+				
+				debugger;
+
+				if( window.linkList.length == 0 )
+				{
+					window.linkList = JSON.parse( global.fs.readFileSync( "1.json" ).toString() );
+					window._tmp.cnt = 0
+				}
+				
+				if( window.linkList.length == window._tmp.cnt ) return;
+				
+				webview.loadURL( window.linkList[ window._tmp.cnt ].url );
+				webview.executeJavaScript(`
+					var _el = window.document.getElementsByClassName("_bd")[0].innerHTML
+					Promise.resolve( _el )
+				`
+				).then(function(data){
+
+					var _data = data.replace(/\/\/img/gi, "https://img")
+					fs.writeFileSync( window.linkList[ window._tmp.cnt ].id + ".html", _data, {flag : "w"} )	
+
+					debugger;
+					++window._tmp.cnt;
+					window.downloadDetailHtml()
+					
+				})
+			
 			}
-		}
+			
+			//-------------------------------------------------------;
+			//게시물상세페이지링크 추출 및 저장하기;
+			//-------------------------------------------------------;
+			//var _tText00 = global.fs.readFileSync( "allStockCode.json" ).toString();
+			//window.allStockCode = JSON.parse( _tText00 );
+			//var list = global.fs.readdirSync("./all_stock_html/20210105/");
+			window.detailHtmlToObject = function( id ){
+				
+				debugger;
 
-		var toSlack = function( url, message){
-
-			var payload = { "text" : message };
-
-			var xhr = new XMLHttpRequest();
-			xhr.open("POST", url );
-			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-			xhr.send( JSON.stringify(payload) )
-
-			console.log("Msg Send Complete - " + payload.text );
-
-		};
-
-		getTagetPage(function(){
-			loadPage( c, URLS.targetPage , FN00 )
+				if( window.detailList.length == 0 )
+				{
+					window.detailList = global.fs.readdirSync( "./detail/html/" );
+					window._tmp.cnt = 0
+				}
+				
+				var a = []
+				var z = 0,zLen = window.detailList.length,zo;
+				for(;z<zLen;++z){
+					zo = window.detailList[ z ];
+				
+					window.document.getElementById("_tmp").innerHTML = "";
+					window.document.getElementById("_tmp").innerHTML = global.fs.readFileSync( "./detail/html/" + zo ).toString();
+					
+					var r = {
+						id : zo.split(".")[0]
+						, info : {}
+						, detail : []
+					};
+					var el00 = window.document.getElementsByTagName("table")[0].children[1].children;
+					
+					var i = 0,iLen = el00.length,io;
+					for(;i<iLen;++i){
+						io = el00[ i ].children
+						if( io.length == 0 ) continue;
+						if( io[ 0 ].children.length > 0 ) io[ 0 ] = io[ 0 ].removeChild( io[ 0 ].childNodes[ 1 ] ); 
+						r.info[ io[ 0 ].innerText ] = io[1].innerText;
+					}
+					
+					
+					var el01 = window.document.getElementsByTagName("article")[0].children[0].children
+					var i = 0,iLen = el01.length,io;
+					for(;i<iLen;++i){
+						io = el01[ i ]
+						debugger;
+						r.detail.push( io.outerHTML );
+					}
+					
+					a.push( r );
+					window.document.getElementById("_tmp").innerHTML = "";
+				}
+				
+				try
+				{
+					fs.writeFileSync( "./detail/" + window.YYYYMMDD + ".json", JSON.stringify( a ,null,4 ), {flag:"w"} );	
+					
+				}
+				catch(er)
+				{
+					console.log( er );
+				}
+			
+			}
 		})
-	})
+
+	}
 })()
